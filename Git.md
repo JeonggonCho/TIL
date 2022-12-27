@@ -70,6 +70,10 @@ git bash에서 (master)로 표기된 것으로 확인 할 수 있다.
 
 - **git log** : 현재 `저장소(repository)` 에 기록된 커밋, 버전을 조회 할 수 있다.
 
+- **git help** : git 의 모든 명령어 및 정보를 볼 수 있다.
 
+- **git config --system** : 시스템의 모든 사용자와 모든 저장소에 관리자 권한 적용
 
+- **git config --global** : 현재 사용자에게 적용되는 설정 조회
 
+- **git config --local** : 특정 저장소에만 적용되는 설정 조회
