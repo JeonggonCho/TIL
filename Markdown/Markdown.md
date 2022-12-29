@@ -104,9 +104,10 @@ ex)
 ```
 ex)
 
-![drawing](img/my_drawing.jpg)
+![](../img/drawing1.jpg)
 ```
-![drawing](img/my_drawing.jpg)
+
+![](../img/drawing1.jpg)
 
 ### **7) Blockquotes**
 : 인용문 작성시 사용하며 `방향표시(>)`를 이용하여 표현한다.
