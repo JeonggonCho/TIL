@@ -10,4 +10,4 @@
 
 ### **<Day.3> 12.29**
 - [Branch](GitHub/Branch.md)
-- [Pull request](GitHub/Pull%20request.md)
+- [GitHub Flow](GitHub/GitHub%20Flow.md)
