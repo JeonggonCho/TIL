@@ -74,15 +74,41 @@ git bash에서 (master)로 표기된 것으로 확인 할 수 있다.
 
 - **git help** : git 의 모든 명령어 및 정보를 볼 수 있다.
 
+---
+
+## (5) Git config 설정
+
+**1) 사용자 정보 설정하기**
+
+: 변경사항을 저장(commit)하기 위해서는 `사용자의 정보(이름과 이메일)`가 필요하다.
+
+  ```bash
+  <사용자 정보 등록>
+
+  $ git config user.name "<user_name>"
+  $ git config user.email"<user_email>"
+  ```
+
+**2) 사용자 정보 삭제하기**
+
+: 설정된 사용자를 지우기 위해서는 `unset`을 이용한다.
+
+  ```bash
+  <사용자 정보 삭제>
+
+  $ git config --unset user.name
+  $ git config --unset user.email
+  ```
+
 - **git config --system** : 시스템의 모든 사용자와 모든 저장소에 관리자 권한 적용
 
-- **git config --global -l** : 현재 사용자에게 적용되는 설정 조회
+- **git config --global** : 현재 사용자에게 적용되는 설정 조회
 
 - **git config --local** : 특정 저장소에만 적용되는 설정 조회
 
 ---
 
-## (5) Git관리
+## (6) Git관리
 
 **Q1) git으로 저장되는 폴더의 이름을 바꿔도 된다?**
 
