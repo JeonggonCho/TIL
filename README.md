@@ -11,3 +11,6 @@
 ### **<Day.3> 12.29**
 - [Branch](GitHub/Branch.md)
 - [GitHub Flow](GitHub/GitHub%20Flow.md)
+
+### **<Day.3> 01.02**
+- [Python_Basic](Python/Python_basic.md)
