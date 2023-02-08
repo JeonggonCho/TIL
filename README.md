@@ -31,4 +31,5 @@
 - 
 
 ### **<Day.X> 02.08**
-- [DB](DB/Relational_Database.md)
+- [DB_Relational Database](DB/Relational_Database.md)
+- [DB_MySQL Workbench](DB/MySQL_Workbench.md)
