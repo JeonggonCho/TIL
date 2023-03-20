@@ -19,4 +19,9 @@
 2. [DB_MySQL Workbench](DB/MySQL_Workbench.md)
 
 ### **4. Web**
-1. []()
+
+
+### **5. JavaScript**
+
+
+### **6. Django**
