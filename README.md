@@ -25,3 +25,5 @@
 
 
 ### **6. Django**
+1. [서버에 대하여](Django/About_Server.md)
+2. [Setting_Guide (가상환경 생성~앱 생성)](Django/Setting_Guide.md)
