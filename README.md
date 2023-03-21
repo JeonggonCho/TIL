@@ -18,7 +18,7 @@
 1. [DB_Relational Database](DB/Relational_Database.md)
 2. [DB_MySQL Workbench](DB/MySQL_Workbench.md)
 
-### **4. Web**
+### **4. Web (html & css)**
 
 
 ### **5. JavaScript**

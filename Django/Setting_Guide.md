@@ -177,6 +177,7 @@ $ pip install -r requirements.txt
 앞서 만들어진 Django 서버 프로젝트는 비어있기 때문에 서비스의 실질적인 기능을 담당하는 앱을 생성하고 등록해 주어야 한다.
 
 ![](../img/django_project%2Capp.jpg)
+
 <Django의 프로젝트와 앱의 관계>
 <br>
 <br>
@@ -197,12 +198,13 @@ $ python manage.py startapp articles
 <br>
 
 ![](../img/django_%EC%95%B1_%EC%83%9D%EC%84%B1.png)
+
 <앱 생성>
 
 <br>
 <br>
 
-앱을 생성한 후, 앱을 `등록하는 과정이 필요`하며, `등록->생성`과 같이 `역순의 과정은 불가능`하다.
+앱을 생성한 후, 앱을 `등록하는 과정이 필요`하며, `등록 -> 생성`과 같이 `역순의 과정은 불가능`하다.
 
 ```bash
 # 8-2. 앱 등록하기
@@ -210,6 +212,7 @@ $ python manage.py startapp articles
 프로젝트 폴더 안의 settings.py 파일의 '설치된 앱' 목록에 기입하기
 ```
 ![](../img/django_%EC%95%B1%EB%93%B1%EB%A1%9D.png)
+
 <앱 등록>
 <br>
 <br>
@@ -226,7 +229,7 @@ $ python manage.py startapp articles
 <br>
 <br>
 
-### 9-1. urls.py
+### **9-1. urls.py**
 
 클라이언트로부터 요청받은 `url주소`를 통해 앱패키지의 `views 모듈의 함수 실행`하기
 
@@ -236,7 +239,7 @@ $ python manage.py startapp articles
 <br>
 <br>
 
-### 9-2. views.py
+### **9-2. views.py**
 
 `templates을 조회`하는 함수 생성
 
@@ -246,7 +249,7 @@ $ python manage.py startapp articles
 <br>
 <br>
 
-### 9-3. templates 폴더
+### **9-3. templates 폴더**
 
 view모듈로 반환되는 `데이터가 담긴 폴더`로 앞선 urls.py와 views.py는 자동생성되지만, 서버 프레임워크인 Django의 특성상 templates 폴더는 `자동생성되지 않는다.` 또한 폴더명은 반드시 `templates`로 해야한다.
 
