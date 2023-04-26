@@ -44,6 +44,7 @@ $ git branch -d {branch_name}
 
 ### **6) Merge**
 
+
 : 각 branch에서 작업을 한 이후, 이력을 합치기 위해 `merge` 명령어를 사용한다.
 
 **<병합시, 서로 다른 commit에서 `동일한 파일`을 수정한 경우>**
