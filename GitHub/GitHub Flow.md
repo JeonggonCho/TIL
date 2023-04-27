@@ -1,5 +1,13 @@
 # GitHub Flow
 
+## - 목록
+1. [Git Flow 의미](#1-git-flow-의미)
+2. [Git Flow 유형](#2-github-flow-유형)
+    - [Shared Repository Model](#1-shared-repository-model)
+    - [Fork $ Pull Model](#2-fork--pull-model)
+
+---
+
 ## (1) Git Flow 의미
 > Git Flow는 Git을 활용하여 `협업하는 일련의 과정`으로 Branch를 통해 이루어진다. 정해진 원칙이 있는 것이 아니며, 각 서비스 및 기능에 따라 제안되는 흐름이 있으며, 각각의 프로젝트 및 회사에 따라 `상이하게 활용`되고 있다.
 
