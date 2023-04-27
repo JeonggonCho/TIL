@@ -11,7 +11,7 @@
 ### **2. Python**
 1. [Python_기초](Python/Python_Basics.md)
 2. [Python_리스트](Python/Python_List.md)
-3. [Python_시간복잡도와 빅오 표기](Python/Python_Time_Complexity.md)
+3. [Python_시간복잡도 & 빅오 표기법](Python/Python_Time_Complexity.md)
 4. [Python_제어문](Python/Python_Control_Statement.md)
 5. [Python_문자열](Python/Python_String.md)
 6. [Python_함수](Python/Python_Function.md)
