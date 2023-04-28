@@ -1,5 +1,10 @@
 # String Formatting
 
+## - 목차
+1. [String Interpolation](#1-string-interpolation)
+    - [%-formatting](#1--formatting)
+    - [f-string](#1-f-string) 
+   
 ---
 
 ## (1) String Interpolation
