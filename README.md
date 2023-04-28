@@ -12,11 +12,13 @@
 1. [Python_기초](Python/Python_Basics.md)
 2. [Python_리스트](Python/Python_List.md)
 3. [Python_시간복잡도 & 빅오 표기법](Python/Python_Time_Complexity.md)
-4. [Python_제어문](Python/Python_Control_Statement.md)
-5. [Python_문자열](Python/Python_String.md)
-6. [Python_함수](Python/Python_Function.md)
-7. [Python_딕셔너리](Python/Python_Dictionary.md)
-8. [Python_모듈,패키지,라이브러리 & 에러,예외처리](Python/Python_Module&Error.md)
+4. [Python_String Formatting](Python/Python_String_Formatting.md)
+5. [Python_형 변환](Python/Python_Typecasting.md)
+6. [Python_제어문](Python/Python_Control_Statement.md)
+7. [Python_문자열](Python/Python_String.md)
+8. [Python_함수](Python/Python_Function.md)
+9. [Python_딕셔너리](Python/Python_Dictionary.md)
+10. [Python_모듈,패키지,라이브러리 & 에러,예외처리](Python/Python_Module&Error.md)
 
 ### **3. DB**
 1. [DB_Relational Database](DB/Relational_Database.md)
