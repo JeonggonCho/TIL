@@ -1,5 +1,20 @@
 # 문자열
 
+## - 목차
+1. [문자열(String)](#1-문자열string)
+    - [문자열 메서드](#1-문자열-메서드)
+      - [split(기준 문자)](#--split기준-문자)
+      - [strip(제거할 문자)](#--strip제거할-문자)
+      - [find(찾는 문자)](#--find찾는-문자)
+      - [index(찾는 문자)](#--index찾는-문자)
+      - [count(개수를 셀 문자)](#--count개수를-셀-문자)
+      - [replace(기존 문자, 새로운 문자)](#--replace기존-문자-새로운-문자)
+      - [삽입할 문자.join(iterable)](#--삽입할-문자joiniterable)
+    - [아스키(ASCII)코드](#2-아스키ascii-코드)
+      - [아스키 코드](#--아스키-코드)
+      - [ord(문자)](#--ord문자)
+      - [chr(아스키 코드)](#--chr아스키-코드)
+
 ---
 
 ## (1) 문자열(String)
@@ -283,7 +298,7 @@ print("".join(words))
 Q) 그렇다면 문자는 어떻게 저장될까?
 > : ASCII(American Standard Code for Information Interchange) - 미국 정보교환 표준부호
 
-### - 아스키 코드**
+### - 아스키 코드
 
 
 - 알파벳을 표현하는 대표 인코딩 방식
