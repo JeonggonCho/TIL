@@ -1,5 +1,34 @@
 # 에러/예외 처리(Error/Exception Handling)
 
+## - 목차
+1. [디버깅](#1-디버깅)
+2. [에러와 예외](#2-에러와-예외)
+   - [문법 에러(Syntax Error)](#1-문법-에러syntax-error)
+     - [EOL(End of Line)](#--eolend-of-line)
+     - [EOF(End of File)](#--eofend-of-file)
+     - [Invalid Syntax](#--invalid-syntax)
+     - [assign to literal](#--assign-to-literal)
+   - [예외(Exception)](#2-예외exception)
+     - [ZeroDivisionError](#--zerodivisionerror)
+     - [NameError](#--nameerror)
+     - [TypeError](#--typeerror)
+     - [ValueError](#--valueerror)
+     - [IndexError](#--indexerror)
+     - [KeyError](#--keyerror)
+     - [ModuleNotFoundError](#--modulenotfounderror)
+     - [ImportError](#--importerror)
+     - [IndentationError](#--indentationerror)
+     - [KeyboardInterrupt](#--keyboardinterrupt)
+     - [파이썬 내장 예외(built-in-exceptions)](#--파이썬-내장-예외built-in-exceptions)
+3. [예외처리](#3-예외처리)
+   - [처리순서](#--처리순서)
+   - [작성방법](#--작성방법)
+   - [정리](#--정리)
+4. [예외 발생 시키기](#4-예외-발생-시키기)
+   - [raise statement](#--raise-statement)
+   - [assert](#--assert)
+   - [raise vs assert](#--raise-vs-assert)
+
 ---
 
 ## (1) 디버깅
