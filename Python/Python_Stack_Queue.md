@@ -1,5 +1,13 @@
 # 스택, 큐 (Stack, Queue)
 
+## - 목차
+1. [데이터 구조 & 알고리즘](#1-데이터-구조--알고리즘)
+   - [데이터 구조(Data Structure)](#1-데이터-구조data-structure)
+   - [알고리즘(Algorithm)](#2-알고리즘algorithm)
+2. [스택(Stack)](#2-스택stack)
+   - [스택](#1-스택)
+3. [큐(Queue)](#3-큐queue)
+
 ---
 
 ## (1) 데이터 구조 & 알고리즘
@@ -86,10 +94,9 @@ ex) 프로세스 관리(데이터 버퍼), 클라이언트/서버(Message Queue)
 
 - 이를 해결하기 위해 `덱(Deque, Double-Ended Queue)` 자료구조를 이용한다.
 
+
 - 덱(Deque)
-
-
-: 양 방향으로 삽입과 삭제가 자유로운 큐
+  - 양 방향으로 삽입과 삭제가 자유로운 큐
 
 ![덱](../img/python_deque.png)
 
