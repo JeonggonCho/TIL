@@ -1,5 +1,18 @@
 # 메서드
 
+## - 목차
+1. [메서드(Method)](#1-메서드method)
+   - [메서드](#1-메서드)
+   - [메서드와 함수의 차이](#2-메서드와-함수의-차이)
+2. [문자열(String Type) 메서드](#2-문자열string-type-메서드)
+   - [문자열 탐색/검증](#1-문자열-탐색검증)
+   - [문자열 변경](#2-문자열-변경)
+3. [리스트(List) 메서드](#3-리스트list-메서드)
+   - [리스트 값 추가 및 삭제](#1-리스트-값-추가-및-삭제)
+4. [세트(Set) 메서드](#4-세트set-메서드)
+5. [딕셔너리(Dictionary) 메서드](#5-딕셔너리dictionary-메서드)
+6. [매직 메서드](#6-매직-메서드)
+
 ---
 
 ## (1) 메서드(Method)
@@ -264,7 +277,7 @@ print(s.swapcase())
 ```bash
 ex)
   
-# .append(x)
+# L.append(x)
 
 cafe = ['starbucks', 'tomntoms', 'hollys']
 
@@ -277,7 +290,7 @@ print(cafe)
 
 ------------------------------------------------------------------------
 
-# .extend(iterable)
+# L.extend(iterable)
 
 cafe = ['starbucks', 'tomntoms', 'hollys']
 
@@ -290,7 +303,7 @@ print(cafe)
 
 ------------------------------------------------------------------------
 
-# .insert(i, x)
+# L.insert(i, x)
 
 cafe = ['starbucks', 'tomntoms']
 
@@ -316,7 +329,7 @@ print(cafe)
 
 ------------------------------------------------------------------------
 
-# .remove(x)
+# L.remove(x)
 
 numbers = [1, 2, 3, 'hi']
 
@@ -340,7 +353,7 @@ numbers.remove(7)
 
 ------------------------------------------------------------------------
 
-# .pop()
+# L.pop()
 
 numbers = ['hi', 1, 2, 3]
 
@@ -355,7 +368,7 @@ print(numbers)
 
 
 
-# .pop(i)
+# L.pop(i)
 
 numbers = ['hi', 1, 2, 3]
 
@@ -370,7 +383,7 @@ print(numbers)
 
 ------------------------------------------------------------------------
 
-# .clear()
+# L.clear()
 
 numbers = [1, 2, 3]
 
@@ -383,7 +396,7 @@ print(numbers)
 
 ------------------------------------------------------------------------
 
-# .index(x)
+# L.index(x)
 
 numbers = [1, 2, 3, 4]
 
@@ -396,7 +409,7 @@ print(numbers.index(100))
 
 ------------------------------------------------------------------------
 
-# .count(x)
+# L.count(x)
 
 numbers = [1, 1, 2, 3, 1]
 
@@ -409,7 +422,7 @@ print(numbers.count(100))
 
 ------------------------------------------------------------------------
 
-# .sort()
+# L.sort()
     # 원본 리스트를 정렬함, None 반환
 
 numbers = [3, 2, 5, 1]
@@ -437,7 +450,7 @@ print(numbers, result)
 
 ------------------------------------------------------------------------
 
-# .reverse()
+# L.reverse()
     # 순서를 반대로 뒤집음(정렬하는 것 아님), None 반환
     
 numbers = [3, 2, 5, 1]
@@ -471,8 +484,125 @@ print(numbers, result)
 
 ```bash
 ex)
+  
+# s.copy() : 세트의 얕은 복사본을 반환
+
+original_set = {1, 2, 3}
+copied_set = original_set.copy()
+print(copied_set)
+
+출력
+>> {1, 2, 3}
+
+-----------------------------------------------------
+
+# s.add(x) : 항목 x가 세트 s에 없다면 추가
+
+my_set = {1, 2, 3}
+my_set.add(4)
+print(my_set)
+
+출력
+>> {1, 2, 3, 4}
+
+-----------------------------------------------------
+
+# s.pop() : 세트 s에서 랜덤하게 항목을 반환하고, 해당 항목을 제거
+
+my_set = {1, 2, 3, 4}
+popped_item = my_set.pop()
+print(popped_item)
+print(my_set)
+
+출력
+>> (랜덤한 값)
+>> 나머지 세트
+
+-----------------------------------------------------
+
+# s.remove(x) : 항목 x를 세트 s에서 삭제
+
+my_set = {1, 2, 3, 4}
+my_set.remove(3)
+print(my_set)
+
+출력
+>> {1, 2, 4}
+
+-----------------------------------------------------
+
+# s.discard(x) : 항목 x가 세트 s에 있는 경우, 항목 x를 세트 s에서 삭제
+
+my_set = {1, 2, 3, 4}
+my_set.discard(3)
+print(my_set)
+
+출력
+>> {1, 2, 4}
+
+-----------------------------------------------------
+
+# s.update(t) : 세트 t에 있는 모든 항목 중 세트 s에 없는 항목을 추가
+
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+set1.update(set2)
+print(set1)
+
+출력
+>> {1, 2, 3, 4, 5}
+
+-----------------------------------------------------
+
+# s.clear() : 세트의 모든 항목을 제거
+
+my_set = {1, 2, 3, 4}
+my_set.clear()
+print(my_set)
+
+출력
+>> set()
+
+-----------------------------------------------------
+
+# s.isdisjoint(t) : 세트 s가 세트 t의 서로 같은 항목을 하나라도 갖고 있지 않은 경우, True 반환
+
+set1 = {1, 2, 3}
+set2 = {4, 5, 6}
+is_disjoint = set1.isdisjoint(set2)
+print(is_disjoint)
+
+출력
+>> True
+
+-----------------------------------------------------
+
+# s.issubset(t) : 세트 s가 세트 t의 하위 세트인 경우, True 반환
+
+set1 = {1, 2}
+set2 = {1, 2, 3, 4}
+is_subset = set1.issubset(set2)
+print(is_subset)
+
+출력
+>> True
+
+-----------------------------------------------------
+
+# s.issuperset(t) : 세트 s가 세트 t의 상위 세트인 경우, True 반환
+
+set1 = {1, 2, 3, 4}
+set2 = {1, 2}
+is_superset = set1.issuperset(set2)
+print(is_superset)
+
+출력
+>> True
 
 ```
+
+![세트 메서드 다이어그램](../img/python_set_method_diagram.png)
+<세트 메서드 다이어그램>
 
 ---
 
@@ -494,7 +624,7 @@ ex)
 ```bash
 ex)
   
-# .get(key[,default])
+# d.get(key[,default])
 
 dict = {
   'apple': '사과',
@@ -526,7 +656,7 @@ print(dict.get('pineapple', 0))
 
 ----------------------------------------------------
 
-# .pop(key[,default])
+# d.pop(key[,default])
 
 dict = {
   'apple': '사과',
@@ -559,7 +689,7 @@ print(data, dict)
 
 ----------------------------------------------------
 
-# .update([other])
+# d.update([other])
     # 값을 제공하는 key, value로 덮어쓴다.
     
 dict = {
@@ -573,4 +703,210 @@ print(dict)
 
 출력
 >> {'apple': '포도', 'banana': '바나나'}
+```
+
+---
+
+## (6) 매직 메서드
+
+
+: '매직 메서드'는 `특정한 이름`을 가진 메서드로, 객체의 특정 상황에서 자동으로 호출되는 메서드를 말한다.
+이러한 메서드들은 `언더바('__')`로 시작하고 끝나는데, 파이썬에서는 이러한 메서드들을 이용하여 객체의 `행동을
+커스터마이징`하거나 `특정 연산을 지원`하도록 할 수 있다.
+
+
+| 문법                              | 설명                                                                           |
+|---------------------------------|------------------------------------------------------------------------------|
+| \__init\__(self, ...)           | 객체가 생성될 때, 호출되는 메서드로, `초기화 작업`을 수행한다.                                        |
+| \__str\__(self)                 | str() 함수가 호출될 때 객체를 `문자열로 변환`하는 메서드로 주로 `print() 함수`에 사용된다.                  |
+| \__len\__(self)                 | len() 함수가 호출될 때, 객체의 `길이를 반환`하는 메서드이다.                                       |
+| \__getitem\__(self, key)        | 인덱스로 `객체에 접근할 때`, 호출되는 메서드이다.                                                |
+| \__setitem\__(self, key, value) | 인덱스에 `값을 할당할 때`, 호출되는 메서드이다.                                                 |
+| \__delitem\__(self, key)        | 인덱스로 객체의 `요소를 삭제할 때`, 호출되는 메서드이다.                                            |
+| \__call\__(self, ...)           | 객체를 `함수처럼 호출할 때`, 호출되는 메서드이다.                                                |
+| \__eq\__(self, other)           | 두 객체가 `동등한지 비교`하는 메서드로, '==' 연산자에 사용된다.                                      |
+| \__lt\__(self, other)           | "less than"의 약어로, `작다(<)`를 나타낸다. 따라서 '<' 연산자 호출시 사용되는 메서드이다.                 |
+| \__le\__(self, other)           | "less than or equal"의 약어로, `작거나 같다(<=)`를 나타낸다. 따라서 '<=' 연산자 호출시 사용되는 메서드이다.  |
+| \__gt\__(self, other)           | "greater than"의 약어로, `크다(>)`를 나타낸다. 따라서 '>' 연산자 호출시 사용되는 메서드이다.              |
+| \__ge\__(self, other)           | "greater than or equal"의 약어로, `크거나 같다(>=)`를 나타낸다. 따라서 '>=' 연산자 호출시 사용되는 메서드이다. |
+
+
+```bash
+ex)
+
+# __init__ : 객체 생성
+
+class MyClass:
+    def __init__(self, name):
+        self.name = name
+        
+obj = MyClass("Example")
+
+--------------------------------------------------------
+
+# __str__ : 객체를 문자열로 변환
+
+class MyClass:
+    def __init__(self, name):
+        self.name = name
+        
+    def __str__(self):
+        return f"MyClass instance with name: {self.name}"
+        
+obj = MyClass("Example")
+print(str(obj))
+
+출력
+>> "MyClass instance with name: Example"
+
+--------------------------------------------------------
+
+# __len__ : 객체의 길이 확인
+
+class MyList:
+    def __init__(self, items):
+        self.items = items
+    
+    def __len__(self):
+        return len(self.items)
+        
+my_list = MyList([1, 2, 3, 4, 5])
+print(len(my_list))
+
+출력
+>> 5
+
+--------------------------------------------------------
+
+# __getitem__ 및 __setitem__ : 인덱스로 객체에 접근 및 할당
+
+class MyList:
+    def __init__(self, items):
+        self.items = items
+        
+    def __getitem__(self, index):
+        return self.items[index]
+        
+    def __setitem__(self, index, value):
+        self.items[index] = value
+        
+my_list = MyList([1, 2, 3, 4, 5])
+print(my_list[2])
+
+my_list[2] = 10
+print(my_list[2])
+
+출력
+>> 3
+>> 10
+
+--------------------------------------------------------
+
+# __call__ : 객체를 함수처럼 호출
+
+class CallableClass:
+    def __call__(self, x, y):
+        return x + y
+        
+obj = CallableClass()
+result = obj(3, 5)
+print(result)
+
+출력
+>> 8
+
+--------------------------------------------------------
+
+# __eq__ : 두 객체의 동등성 비교
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        
+    def __eq__(self, other):
+        return self.x == other.x and self.y == other.y
+        
+point1 = Point(1, 2)
+point2 = Point(1, 2)
+print(point1 == point2)
+
+출력
+>> True
+
+--------------------------------------------------------
+
+# __lt__ : 작은지 비교
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __lt__(self, other):
+        return self.x < other.x and self.y < other.y
+
+point1 = Point(1, 2)
+point2 = Point(3, 4)
+print(point1 < point2)
+
+출력
+>> True
+
+--------------------------------------------------------
+
+# __le__ : 작거나 같은지 비교
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __le__(self, other):
+        return self.x <= other.x and self.y <= other.y
+
+point1 = Point(1, 2)
+point2 = Point(3, 4)
+print(point1 <= point2)
+
+출력
+>> True
+
+--------------------------------------------------------
+
+# __gt__ : 큰 지 비교
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __gt__(self, other):
+        return self.x > other.x and self.y > other.y
+
+point1 = Point(3, 4)
+point2 = Point(1, 2)
+print(point1 > point2)
+
+출력
+>> True
+
+--------------------------------------------------------
+
+# __ge__ : 크거나 같은지 비교
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __ge__(self, other):
+        return self.x >= other.x and self.y >= other.y
+
+point1 = Point(3, 4)
+point2 = Point(1, 2)
+print(point1 >= point2)
+
+출력
+>> True
 ```
