@@ -43,7 +43,7 @@
 - [사용자 정의 함수](Python/Python_User_Function.md)
 - [이차원 리스트](Python/Python_matrix.md)
 - [사용자 정의 클래스](Python/Python_User_Class.md)
-- [응용 및 심화](Python/Python_Deep_learning.md)
+- [응용 및 심화](Python/Python_Deepen.md)
 - [파이썬 기반 프로젝트](Python/Python_Project.md)
 
 </div>
@@ -73,12 +73,23 @@
 
 <br>
 
-[//]: # (### **<img src="./logo/postgresql.png" width="20" height="20"/> PostgreSQL**)
+[//]: # (postgresql)
+[//]: # (<details>)
+[//]: # (<summary><img src="./logo/postgresql.png" width="20" height="20"/> PostgreSQL</summary>)
+[//]: # (<div markdown="1">)
+[//]: # (</div>)
+[//]: # (</details>)
 
+[//]: # (<br>)
 
+[//]: # (mongodb)
+[//]: # (<details>)
+[//]: # (<summary><img src="./logo/mongodb.png" width="20" height="20"/> MongoDB</summary>)
+[//]: # (<div markdown="1">)
+[//]: # (</div>)
+[//]: # (</details>)
 
-[//]: # (### **<img src="./logo/mongodb.png" width="20" height="20"/> MongoDB**)
-
+[//]: # (<br>)
 
 [//]: # (html)
 <details>
@@ -100,8 +111,14 @@
 
 <br>
 
-[//]: # (### **<img src="./logo/sass.png" width="20" height="20"/> Sass**)
+[//]: # (sass)
+[//]: # (<details>)
+[//]: # (<summary><img src="./logo/sass.png" width="20" height="20"/> Sass</summary>)
+[//]: # (<div markdown="1">)
+[//]: # (</div>)
+[//]: # (</details>)
 
+[//]: # (<br>)
 
 [//]: # (javascript)
 <details>
@@ -121,16 +138,32 @@
 
 <br>
 
-[//]: # (### **<img src="./logo/typescript.png" width="20" height="20"/> TypeScript**)
+[//]: # (typescript)
+[//]: # (<details>)
+[//]: # (<summary><img src="./logo/typescript.png" width="20" height="20"/> TypeScript</summary>)
+[//]: # (<div markdown="1">)
+[//]: # (</div>)
+[//]: # (</details>)
 
+[//]: # (<br>)
 
+[//]: # (java)
+[//]: # (<details>)
+[//]: # (<summary><img src="./logo/java.png" width="20" height="20"/> Java</summary>)
+[//]: # (<div markdown="1">)
+[//]: # (</div>)
+[//]: # (</details>)
 
-[//]: # (### **<img src="./logo/java.png" width="20" height="20"/> Java**)
+[//]: # (<br>)
 
+[//]: # (spring)
+[//]: # (<details>)
+[//]: # (<summary><img src="./logo/spring.png" width="20" height="20"/> Spring</summary>)
+[//]: # (<div markdown="1">)
+[//]: # (</div>)
+[//]: # (</details>)
 
-
-[//]: # (### **<img src="./logo/spring.png" width="20" height="20"/> Spring**)
-
+[//]: # (<br>)
 
 [//]: # (django)
 <details>
@@ -152,36 +185,78 @@
 
 <br>
 
-[//]: # (### **<img src="./logo/react.png" width="20" height="20"/> React.js**)
+[//]: # (reactjs)
+<details>
+<summary><img src="./logo/react.png" width="20" height="20"/> React.js</summary>
+<div markdown="1">
 
+</div>
+</details>
 
+<br>
 
-[//]: # (### **<img src="./logo/nextjs.png" width="20" height="20"/> Next.js**)
+[//]: # (nextjs)
+[//]: # (<details>)
+[//]: # (<summary><img src="./logo/nextjs.png" width="20" height="20"/> Next.js</summary>)
+[//]: # (<div markdown="1">)
+[//]: # (</div>)
+[//]: # (</details>)
 
+[//]: # (<br>)
 
+[//]: # (vuejs)
+[//]: # (<details>)
+[//]: # (<summary><img src="./logo/vuejs.png" width="20" height="20"/> Vue.js</summary>)
+[//]: # (<div markdown="1">)
+[//]: # (</div>)
+[//]: # (</details>)
 
-[//]: # (### **<img src="./logo/vuejs.png" width="20" height="20"/> Vue.js**)
+[//]: # (<br>)
 
+[//]: # (angularjs)
+[//]: # (<details>)
+[//]: # (<summary><img src="./logo/angularjs.png" width="20" height="20"/> Angular.js</summary>)
+[//]: # (<div markdown="1">)
+[//]: # (</div>)
+[//]: # (</details>)
 
+[//]: # (<br>)
 
-[//]: # (### **<img src="./logo/angularjs.png" width="20" height="20"/> Angular.js**)
+[//]: # (threejs)
+[//]: # (<details>)
+[//]: # (<summary><img src="./logo/threejs.png" width="20" height="20"/> Three.js</summary>)
+[//]: # (<div markdown="1">)
+[//]: # (</div>)
+[//]: # (</details>)
 
+[//]: # (<br>)
 
+[//]: # (r3f)
+[//]: # (<details>)
+[//]: # (<summary><img src="./logo/react.png" width="20" height="20"/> R3F&#40;React Three Fiber&#41;</summary>)
+[//]: # (<div markdown="1">)
+[//]: # (</div>)
+[//]: # (</details>)
 
-[//]: # (### **<img src="./logo/threejs.png" width="20" height="20"/> Three.js**)
+[//]: # (<br>)
 
+[//]: # (docker)
+[//]: # (<details>)
+[//]: # (<summary><img src="./logo/docker.png" width="20" height="20"/> Docker</summary>)
+[//]: # (<div markdown="1">)
+[//]: # (</div>)
+[//]: # (</details>)
 
+[//]: # (<br>)
 
-[//]: # (### **<img src="./logo/react.png" width="20" height="20"/> R3F&#40;React Three Fiber&#41;**)
+[//]: # (kubernetes)
+[//]: # (<details>)
+[//]: # (<summary><img src="./logo/kubernetes.png" width="20" height="20"/> Kubernetes</summary>)
+[//]: # (<div markdown="1">)
+[//]: # (</div>)
+[//]: # (</details>)
 
-
-
-[//]: # (### **<img src="./logo/docker.png" width="20" height="20"/> Docker**)
-
-
-
-[//]: # (### **<img src="./logo/kubernetes.png" width="20" height="20"/> Kubernetes**)
-
+[//]: # (<br>)
 
 [//]: # (data structure, algorithm)
 <details>
@@ -220,4 +295,9 @@
 
 <br>
 
-[//]: # (### **<img src="./logo/computer_science.png" width="20" height="20"/> Computer Science&#40;CS&#41;**)
+[//]: # (computer science)
+[//]: # (<details>)
+[//]: # (<summary><img src="./logo/computer_science.png" width="20" height="20"/> Computer Science&#40;CS&#41;</summary>)
+[//]: # (<div markdown="1">)
+[//]: # (</div>)
+[//]: # (</details>)
