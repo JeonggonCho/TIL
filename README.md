@@ -1,6 +1,6 @@
 ## 📝 배운 지식 정리
 
-### **Markdown & GIT**
+### **<img src="./logo/markdown.png" width="25" height="20"/> Markdown , <img src="./logo/git.png" width="20" height="20"/> GIT**
 - [Markdown](Markdown/Markdown.md)
 - [CLI](CLI/CLI.md)
 - [Git](GitHub/Git.md)
@@ -8,7 +8,7 @@
 - [Branch](GitHub/Branch.md)
 - [GitHub Flow](GitHub/GitHub%20Flow.md)
 
-### **Python**
+### **<img src="./logo/python.png" width="20" height="20"/> Python**
 - [기초](Python/Python_Basics.md)
 - [리스트](Python/Python_List.md)
 - [String Formatting](Python/Python_String_Formatting.md)
@@ -30,42 +30,42 @@
 - [응용 및 심화](Python/Python_Deep_learning.md)
 - [파이썬 기반 프로젝트](Python/Python_Project.md)
 
-### **MySQL**
+### **<img src="./logo/mysql.png" width="20" height="20"/> MySQL**
 - [데이터 베이스]()
 - [관계형 데이터 베이스](DB/Relational_Database.md)
 - [MySQL Workbench](DB/MySQL_Workbench.md)
-- [SQL 기초]()
-- [SQL 단일 테이블 쿼리]()
-- [SQL 테이블 관리하기]()
-- [SQL 테이블 조작하기]()
-- [SQL 다중 테이블 쿼리]()
-- [SQL 중첩 쿼리]()
-- [SQL 트랜잭션, 트리거]()
-- [SQL 정규화, 데이터 모델링]()
+- [기초]()
+- [단일 테이블 쿼리]()
+- [테이블 관리하기]()
+- [테이블 조작하기]()
+- [다중 테이블 쿼리]()
+- [중첩 쿼리]()
+- [트랜잭션, 트리거]()
+- [정규화, 데이터 모델링]()
 
 
 
-[//]: # (### **PostgreSQL**)
+[//]: # (### **<img src="./logo/postgresql.png" width="20" height="20"/> PostgreSQL**)
 
 
 
-[//]: # (### **MongoDB**)
+[//]: # (### **<img src="./logo/mongodb.png" width="20" height="20"/> MongoDB**)
 
 
 
-### **HTML**
+### **<img src="./logo/html.png" width="20" height="20"/> HTML**
 
 
 
-### **CSS**
+### **<img src="./logo/css.png" width="20" height="20"/> CSS**
 
 
 
-[//]: # (### **Sass**)
+[//]: # (### **<img src="./logo/sass.png" width="20" height="20"/> Sass**)
 
 
 
-### **JavaScript**
+### **<img src="./logo/javascript.png" width="20" height="20"/> JavaScript**
 - [자바스크립트 역사]()
 - [DOM]()
 - [기초 문법]()
@@ -75,19 +75,19 @@
 - [이벤트 조작하기]()
 
 
-[//]: # (### **TypeScript**)
+[//]: # (### **<img src="./logo/typescript.png" width="20" height="20"/> TypeScript**)
 
 
 
-[//]: # (### **Java**)
+[//]: # (### **<img src="./logo/java.png" width="20" height="20"/> Java**)
 
 
 
-[//]: # (### **Spring**)
+[//]: # (### **<img src="./logo/spring.png" width="20" height="20"/> Spring**)
 
 
 
-### **Django**
+### **<img src="./logo/django.png" width="25" height="25"/> Django**
 - [서버에 대하여](Django/About_Server.md)
 - [Setting_Guide (가상환경 생성~앱 생성)](Django/Setting_Guide.md)
 - [템플릿](Django/Django_Template.md)
@@ -99,39 +99,39 @@
 - [HTTP Method : PUT & PATCH 비교](Django/PUT&PATCH.md)
 
 
-[//]: # (### **React.js**)
+[//]: # (### **<img src="./logo/react.png" width="20" height="20"/> React.js**)
 
 
 
-[//]: # (### **Next.js**)
+[//]: # (### **<img src="./logo/nextjs.png" width="20" height="20"/> Next.js**)
 
 
 
-[//]: # (### **Vue.js**)
+[//]: # (### **<img src="./logo/vuejs.png" width="20" height="20"/> Vue.js**)
 
 
 
-[//]: # (### **Angular.js**)
+[//]: # (### **<img src="./logo/angularjs.png" width="20" height="20"/> Angular.js**)
 
 
 
-[//]: # (### **Three.js**)
+[//]: # (### **<img src="./logo/threejs.png" width="20" height="20"/> Three.js**)
 
 
 
-[//]: # (### **R3F&#40;React Three Fiber&#41;**)
+[//]: # (### **<img src="./logo/react.png" width="20" height="20"/> R3F&#40;React Three Fiber&#41;**)
 
 
 
-[//]: # (### **Docker**)
+[//]: # (### **<img src="./logo/docker.png" width="20" height="20"/> Docker**)
 
 
 
-[//]: # (### **Kubernetes**)
+[//]: # (### **<img src="./logo/kubernetes.png" width="20" height="20"/> Kubernetes**)
 
 
 
-### **Data Structure, Algorithm**
+### **<img src="./logo/algorithm.png" width="20" height="20"/> Data Structure, Algorithm**
 - [데이터 입출력]()
 - [시간복잡도, 빅오 표기법](Python/Python_Time_Complexity.md)
 - [스택(Stack), 큐(Queue)]()
@@ -160,6 +160,6 @@
 - [투 포인터와 구간 합]()
 
 
-[//]: # (### **Computer Science&#40;CS&#41;**)
+[//]: # (### **<img src="./logo/computer_science.png" width="20" height="20"/> Computer Science&#40;CS&#41;**)
 
 
