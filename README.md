@@ -44,7 +44,8 @@
 - [이차원 리스트](Python/Python_matrix.md)
 - [클래스](Python/Python_Class.md)
 - [응용 및 심화](Python/Python_Deepen.md)
-- [파이썬 기반 프로젝트](Python/Python_Project.md)
+- [가상환경](Python/Python_Virtual_environments.md)
+- [API](Python/Python_API.md)
 
 </div>
 </details>
