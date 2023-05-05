@@ -42,7 +42,7 @@
 - [힙](Python/Python_Heap.md)
 - [사용자 정의 함수](Python/Python_User_Function.md)
 - [이차원 리스트](Python/Python_matrix.md)
-- [사용자 정의 클래스](Python/Python_User_Class.md)
+- [클래스](Python/Python_Class.md)
 - [응용 및 심화](Python/Python_Deepen.md)
 - [파이썬 기반 프로젝트](Python/Python_Project.md)
 

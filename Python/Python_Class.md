@@ -1,4 +1,4 @@
-# 사용자 정의 클래스
+# 클래스
 
 ## - 목차
 1. [객체 지향 프로그래밍](#1-객체-지향-프로그래밍)
@@ -14,6 +14,16 @@
         - [속성](#--속성)
         - [메소드](#--메소드)
         - [객체 비교하기](#--객체-비교하기)
+3. [상속](#3-상속)
+    - [클래스 상속](#1-클래스-상속)
+        - [상속](#--상속)
+    - [상속 관련 함수와 메서드](#2-상속-관련-함수와-메서드)
+        - [isinstance(object, classinfo)](#--isinstanceobject-classinfo)
+        - [issubclass(class, classinfo)](#--issubclassclass-classinfo)
+        - [super()](#--super)
+    - [상속을 통한 메서드 재사용](#3-상속을-통한-메서드-재사용)
+    - [메서드 오버라이딩](#4-메서드-오버라이딩)
+    - [다중 상속](#5-다중-상속)
 
 ---
 
@@ -178,6 +188,81 @@ my_instance.my_attribute
 
 
 : 객체들의 분류(class)
+
+[클래스 메소드]
+
+- 클래스가 사용할 메소드
+- @classmethod 데코레이터를 사용하여 정의
+  - 데코레이터: 함수를 어떤 함수로 꾸며서 새로운 기능을 부여
+- 호출 시, 첫 번째 인자로 클래스(cls)가 전달됨
+
+```bash
+ex)
+  
+class MyClass:
+    
+    @classmethod
+    def class_method(cls, arg1, arg2, ...)
+    
+MyClass.class_method(...)
+```
+
+[스태틱 메소드]
+
+- 인스턴스나 클래스를 사용하지 않는 메소드
+- @staticmethod 데코레이터를 사용하여 정의
+- 호출 시, 어떠한 인자도 전달되지 않음(클래스 및 인스턴스 정보에 접근/수정 불가)
+
+```bash
+ex)
+  
+class MyClass:
+    
+    @staticmethod
+    def static_method(arg1, arg2, ...)
+    
+MyClass.static_method(...)
+```
+
+[메소드 정리]
+
+- 인스턴스나 클래스를 활용하거나 조작하지 않는 경우?
+  - 스태틱 메소드로 정의함, 전달되는 인자 없음
+
+- 인스턴스를 활용하거나 조작하는 경우?
+  - 인스턴스 메소드로 정의하고, 첫 번째 인자로 전달된 인스턴스를 조작(일반적으로 self)
+
+- 클래스를 활용하거나 조작하는 경우?
+  - 클래스 메소드로 정의하고, 첫 번째 인자로 전달된 클래스를 조작(일반적으로 cls)
+
+```bash
+ex)
+  
+class MyClass:
+    
+    # 인스턴스 메소드 - 인스턴스를 활용하거나 조작
+    def method(self):
+        return 'instance method', self
+    
+    # 클래스 메소드 - 클래스를 활용하거나 조작
+    @classmethod
+    def classmethod(cls):
+        return 'class method', cls
+    
+    # 스태틱 메소드 - 인스턴스나 클래스를 활용하거나 조작하지 않음
+    @staticmethod
+    def staticmethod():
+        return 'static method'
+```
+
+
+[인스턴스와 클래스 간의 이름 공간(namespace)]
+
+- 클래스를 정의하면, 클래스와 해당하는 이름 공간 생성
+- 인스턴스를 만들면, 인스턴스 객체가 생성되고, 이름 공간 생성
+- 인스턴스에서 특정 속성에 접근하면, 인스턴스 - 클래스 순으로 탐색
+
+![인스턴스와 클래스 이름공간](../img/python_class_instance_namespace.png)
 
 
 ---
@@ -449,4 +534,375 @@ print(a == b, a is b)
 
 출력
 >> True, True
+```
+
+
+---
+
+## (3) 상속
+
+### **1) 클래스 상속**
+
+### - 상속
+
+- 두 클래스 사이 부모 - 자식 관계를 정립하는 것
+- 모든 파이썬 클래스는 object를 상속 받음
+- 부모에 정의된 속성이나 메서드를 활용하거나 오버라이딩(재정의)를 하여 활용
+- 코드의 재사용성을 높이고, 클래스 간의 계층적 관계를 활용함
+
+```bash
+class ChildClass(ParentClass):
+    pass
+```
+
+
+### **2) 상속 관련 함수와 메서드**
+
+### - isinstance(object, classinfo)
+
+
+: classinfo의 instance거나 subclass인 경우 True
+
+```bash
+ex)
+  
+# 상속이 없는 경우
+
+class Person:
+    pass
+    
+class Professor:
+    pass
+    
+class Student:
+    pass
+    
+# 인스턴스 생성
+p1 = Professor()
+s1 = Student()
+
+print(isinstance(p1, Person))
+print(isinstance(p1, Professor))
+print(isinstance(p1, Student))
+
+print(isinstance(s1, Person))
+print(isinstance(s1, Professor))
+print(isinstance(s1, Student))
+
+출력
+>> False
+>> True
+>> False
+
+>> False
+>> False
+>> True
+
+------------------------------------------------
+
+# 상속인 경우
+
+class Person:
+    pass
+    
+class Professor(Person): # Person 클래스 상속
+    pass
+    
+class Student(Person): # Person 클래스 상속
+    pass
+    
+# 인스턴스 생성
+p1 = Professor()
+s1 = Student()
+
+print(isinstance(p1, Person))
+print(isinstance(p1, Professor))
+print(isinstance(p1, Student))
+
+print(isinstance(s1, Person))
+print(isinstance(s1, Professor))
+print(isinstance(s1, Student))
+
+출력
+>> True # 상속된 부모 Person도 True
+>> True
+>> False
+
+>> True # 상속된 부모 Person도 True
+>> False
+>> True
+```
+
+### - issubclass(class, classinfo)
+
+- class가 classinfo의 subclass면 True
+- classinfo는 클래스 객체의 튜플일 수 있으며, classinfo의 모든 항목을 검사
+
+```bash
+ex)
+  
+issubclass(bool, int)
+
+출력
+>> True
+
+issubclass(float, int)
+
+출력
+>> False
+
+issubclass(Professor, Person)
+
+출력
+>> True
+
+issubclass(Professor, (Person, Student))
+
+출력
+>> 출력
+```
+
+
+### - super()
+
+
+: 자식클래스에서 부모클래스를 사용하고 싶은 경우 활용
+
+```bash
+ex)
+  
+# 일반적인 방법
+class Person:
+    def __init__(self, name, age, number, email):
+        self.name = name
+        self.age = age
+        self.number = number
+        self.email = email
+
+class Student(Person):
+    def __init__(self, name, age, number, email, student_id):
+        self.name = name
+        self.age = age
+        self.number = number
+        self.email = email
+        self.student_id = student_id
+        
+-------------------------------------------------------------------------
+
+# super() 을 이용
+class Person:
+    def __init__(self, name, age, number, email):
+        self.name = name
+        self.age = age
+        self.number = number
+        self.email = email
+
+class Student(Person):
+    def __init__(self, name, age, number, email, student_id):
+        # Person 클래스
+        super().__init__(name, age, number, email)
+        self.student_id = student_id
+```
+
+
+### **3) 상속을 통한 메서드 재사용**
+
+![상속메서드재사용](../img/python_상속메서드재사용.png)
+
+```bash
+ex)
+  
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        
+    def talk(self):
+        print(f'반갑습니다. {self.name}입니다.')
+        
+class Professor(Person):
+    def __init__(self, name, age, department):
+        self.name = name
+        self.age = age
+        self.department = department
+
+class Student(Person):
+    def __init__(self, name, age, gpa):
+        self.name = name
+        self.age = age
+        self.gpa = gpa
+        
+
+p1 = Professor('박교수', 50, '컴퓨터공학과')
+s1 = Student('조정곤', 27, 4.3)
+
+# 부모 Person 클래스의 talk 메서드 활용
+p1.talk()
+
+출력
+>> '반갑습니다. 박교수입니다.'
+
+# 부모 Person 클래스의 talk 메서드 활용
+s1.talk()
+
+출력
+>> '반갑습니다. 조정곤입니다.'
+```
+
+
+### **4) 메서드 오버라이딩**
+
+- 상속 받은 메서드를 재정의
+  - 상속받은 클래스에서 같은 이름의 메서드로 덮어씀
+  - 부모 클래스의 메서드를 실행시키고 싶은 경우, super를 사용
+
+```bash
+ex)
+  
+class Person:
+    def __init__(self, name):
+        self.name = name
+    
+    def talk(self):
+        print(f'반갑습니다. {self.name}입니다.')
+
+# 자식클래스 - Professor
+class Professor(Person):
+    def talk(self):
+        print(f'{self.name}일세.')
+        
+# 자식클래스 - Student
+class Student(Person):
+    def talk(self):
+        super().talk()
+        print(f'저는 학생입니다.')
+    
+    
+p1 = Professor('김교수')
+p1.talk()
+
+출력
+>> '김교수일세.'
+
+s1 = Student('조정곤')
+s1.talk()
+
+출력
+>> '반갑습니다. 조정곤입니다.'
+>> '저는 학생입니다.'
+```
+
+
+### **5) 다중 상속**
+
+- 파이썬은 두 개 이상의 클래스를 상속 받을 수 있음
+- 상속 받은 모든 클래스의 요소를 활용 가능함
+- 중복된 속성이나 메서드가 있는 경우, 상속 순서에 의해 결정됨
+
+```bash
+ex)
+  
+class Person:
+    def __init__(self, name):
+        self.name = name
+        
+    def greeting(self):
+        return f'안녕, {self.name}'
+        
+        
+class Mom(Person):
+    gene = 'XX'
+    
+    def swim(self):
+        return '엄마가 수영'
+     
+        
+class Dad(Person):
+    gene = 'XY'
+    
+    def walk(self):
+        return '아빠가 걷기'
+        
+        
+class FirstChild(Dad, Mom): # 아빠가 먼저 상속됨
+    def swim(self):
+        return '첫째가 수영'
+        
+    def cry(self):
+        return '첫째가 응애'
+
+
+baby1 = FirstChild('아가')
+baby1.cry()
+
+출력
+>> '첫째가 응애'
+
+baby1.swim()
+
+출력
+>> '첫째가 수영'
+
+baby1.walk()
+
+출력
+>> '아빠가 걷기'
+
+baby1.gene
+
+출력
+>> 'XY'
+
+------------------------------------------------------------------
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+        
+    def greeting(self):
+        return f'안녕, {self.name}'
+        
+        
+class Mom(Person):
+    gene = 'XX'
+    
+    def swim(self):
+        return '엄마가 수영'
+     
+        
+class Dad(Person):
+    gene = 'XY'
+    
+    def walk(self):
+        return '아빠가 걷기'
+        
+        
+class SecondChild(Mom, Dad): # 엄마가 먼저 상속됨
+    def walk(self):
+        return '둘째가 걷기'
+        
+    def cry(self):
+        return '둘째가 응애'
+
+
+baby2 = SecondChild('애기')
+baby2.cry()
+
+출력
+>> '둘째가 응애'
+
+baby2.walk()
+
+출력
+>> '둘째가 걷기'
+
+baby2.swim()
+
+출력
+>> '엄마가 수영'
+
+baby2.gene
+
+출력
+>> 'XX'
 ```
