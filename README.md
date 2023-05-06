@@ -60,7 +60,7 @@
 - [데이터 베이스](MySQL/Database.md)
 - [관계형 데이터 베이스](MySQL/Relational_Database.md)
 - [MySQL Workbench](MySQL/MySQL_Workbench.md)
-- [기초]()
+- [SQL 기초](MySQL/MySQL_Basics.md)
 - [단일 테이블 쿼리]()
 - [테이블 관리하기]()
 - [테이블 조작하기]()
