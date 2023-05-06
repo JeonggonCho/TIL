@@ -57,9 +57,9 @@
 <summary><img src="./logo/mysql.png" width="20" height="20"/> MySQL</summary>
 <div markdown="1">
 
-- [데이터 베이스]()
-- [관계형 데이터 베이스](DB/Relational_Database.md)
-- [MySQL Workbench](DB/MySQL_Workbench.md)
+- [데이터 베이스](MySQL/Database.md)
+- [관계형 데이터 베이스](MySQL/Relational_Database.md)
+- [MySQL Workbench](MySQL/MySQL_Workbench.md)
 - [기초]()
 - [단일 테이블 쿼리]()
 - [테이블 관리하기]()
