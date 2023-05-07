@@ -28,9 +28,12 @@
 -- ex)
 
 -- 구글에 작성하는 질문
+
 "how old is earth?"
 
+
 -- SQL에서 다음과 같이 작성
+
 SELECT age FROM solar_system WHERE name = 'earth';
 
 -- 해석: solar_system 테이블에서 name이 'earth'인 항목을 찾아서 그 항목의 age를 조회
