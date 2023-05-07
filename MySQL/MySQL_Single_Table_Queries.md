@@ -17,7 +17,9 @@
         - [ex2) 내림차순으로 정렬](#--ex2-내림차순으로-정렬)
         - [ex3) 이중 정렬](#--ex3-이중-정렬)
         - [ex4) 연산과 정렬](#--ex4-연산과-정렬)
-3. [SELECT Statements 실행순서](#3-select-statements-실행순서)
+        - [SELECT Statements 실행순서](#--select-statements-실행순서)
+3. [Filtering data](#3-filtering-data)
+4. [Grouping data](#4-grouping-data)
 
 ---
 
@@ -307,10 +309,33 @@ ORDER BY
 ```
 
 
----
-
-## (3) SELECT Statements 실행순서
+### - SELECT Statements 실행순서
 
 1. 테이블에서 (FROM)
 2. 조회하여 (SELECT)
 3. 정렬 (ORDER BY)
+
+
+---
+
+## (3) Filtering data
+
+### **1) Filtering data 관련 키워드**
+
+- Clause
+  - DISTINCT
+  - WHERE
+  - LIMIT
+
+- Operator
+  - BETWEEN
+  - IN
+  - LIKE
+  - Comparison
+  - Logical
+
+
+---
+
+## (4) Grouping data
+

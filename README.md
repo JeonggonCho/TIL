@@ -140,13 +140,13 @@
 <br>
 
 [//]: # (typescript)
-[//]: # (<details>)
-[//]: # (<summary><img src="./logo/typescript.png" width="20" height="20"/> TypeScript</summary>)
-[//]: # (<div markdown="1">)
-[//]: # (</div>)
-[//]: # (</details>)
+<details>
+<summary><img src="./logo/typescript.png" width="20" height="20"/> TypeScript</summary>
+<div markdown="1">
+</div>
+</details>
 
-[//]: # (<br>)
+<br>
 
 [//]: # (java)
 [//]: # (<details>)
@@ -266,7 +266,7 @@
 
 - [데이터 입출력]()
 - [시간복잡도, 빅오 표기법](Python/Python_Time_Complexity.md)
-- [스택(Stack), 큐(Queue)]()
+- [스택(Stack), 큐(Queue)](Algorithm/Algorithm_stack_queue.md)
 - [우선순위 큐(Priority Queue),힙(Heap): 우선순위에 따라 데이터 꺼내는 자료구조]()
 - [트리 자료구조(Tree): 활용도 높은 자료구조]()
 - [바이너리 인덱스 트리(Binary Index Tree): 특수한 목적의 자료구조]()
