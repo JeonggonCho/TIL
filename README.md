@@ -197,13 +197,13 @@
 <br>
 
 [//]: # (nextjs)
-[//]: # (<details>)
-[//]: # (<summary><img src="./logo/nextjs.png" width="20" height="20"/> Next.js</summary>)
-[//]: # (<div markdown="1">)
-[//]: # (</div>)
-[//]: # (</details>)
+<details>
+<summary><img src="./logo/nextjs.png" width="20" height="20"/> Next.js</summary>
+<div markdown="1">
+</div>
+</details>
 
-[//]: # (<br>)
+<br>
 
 [//]: # (vuejs)
 [//]: # (<details>)
