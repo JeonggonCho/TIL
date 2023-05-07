@@ -1,7 +1,6 @@
-## 📝 배운 지식 정리
+# 📝 배운 지식 정리
 
-<br>
-<br>
+---
 
 [//]: # (마크다운)
 <details>
@@ -267,7 +266,7 @@
 - [데이터 입출력]()
 - [시간복잡도, 빅오 표기법](Python/Python_Time_Complexity.md)
 - [스택(Stack), 큐(Queue)](Algorithm/Algorithm_stack_queue.md)
-- [우선순위 큐(Priority Queue),힙(Heap): 우선순위에 따라 데이터 꺼내는 자료구조]()
+- [우선순위 큐(Priority Queue),힙(Heap): 우선순위에 따라 데이터 꺼내는 자료구조](Algorithm/Algorithm_priority_queue_heap.md)
 - [트리 자료구조(Tree): 활용도 높은 자료구조]()
 - [바이너리 인덱스 트리(Binary Index Tree): 특수한 목적의 자료구조]()
 - [선택 정렬, 삽입 정렬: 간단하고 기본적인 정렬 알고리즘]()
