@@ -61,7 +61,7 @@
 - [MySQL Workbench](MySQL/MySQL_Workbench.md)
 - [SQL 기초](MySQL/MySQL_Basics.md)
 - [단일 테이블 쿼리](MySQL/MySQL_Single_Table_Queries.md)
-- [테이블 관리하기]()
+- [테이블 관리하기](MySQL/MySQL_Managing_Tables.md)
 - [테이블 조작하기]()
 - [다중 테이블 쿼리]()
 - [중첩 쿼리]()
@@ -142,6 +142,9 @@
 <details>
 <summary><img src="./logo/typescript.png" width="20" height="20"/> TypeScript</summary>
 <div markdown="1">
+
+- [타입스크립트 소개](TypeScript/TS_intro.md)
+
 </div>
 </details>
 
@@ -332,7 +335,8 @@
 <summary><img src="./logo/computer_science.png" width="20" height="20"/> Computer Science(CS)</summary>
 <div markdown="1">
 
-- [디자인 패턴과 프로그래밍 패러다임](Computer_Science/CS_Design_pattern_Programming_paradigm.md)
+- [CS_디자인 패턴과 프로그래밍 패러다임](Computer_Science/CS_Design_pattern_Programming_paradigm.md)
+- [OS_운영체제 개요](Computer_Science/OS_운영체제_개요.md)
 
 </div>
 </details>
