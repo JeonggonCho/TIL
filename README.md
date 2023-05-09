@@ -193,6 +193,7 @@
 - [리액트 소개](Reactjs/React_intro.md)
 - [리액트 앱 만들기](Reactjs/Create_React_App.md)
 - [JSX](Reactjs/React_JSX.md)
+- [State](Reactjs/React_State.md)
 
 </div>
 </details>
@@ -327,8 +328,11 @@
 <br>
 
 [//]: # (computer science)
-[//]: # (<details>)
-[//]: # (<summary><img src="./logo/computer_science.png" width="20" height="20"/> Computer Science&#40;CS&#41;</summary>)
-[//]: # (<div markdown="1">)
-[//]: # (</div>)
-[//]: # (</details>)
+<details>
+<summary><img src="./logo/computer_science.png" width="20" height="20"/> Computer Science(CS)</summary>
+<div markdown="1">
+
+- [디자인 패턴과 프로그래밍 패러다임](Computer_Science/CS_Design_pattern_Programming_paradigm.md)
+
+</div>
+</details>
