@@ -61,12 +61,12 @@ Q) 카운터 프로그램을 만들 경우
 
 > DOM : Document Object Model, 문서 객체 모델
 
-![DOM](../img/DOM.png)
+![DOM](../img/React_DOM.png)
 
 <DOM_구조>
 
 
-![parsing](../img/browser_parsing.png)
+![parsing](../img/React_browser_parsing.png)
 
 <화면 표시 과정>
 
@@ -77,7 +77,7 @@ Q) 카운터 프로그램을 만들 경우
 
 ### - virtual DOM
 
-![virtual_DOM](../img/virtual_DOM.png)
+![virtual_DOM](../img/React_virtual_DOM.png)
 
 <DOM과 virtual DOM 비교>
 

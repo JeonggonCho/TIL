@@ -225,6 +225,15 @@
 
 [//]: # (<br>)
 
+[//]: # (sveltejs)
+[//]: # (<details>)
+[//]: # (<summary><img src="./logo/sveltejs.png" width="20" height="20"> Svelte.js</summary>)
+[//]: # (<div markdown="1">)
+[//]: # (</div>)
+[//]: # (</details>)
+
+[//]: # (<br>)
+
 [//]: # (threejs)
 [//]: # (<details>)
 [//]: # (<summary><img src="./logo/threejs.png" width="20" height="20"/> Three.js</summary>)
