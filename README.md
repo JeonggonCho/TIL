@@ -63,7 +63,7 @@
 - [단일 테이블 쿼리](MySQL/MySQL_Single_Table_Queries.md)
 - [테이블 관리하기](MySQL/MySQL_Managing_Tables.md)
 - [테이블 조작하기](MySQL/MySQL_Modifying_Data.md)
-- [다중 테이블 쿼리]()
+- [다중 테이블 쿼리](MySQL/MySQL_Multi_Table_Queries.md)
 - [중첩 쿼리]()
 - [트랜잭션, 트리거]()
 - [정규화, 데이터 모델링]()
