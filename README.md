@@ -96,6 +96,8 @@
 <summary><img src="./logo/html.png" width="20" height="20"/> HTML</summary>
 <div markdown="1">
 
+- [웹 소개](HTML/Web_intro.md)
+
 </div>
 </details>
 
