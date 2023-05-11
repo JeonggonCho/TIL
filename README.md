@@ -97,6 +97,7 @@
 <div markdown="1">
 
 - [웹 소개](HTML/Web_intro.md)
+- [HTML 소개](HTML/HTML_intro.md)
 
 </div>
 </details>
