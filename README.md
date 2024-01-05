@@ -137,7 +137,7 @@
 - [자바스크립트 역사](JavaScript/JS_History.md)
 - [DOM](JavaScript/JS_DOM.md)
 - [기초 문법](JavaScript/JS_Basic_syntax.md)
-- [함수]()
+- [함수](JavaScript/JS_Function.md)
 - [객체]()
 - [배열]()
 - [이벤트 조작하기]()
