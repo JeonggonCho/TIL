@@ -183,8 +183,9 @@
 <div markdown="1">
 
 - [Django 소개](Django/Django_intro.md)
+- [Setting (가상환경 생성~앱 생성)](Django/Django_Setting.md)
+- 
 - [서버에 대하여](Django/About_Server.md)
-- [Setting_Guide (가상환경 생성~앱 생성)](Django/Setting_Guide.md)
 - [템플릿](Django/Django_Template.md)
 - [URLs](Django/Django_URLs.md)
 - [모델](Django/Django_Model.md)
