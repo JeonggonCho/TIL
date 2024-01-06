@@ -97,7 +97,7 @@ EventTarget.addEventListener(type, handler);
 </body>
 ```
 
-![]()
+![event handler 예시](../img/event_handler_예시.gif)
 
 <event handler 예시 결과>
 
@@ -138,7 +138,7 @@ EventTarget.addEventListener(type, handler);
 </body>
 ```
 
-![]()
+![click event](../img/click_event.gif)
 
 <click 이벤트 예시 결과>
 
@@ -174,7 +174,7 @@ EventTarget.addEventListener(type, handler);
 </body>
 ```
 
-![]()
+![input event](../img/input_event.gif)
 
 <input 이벤트 예시 결과>
 
@@ -186,6 +186,14 @@ EventTarget.addEventListener(type, handler);
 - 버튼을 클릭하면 출력한 값의 스타일을 변경하기
 
 ```html
+<head>
+    <style>
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+
 <body>
     <h1></h1>
     <button id="btn">클릭</button>
@@ -205,12 +213,13 @@ EventTarget.addEventListener(type, handler);
         
         btn.addEventListener('click', () => {
             h1Tag.classList.toggle('blue');
+            // toggle메서드 : 클래스가 존재하면 삭제, 없으면 추가
         })
     </script>
 </body>
 ```
 
-![]()
+![click & input event](../img/click_input_event.gif)
 
 <click & input 이벤트 예시 결과>
 
@@ -236,7 +245,7 @@ EventTarget.addEventListener(type, handler);
 </body>
 ```
 
-![]()
+![prevent event](../img/prevent_event.gif)
 
 <이벤트 취소 예시 결과>
 
@@ -265,7 +274,7 @@ EventTarget.addEventListener(type, handler);
         const btn = document.querySelector('#btn');
         const ulTag = document.querySelector('ul');
         
-        const addTodo = (event) = {
+        const addTodo = (event) => {
             // 2.1 사용자 입력 데이터 저장
             const inputData = inputTag.value;
             console.log(inputData);
@@ -296,7 +305,7 @@ EventTarget.addEventListener(type, handler);
 </body>
 ```
 
-![]()
+![간단한 todo](../img/simple_todo.gif)
 
 <간단한 To do 만들기 결과>
 
@@ -326,7 +335,7 @@ EventTarget.addEventListener(type, handler);
             console.log(numbers);
             
             // 2.2 45개의 요소가 있는 배열에서 6개 번호 추출
-            const sixNumbers = _.sampleSize(Numbers, 6);
+            const sixNumbers = _.sampleSize(numbers, 6);
             console.log(sixNumbers);
             
             // 2.3 6개의 요소를 담을 ul요소 생성
@@ -351,7 +360,7 @@ EventTarget.addEventListener(type, handler);
 </body>
 ```
 
-![]()
+![lotto generator](../img/lotto_generator.gif)
 
 <로또 번호 생성기 예시 결과>
 
