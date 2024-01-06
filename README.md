@@ -182,6 +182,7 @@
 <summary><img src="./logo/django.png" width="25" height="25"/> Django</summary>
 <div markdown="1">
 
+- [Django 소개](Django/Django_intro.md)
 - [서버에 대하여](Django/About_Server.md)
 - [Setting_Guide (가상환경 생성~앱 생성)](Django/Setting_Guide.md)
 - [템플릿](Django/Django_Template.md)
