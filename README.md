@@ -114,6 +114,7 @@
 - [포지션](CSS/CSS_Positioning.md)
 - [Float](CSS/CSS_Floating.md)
 - [Flexbox](CSS/CSS_Flexbox.md)
+- [Semantic](CSS/CSS_Semantic.md)
 
 </div>
 </details>
@@ -153,6 +154,7 @@
 <div markdown="1">
 
 - [타입스크립트 소개](TypeScript/TS_intro.md)
+- [개발환경 구축](TypeScript/TS_Setting.md)
 
 </div>
 </details>
