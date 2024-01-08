@@ -184,15 +184,17 @@
 
 - [Django 소개](Django/Django_intro.md)
 - [Setting (가상환경 생성~앱 생성)](Django/Django_Setting.md)
-- 
-- [서버에 대하여](Django/About_Server.md)
-- [템플릿](Django/Django_Template.md)
+- [Django 디자인 패턴](Django/Django_Design_pattern.md)
+- [Template](Django/Django_Template.md)
 - [URLs](Django/Django_URLs.md)
-- [모델](Django/Django_Model.md)
+- [Model](Django/Django_Model.md)
 - [ORM](Django/Django_ORM.md)
 - [쿠키와 세션](Django/Cookie&Session.md)
 - [REST API](Django/REST_API.md)
 - [HTTP Method : PUT & PATCH 비교](Django/PUT&PATCH.md)
+-
+-
+- [서버에 대하여](Django/About_Server.md)
 
 </div>
 </details>
