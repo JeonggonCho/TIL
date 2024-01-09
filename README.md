@@ -158,6 +158,7 @@
 - [기본 특징](TypeScript/TS_Basic_feature.md)
 - [타입 시스템](TypeScript/TS_Type_system.md)
 - [변수](TypeScript/TS_Variable.md)
+- [타입 추론]()
 
 </div>
 </details>
