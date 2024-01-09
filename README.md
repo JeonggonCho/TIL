@@ -155,6 +155,9 @@
 
 - [타입스크립트 소개](TypeScript/TS_intro.md)
 - [개발환경 구축](TypeScript/TS_Setting.md)
+- [기본 특징](TypeScript/TS_Basic_feature.md)
+- [타입 시스템](TypeScript/TS_Type_system.md)
+- [변수](TypeScript/TS_Variable.md)
 
 </div>
 </details>
