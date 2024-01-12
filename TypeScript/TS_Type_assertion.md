@@ -57,7 +57,7 @@ let len2 = (what as string).length;
 
 1) `< >` 사용법
    - '<변환할 타입>변수명'으로 작성
-   - ex) <number>num
+   - ex) \<number>num
 2) `as` 사용법
    - '변수명 as 변환할 타입'으로 작성
    - ex) num as number

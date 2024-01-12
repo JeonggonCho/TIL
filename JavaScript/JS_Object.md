@@ -8,6 +8,7 @@
     - [Property 존재 여부 확인 (in)](#2-property-존재-여부-확인-in)
     - [단축 Property](#3-단축-property)
     - [계산된 Property](#4-계산된-property)
+    - [비구조화 할당](#5-비구조화-할당)
 3. [객체와 함수](#3-객체와-함수)
     - [Method](#1-method)
         - [Method 예시](#--method-예시)
@@ -25,7 +26,14 @@
 
 ## (1) Object
 
-- 키로 구분된 데이터 집합(data collection)을 저장하는 자료형
+- `키-값의 쌍`으로 구분된 데이터 집합(data collection)을 저장하는 자료형
+- `키`는 따옴표가 없으나 `문자열`임
+- 키가 중복 가능하나 추천하지 않음
+  - 중복일 경우, 뒤의 요소를 우선시 함
+- `값`은 자료형이 서로 달라도 상관없음
+- 객체는 `생성자 방식`, `객체 리터럴 방식`으로 생성가능
+  - 생성자 방식(new 키워드 사용) : let person = new Object();
+  - 객체 리터럴 방식(중괄호 사용) : {};
 
 <br>
 
@@ -53,21 +61,30 @@ const user = {
 ### **1) Property 활용**
 
 ```javascript
-// 조회
+// 조회 - 점 표기법, 괄호 표기법
 console.log(user.age); // 27
 console.log(user['key with space']); // true
+
 
 // 추가
 user.address = 'korea';
 console.log(user); // {name: 'Jeonggon', age: 27, key with space: true, address: 'korea'}
 
+
 // 수정
 user.age = 30;
 console.log(user.age) // 30
 
-// 삭제
+
+// 삭제 - delete 사용, null 사용
+// delete 단점 : 삭제하더라도 프로퍼티와 객체의 연결을 끊을 뿐, 메모리에 프로퍼티가 남아있음
 delete user.address;
 console.log(user); // {name: 'Jeonggon', age: 27, key with space: true}
+
+
+// null 사용 : 삭제한 효과를 내며, 메모리의 내역도 지워짐
+user.age = null;
+console.log(user); // {name: 'Jeonggon', key with space: true}
 ```
 
 <br>
@@ -121,6 +138,44 @@ const bag = {
 console.log(bag); // {연필: 5, myproperty: 'value'}
 ```
 
+<br>
+
+### **5) 비구조화 할당**
+
+```javascript
+// ex)
+let object = {one: "one", two: "two", three: "three"};
+
+let one = object.one;
+let two = object.two;
+let three = object.three;
+// 반복적인 코드를 사용하며 비효율적임
+
+
+// 1) 비구조화 할당으로 간단하게 표현
+let {one, two, three} = object;
+// 키값을 기준으로 one이라는 키를 가지는 값을 one 변수에 저장하고
+// two라는 키를 가지는 값을 two에 저장하고
+// three라는 프로퍼티 값을 three에 저장
+// 배열에서는 인덱스(순서)를 이용했다면, 객체는 키를 이용함
+// 기본적으로 변수명이 키 이름으로 할당됨
+
+
+// 2) 원하는 변수명으로 지정하는 방법
+let {one:myOne, two:myTwo, three:myThree} = object;
+// 콜론(:) 뒤에 원하는 변수명 지정
+
+
+// 3) 존재하지 않는 키를 작성할 경우
+let {one, two, three, four} = object;
+// 존재하지 않는 키 이름의 four 변수에 undefined 할당됨
+
+
+// 4) 기본값 설정
+let {one, two, three, four="four"} = object;
+// 기본 값을 설정하면 undefined가 할당되지 않도록 할 수 있음
+```
+
 
 ---
 
@@ -128,7 +183,7 @@ console.log(bag); // {연필: 5, myproperty: 'value'}
 
 ### **1) Method**
 
-- 객체 속성에 정의된 함수
+- `객체 속성`에 정의된 `함수`
 
 <br>
 
@@ -156,6 +211,8 @@ console.log(person.greeting());
 <br>
 
 ### - Method + this 예시
+
+- 메서드가 멤버를 참조할 경우, 자기자신이 속한 객체를 참조함
 
 ```javascript
 const person = {

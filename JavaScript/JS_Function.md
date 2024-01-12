@@ -12,6 +12,7 @@
         - [나머지 매개변수(Rest parameters)](#--나머지-매개변수rest-parameters)
     - [화살표 함수 표현식(Arrow function expressions)](#3-화살표-함수-표현식arrow-function-expressions)
         - [화살표 함수 표현식의 작성순서](#--화살표-함수-표현식의-작성순서)
+    - [콜백함수](#4-콜백함수)
 3. [참고](#3-참고)
     - [화살표 함수 표현식 응용](#1-화살표-함수-표현식-응용)
 
@@ -197,7 +198,7 @@ console.log(myFunc(1, 2)); // [1, 2, []]
 
 ### - 화살표 함수 표현식의 작성순서
 
-1) function 키워드 제거 후 매개변수와 중괄호 사이에 화살표(=>) 작성
+1) `function 키워드 제거` 후 매개변수와 중괄호 사이에 `화살표(=>)` 작성
 2) 함수의 매개변수가 하나뿐이면 매개변수의 '()' 제거 가능
 3) 함수 본문의 표현식이 한 줄이라면 '{}'와 'return' 제거 가능
 
@@ -220,6 +221,57 @@ const arrow3 = name => {
 
 // 3. 함수 바디가 return을 포함한 표현식 1개일 경우에 {} & return 삭제 가능
 const arrow4 = name => `hello, ${name}`;
+```
+
+<br>
+
+### **4) 콜백함수**
+
+- 어떤 다른 함수의 `매개변수`로 `함수`를 넘겨주는 것을 의미함
+
+```javascript
+// 일반 함수 사용
+
+function checkMood(mood) {
+    if (mood === "good") {
+        sing();
+    } else {
+        cry();
+    }
+}
+
+function cry() {
+    console.log("Action: CRY");
+}
+
+function sing() {
+    console.log("Action: SING");
+}
+
+checkMood("good"); // 출력 : "Action: SING"
+
+
+
+// 콜백함수 사용 예시
+// checkMood 함수의 2번째, 3번째 매개변수(값)로 sing, cry 콜백함수를 전달 - 함수 표현식
+
+function checkMood(mood, goodCallback, badCallback) {
+    if (mood === "good") {
+        goodCallback();
+    } else {
+        badCallback();
+    }
+}
+
+function cry() {
+   console.log("Action: CRY");
+}
+
+function sing() {
+   console.log("Action: SING");
+}
+
+checkMood("sad", sing, cry); // 출력 : "Action: CRY"
 ```
 
 
