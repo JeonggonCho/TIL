@@ -4,11 +4,21 @@
 
 [//]: # (마크다운)
 <details>
-<summary><img src="./logo/markdown.png" width="25" height="20"/> Markdown , <img src="./logo/git.png" width="20" height="20"/> GIT</summary>
+<summary><img src="./logo/markdown.png" width="25" height="20"/> Markdown</summary>
 <div markdown="1">
 
 - [Markdown](Markdown/Markdown.md)
-- [CLI](CLI/CLI.md)
+
+</div>
+</details>
+
+<br>
+
+[//]: # (GIT)
+<details>
+<summary><img src="./logo/git.png" width="20" height="20"/> GIT</summary>
+<div markdown="1">
+
 - [Git](GitHub/Git.md)
 - [GitHub](GitHub/GitHub.md)
 - [Branch](GitHub/Branch.md)
@@ -359,6 +369,7 @@
 <summary><img src="./logo/computer_science.png" width="20" height="20"/> Computer Science(CS)</summary>
 <div markdown="1">
 
+- [CS_CLI](CLI/CLI.md)
 - [CS_디자인 패턴과 프로그래밍 패러다임](Computer_Science/CS_Design_pattern_Programming_paradigm.md)
 - [OS_운영체제 개요](Computer_Science/OS_운영체제_개요.md)
 
