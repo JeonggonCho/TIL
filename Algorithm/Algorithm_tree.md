@@ -105,8 +105,8 @@
 
 ### 1-4. 트리의 순회 구현 예제
 
-```bash
-ex)
+```python
+# ex)
 
 # 트리 순회 구현 예제 코드 (Pyhton)
 
@@ -158,20 +158,20 @@ print()
 post_order(tree['A'])
 
 
-입력
-7
-A B C # 노드 A의 왼쪽 자식 노드는 B, 오른쪽 자식 노드는 C
-B D E # 노드 B의 왼쪽 자식 노드는 D, 오른쪽 자식 노드는 E
-C F G # 노드 C의 왼쪽 자식 노드는 F, 오른쪽 자식 노드는 G
-D None None # 노드 D의 왼쪽 자식 노드는 None, 오른쪽 자식 노드는 None
-E None None # 노드 E의 왼쪽 자식 노드는 None, 오른쪽 자식 노드는 None
-F None None # 노드 F의 왼쪽 자식 노드는 None, 오른쪽 자식 노드는 None
-G None None # 노드 G의 왼쪽 자식 노드는 None, 오른쪽 자식 노드는 None
+# 입력
+# 7
+# A B C // 노드 A의 왼쪽 자식 노드는 B, 오른쪽 자식 노드는 C
+# B D E // 노드 B의 왼쪽 자식 노드는 D, 오른쪽 자식 노드는 E
+# C F G // 노드 C의 왼쪽 자식 노드는 F, 오른쪽 자식 노드는 G
+# D None None // 노드 D의 왼쪽 자식 노드는 None, 오른쪽 자식 노드는 None
+# E None None // 노드 E의 왼쪽 자식 노드는 None, 오른쪽 자식 노드는 None
+# F None None // 노드 F의 왼쪽 자식 노드는 None, 오른쪽 자식 노드는 None
+# G None None // 노드 G의 왼쪽 자식 노드는 None, 오른쪽 자식 노드는 None
 
-출력
->> "A B D E C F G "
->> "D B E A F C G "
->> "D E B F G C A "
+# 출력
+# "A B D E C F G "
+# "D B E A F C G "
+# "D E B F G C A "
 ```
 
 참고문제 : [SWEA\_중위순회](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV140YnqAIECFAYD&categoryId=AV140YnqAIECFAYD&categoryType=CODE&problemTitle=1231&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)
