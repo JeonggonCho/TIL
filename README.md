@@ -215,11 +215,11 @@
 -   [Template](Django/Django_Template.md)
 -   [URLs](Django/Django_URLs.md)
 -   [Model](Django/Django_Model.md)
+-
 -   [ORM](Django/Django_ORM.md)
 -   [쿠키와 세션](Django/Cookie&Session.md)
 -   [REST API](Django/REST_API.md)
 -   [HTTP Method : PUT & PATCH 비교](Django/PUT&PATCH.md)
--
 -
 -   [서버에 대하여](Django/About_Server.md)
 
