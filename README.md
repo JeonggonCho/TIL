@@ -161,7 +161,7 @@
 -   [배열](JavaScript/JS_Array.md)
 -   [이벤트 조작하기](JavaScript/JS_Event.md)
 -   [동기 & 비동기](JavaScript/JS_Asynchronous.md)
--   [Promise]()
+-   [Promise](JavaScript/JS_Promise.md)
 -   [async/await]()
 -   [API & fetch]()
 -   [Node.js 기초]()
