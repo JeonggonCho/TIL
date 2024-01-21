@@ -163,7 +163,7 @@
 -   [동기 & 비동기](JavaScript/JS_Asynchronous.md)
 -   [Promise](JavaScript/JS_Promise.md)
 -   [async/await](JavaScript/JS_async,await.md)
--   [API & fetch]()
+-   [API & fetch](JavaScript/JS_API,fetch.md)
 -   [Node.js 기초]()
 
 </div>
