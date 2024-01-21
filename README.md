@@ -78,9 +78,9 @@
 -   [테이블 관리하기](MySQL/MySQL_Managing_Tables.md)
 -   [테이블 조작하기](MySQL/MySQL_Modifying_Data.md)
 -   [다중 테이블 쿼리](MySQL/MySQL_Multi_Table_Queries.md)
--   [중첩 쿼리]()
+<!-- -   [중첩 쿼리]()
 -   [트랜잭션, 트리거]()
--   [정규화, 데이터 모델링]()
+-   [정규화, 데이터 모델링]() -->
 
 </div>
 </details>
@@ -164,7 +164,7 @@
 -   [Promise](JavaScript/JS_Promise.md)
 -   [async/await](JavaScript/JS_async,await.md)
 -   [API & fetch](JavaScript/JS_API,fetch.md)
--   [Node.js 기초]()
+-   [Node.js 기초](JavaScript/Nodejs_basic.md)
 
 </div>
 </details>
@@ -330,7 +330,7 @@
 -   [우선순위 큐(Priority Queue),힙(Heap): 우선순위에 따라 데이터 꺼내는 자료구조](Algorithm/Algorithm_priority_queue_heap.md)
 -   [트리 자료구조(Tree): 활용도 높은 자료구조](Algorithm/Algorithm_tree.md)
 -   [바이너리 인덱스 트리(Binary Index Tree): 특수한 목적의 자료구조](Algorithm/Algorithm_binary_indexed_tree.md)
--   [선택 정렬, 삽입 정렬: 간단하고 기본적인 정렬 알고리즘]()
+<!-- -   [선택 정렬, 삽입 정렬: 간단하고 기본적인 정렬 알고리즘]()
 -   [퀵 정렬, 계수 정렬: 더 빠른 정렬 알고리즘]()
 -   [완전탐색(Exhaustive Search)]()
 -   [그래프(Graph)]()
@@ -349,7 +349,7 @@
 -   [동적 계획법: 메모리를 더 소모하여 속도 향상시키는 방법]()
 -   [그리디(Greedy): 현재 상황에서 가장 좋아보이는 것만 고르기]()
 -   [단순구현(Implementation)]()
--   [투 포인터와 구간 합]()
+-   [투 포인터와 구간 합]() -->
 
 </div>
 </details>
