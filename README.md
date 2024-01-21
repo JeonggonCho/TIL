@@ -160,7 +160,7 @@
 -   [객체](JavaScript/JS_Object.md)
 -   [배열](JavaScript/JS_Array.md)
 -   [이벤트 조작하기](JavaScript/JS_Event.md)
--   [동기 비동기](JavaScript/JS_Asynchronous.md)
+-   [동기 & 비동기](JavaScript/JS_Asynchronous.md)
 -   [Promise]()
 -   [async/await]()
 -   [API & fetch]()
