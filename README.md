@@ -164,6 +164,8 @@
 -   [Promise](JavaScript/JS_Promise.md)
 -   [async/await](JavaScript/JS_async,await.md)
 -   [API & fetch](JavaScript/JS_API,fetch.md)
+-   [try & catch]()
+-   [closure]()
 -   [Node.js 기초](JavaScript/Nodejs_basic.md)
 
 </div>
