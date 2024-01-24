@@ -162,10 +162,10 @@
 -   [이벤트 조작하기](JavaScript/JS_Event.md)
 -   [동기 & 비동기](JavaScript/JS_Asynchronous.md)
 -   [Promise](JavaScript/JS_Promise.md)
--   [async/await](JavaScript/JS_async,await.md)
+-   [async & await](JavaScript/JS_async,await.md)
 -   [API & fetch](JavaScript/JS_API,fetch.md)
--   [try & catch]()
--   [closure]()
+-   [try & catch](JavaScript/JS_try,catch.md)
+-   [closure](JavaScript/JS_closure.md)
 -   [Node.js 기초](JavaScript/Nodejs_basic.md)
 
 </div>
@@ -217,8 +217,8 @@
 -   [Template](Django/Django_Template.md)
 -   [URLs](Django/Django_URLs.md)
 -   [Model](Django/Django_Model.md)
--
 -   [ORM](Django/Django_ORM.md)
+- 
 -   [쿠키와 세션](Django/Cookie&Session.md)
 -   [REST API](Django/REST_API.md)
 -   [HTTP Method : PUT & PATCH 비교](Django/PUT&PATCH.md)

@@ -1,4 +1,4 @@
-# async / await
+# async & await
 
 ## 목차
 
