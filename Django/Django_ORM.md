@@ -13,9 +13,11 @@
     1. [전체 데이터 조회](#3-1-전체-데이터-조회)
     2. [단일 데이터 조회](#3-2-단일-데이터-조회)
     3. [특정 조건 데이터 조회](#3-3-특정-조건-데이터-조회)
-4. [참고](#4-참고)
-    1. [Field lookups](#4-1-field-lookups)
-    2. [ORM, QuerySet API를 왜 사용할까?](#4-2-orm-queryset-api를-왜-사용할까)
+4. [ORM 수정](#4-orm-수정)
+5. [ORM 삭제](#5-orm-삭제)
+6. [참고](#6-참고)
+    1. [Field lookups](#6-1-field-lookups)
+    2. [ORM, QuerySet API를 왜 사용할까?](#6-2-orm-queryset-api를-왜-사용할까)
 
 <br>
 <br>
@@ -173,9 +175,49 @@ $ Article.objects.filter(content='Django!')
 <br>
 <br>
 
-## 4. 참고
+## 4. ORM 수정
 
-### 4-1. Field lookups
+- 데이터 수정
+
+```bash
+# 수정할 인스턴스 조회
+$ article = Article.objects.get(pk=1)
+
+# 인스턴스 변수를 변경
+$ article.title = 'hello'
+
+# 저장
+$ article.save()
+
+# 수정되었는지 확인
+$ article.title
+
+# 출력
+# 'hello'
+```
+
+<br>
+<br>
+
+## 5. ORM 삭제
+
+- 데이터 삭제
+
+```bash
+# 삭제할 인스턴스 조회
+$ article = Article.objects.get(pk=1)
+
+# delete() 메서드 호출 (삭제 된 객체가 반환됨)
+$ article.delete()
+# (1, { 'articles.Article' : 1})
+```
+
+<br>
+<br>
+
+## 6. 참고
+
+### 6-1. Field lookups
 
 - 특정 레코드에 대한 `조건을 설정`하는 방법
 - QuerySet 메서드 filter(), exclude(), get()에서 `키워드 인자`로 지정됨
@@ -189,7 +231,7 @@ $ Article.object.filter(content__contains='dj')
 
 <br>
 
-### 4-2. ORM, QuerySet API를 왜 사용할까?
+### 6-2. ORM, QuerySet API를 왜 사용할까?
 
 - 데이터 베이스 쿼리를 추상화하여 Django 개발자가 `데이터 베이스를 직접 상호작용하지 않아도 됨`
 - 데이터 베이스와의 `결합도(Coupling)을 낮추고` 개발자가 `직관적, 생산적`으로 개발할 수 있도록 해줌
