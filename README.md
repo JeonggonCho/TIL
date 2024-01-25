@@ -55,6 +55,7 @@
 -   [사용자 정의 함수](Python/Python_User_Function.md)
 -   [이차원 리스트](Python/Python_matrix.md)
 -   [클래스](Python/Python_Class.md)
+-   [데코레이터](Python/Python_Decorator.md)
 -   [응용 및 심화](Python/Python_Deepen.md)
 -   [가상환경](Python/Python_Virtual_environments.md)
 -   [API](Python/Python_API.md)
@@ -219,7 +220,7 @@
 -   [Model](Django/Django_Model.md)
 -   [ORM](Django/Django_ORM.md)
 -   [View의 ORM](Django/Django_View_with_ORM.md)
-- 
+-
 -   [쿠키와 세션](Django/Cookie&Session.md)
 -   [REST API](Django/REST_API.md)
 -   [HTTP Method : PUT & PATCH 비교](Django/PUT&PATCH.md)
