@@ -218,6 +218,7 @@
 -   [URLs](Django/Django_URLs.md)
 -   [Model](Django/Django_Model.md)
 -   [ORM](Django/Django_ORM.md)
+-   [View의 ORM](Django/Django_View_with_ORM.md)
 - 
 -   [쿠키와 세션](Django/Cookie&Session.md)
 -   [REST API](Django/REST_API.md)
