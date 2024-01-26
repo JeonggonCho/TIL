@@ -221,8 +221,8 @@
 -   [ORM](Django/Django_ORM.md)
 -   [View의 ORM](Django/Django_View_with_ORM.md)
 -   [Form](Django/Django_Form.md)
+-   [HTTP requests 컨트롤(GET/POST)](Django/Django_HTTP_requests.md)
 -
--   [쿠키와 세션](Django/Cookie&Session.md)
 -   [REST API](Django/REST_API.md)
 -   [HTTP Method : PUT & PATCH 비교](Django/PUT&PATCH.md)
 -
@@ -373,6 +373,7 @@
 
 -   [CS_CLI](Computer_Science/CS_CLI.md)
 -   [CS\_디자인 패턴과 프로그래밍 패러다임](Computer_Science/CS_Design_pattern_Programming_paradigm.md)
+-   [CS_Cookie & Session](Computer_Science/CS_Cookie,Session.md)
 -   [OS\_운영체제 개요](Computer_Science/OS_운영체제_개요.md)
 
 </div>
