@@ -56,6 +56,8 @@ class Todo(models.Model):
 -   아래와 같은 테이블을 만들기 위한 설계도
 -   id 필드는 자동으로 생성됨
 
+<br>
+
 | id  | content | completed | priority | created_at | deadline |
 | --- | ------- | --------- | -------- | ---------- | -------- |
 | ... | ...     | ...       | ...      | ...        | ...      |

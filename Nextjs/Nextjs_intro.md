@@ -4,7 +4,7 @@
 
 1. [Next.js는 무엇이고 왜 사용하는가?](#1-nextjs는-무엇이고-왜-사용하는가)
 2. [Next.js의 주요기능 및 장점](#2-nextjs의-주요기능-및-장점)
-    1. [2-1. React를 활용한 풀스택 애플리케이션 구축가능(Fullstack Apps)](#2-1-react를-활용한-풀스택-애플리케이션-구축가능fullstack-apps)
+    1. [React를 활용한 풀스택 애플리케이션 구축가능(Fullstack Apps)](#2-1-react를-활용한-풀스택-애플리케이션-구축가능fullstack-apps)
     2. [파일 시스템을 사용하여 경로를 설정 가능(Filesystem-based Routing)](#2-2-파일-시스템을-사용하여-경로를-설정-가능filesystem-based-routing)
     3. [Next.js가 페이지에 보이는 모든 내용을 서버에서 렌더링(Sever-side Rendering)](#2-3-nextjs가-페이지에-보이는-모든-내용을-서버에서-렌더링sever-side-rendering)
 3. [Next.js 프로젝트 만들기](#3-nextjs-프로젝트-만들기)

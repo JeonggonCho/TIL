@@ -220,6 +220,7 @@
 -   [Model](Django/Django_Model.md)
 -   [ORM](Django/Django_ORM.md)
 -   [View의 ORM](Django/Django_View_with_ORM.md)
+-   [Form](Django/Django_Form.md)
 -
 -   [쿠키와 세션](Django/Cookie&Session.md)
 -   [REST API](Django/REST_API.md)
@@ -243,6 +244,7 @@
 -   [JSX](Reactjs/React_JSX.md)
 -   [State](Reactjs/React_State.md)
 -   [Props](Reactjs/React_Props.md)
+-   [Suspense]()
 
 </div>
 </details>
@@ -254,6 +256,9 @@
 <details>
 <summary><img src="./logo/nextjs.png" width="20" height="20"/> Next.js</summary>
 <div markdown="1">
+
+-   [Next.js 소개 및 실행](Nextjs/Nextjs_intro.md)
+
 </div>
 </details>
 
