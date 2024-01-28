@@ -221,10 +221,11 @@
 -   [ORM](Django/Django_ORM.md)
 -   [View의 ORM](Django/Django_View_with_ORM.md)
 -   [Form](Django/Django_Form.md)
--   [HTTP requests 컨트롤(GET/POST)](Django/Django_HTTP_requests.md)
+-   [HTTP requests (GET/POST)](Django/Django_HTTP_requests_GET_POST.md)
+-   [Authentication](Django/Django_Authentication.md)
 -
 -   [REST API](Django/REST_API.md)
--   [HTTP Method : PUT & PATCH 비교](Django/PUT&PATCH.md)
+-   [HTTP requests (PUT/PATCH)](Django/PUT&PATCH.md)
 -
 -   [서버에 대하여](Django/About_Server.md)
 

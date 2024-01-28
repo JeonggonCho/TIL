@@ -1,4 +1,4 @@
-# HTTP requests 컨트롤(GET/POST)
+# HTTP requests (GET/POST)
 
 ## 목차
 
