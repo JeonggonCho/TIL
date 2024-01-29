@@ -223,6 +223,7 @@
 -   [Form](Django/Django_Form.md)
 -   [HTTP requests (GET/POST)](Django/Django_HTTP_requests_GET_POST.md)
 -   [Authentication](Django/Django_Authentication.md)
+-   [Static Files](Django/Django_Static_files.md)
 -
 -   [REST API](Django/REST_API.md)
 -   [HTTP requests (PUT/PATCH)](Django/PUT&PATCH.md)
