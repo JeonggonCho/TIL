@@ -224,6 +224,7 @@
 -   [HTTP requests (GET/POST)](Django/Django_HTTP_requests_GET_POST.md)
 -   [Authentication](Django/Django_Authentication.md)
 -   [Static Files](Django/Django_Static_files.md)
+-   [N:1 관계 (Comment & Article)](Django/Django_Many_to_one_relationships_article_comment.md)
 -
 -   [REST API](Django/REST_API.md)
 -   [HTTP requests (PUT/PATCH)](Django/PUT&PATCH.md)
