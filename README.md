@@ -261,7 +261,9 @@
 <summary><img src="./logo/nextjs.png" width="20" height="20"/> Next.js</summary>
 <div markdown="1">
 
--   [Next.js 소개 및 실행](Nextjs/Nextjs_intro.md)
+-   [Next.js 소개 및 프로젝트 생성](Nextjs/Nextjs_intro.md)
+-   [Library vs Framework](Nextjs/Nextjs_Library_Framework.md)
+-   [Routing](Nextjs/Nextjs_Routing.md)
 
 </div>
 </details>
