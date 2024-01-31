@@ -225,11 +225,12 @@
 -   [Authentication](Django/Django_Authentication.md)
 -   [Static Files](Django/Django_Static_files.md)
 -   [N:1 관계 (Comment & Article)](Django/Django_Many_to_one_relationships_article_comment.md)
--
+-   [N:1 관계 (Comment & Article & User)](Django/Django_Many_to_one_relationships_article_comment_user.md)
+-   [M:N 관계 (Like 기능)](Django)
+-   [M:N 관계 (Follow 기능)](Django)
+-   
 -   [REST API](Django/REST_API.md)
 -   [HTTP requests (PUT/PATCH)](Django/PUT&PATCH.md)
--
--   [서버에 대하여](Django/About_Server.md)
 
 </div>
 </details>
@@ -375,6 +376,7 @@
 <div markdown="1">
 
 -   [CS_CLI](Computer_Science/CS_CLI.md)
+-   [CS_Server](Computer_Science/CS_Server.md)
 -   [CS\_디자인 패턴과 프로그래밍 패러다임](Computer_Science/CS_Design_pattern_Programming_paradigm.md)
 -   [CS_Cookie & Session](Computer_Science/CS_Cookie,Session.md)
 -   [OS\_운영체제 개요](Computer_Science/OS_운영체제_개요.md)
