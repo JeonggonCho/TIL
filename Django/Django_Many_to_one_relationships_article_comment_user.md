@@ -2,7 +2,34 @@
 
 ## 목차
 
-1. []()
+1. [Comment & Article & User](#1-comment--article--user)
+    1. [Article & User 관계](#1-1-article--user-관계)
+    2. [Comment & User 관계](#1-2-comment--user-관계)
+2. [Article & User](#2-article--user)
+    1. [Article에서 User 외래키 정의](#2-1-article에서-user-외래키-정의)
+        - [Article 모델에 user 외래키 삽입](#--article-모델에-user-외래키-삽입)
+        - [User 모델을 참조하는 방법](#--user-모델을-참조하는-방법)
+        - [get_user_model()](#--get_user_model)
+        - [settings.AUTH_USER_MODEL](#--settingsauth_user_model)
+3. [Article 생성](#3-article-생성)
+    1. [ArticleForm 출력 필드 수정](#3-1-articleform-출력-필드-수정)
+    2. [Article 생성 view 함수 수정](#3-2-article-생성-view-함수-수정)
+    3. [index 및 detail 페이지 템플릿](#3-3-index-및-detail-페이지-템플릿)
+        - [index 페이지](#--index-페이지)
+        - [detail 페이지](#--detail-페이지)
+4. [Article 수정 및 삭제](#4-article-수정-및-삭제)
+    1. [view 함수 update 수정](#4-1-view-함수-update-수정)
+    2. [view 함수 delete 수정](#4-2-view-함수-delete-수정)
+    3. [article 수정 및 삭제 버튼 표시](#4-3-article-수정-및-삭제-버튼-표시)
+5. [Comment & User](#5-comment--user)
+    1. [Comment에서 User 외래키 정의](#5-1-comment에서-user-외래키-정의)
+        - [Comment 모델에 user 외래키 삽입](#--comment-모델에-user-외래키-삽입)
+6. [Comment 생성](#6-comment-생성)
+    1. [Comment 생성 view 함수 수정](#6-1-comment-생성-view-함수-수정)
+    2. [detail 페이지 템플릿](#6-2-detail-페이지-템플릿)
+7. [Comment 삭제](#7-comment-삭제)
+    1. [view 함수 comment_delete 수정](#7-1-view-함수-comment_delete-수정)
+    2. [comment 삭제 버튼 표시](#7-2-comment-삭제-버튼-표시)
 
 <br>
 <br>
