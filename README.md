@@ -264,7 +264,8 @@
 -   [Next.js 소개 및 프로젝트 생성](Nextjs/Nextjs_intro.md)
 -   [Library vs Framework](Nextjs/Nextjs_Library_Framework.md)
 -   [Routing](Nextjs/Nextjs_Routing.md)
--   [not-found, usePathname](Nextjs/Nextjs_not-found_usePathname.md)
+-   [not-found, usePathname, Rendering](Nextjs/Nextjs_not-found_usePathname_Rendering.md)
+-   [Client/Server component 비교](Nextjs)
 
 </div>
 </details>
