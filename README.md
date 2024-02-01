@@ -226,7 +226,7 @@
 -   [Static Files](Django/Django_Static_files.md)
 -   [N:1 관계 (Comment & Article)](Django/Django_Many_to_one_relationships_article_comment.md)
 -   [N:1 관계 (Comment & Article & User)](Django/Django_Many_to_one_relationships_article_comment_user.md)
--   [M:N 관계 (Like 기능)](Django)
+-   [M:N 관계 (Like 기능)](Django/Django_Many_to_many_relationships_like.md)
 -   [M:N 관계 (Follow 기능)](Django)
 -   
 -   [REST API](Django/REST_API.md)

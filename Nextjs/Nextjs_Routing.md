@@ -27,7 +27,7 @@
 
 ![Root Segments](../img/Nextjs_Root_segments.png)
 
-<루트 세그먼트와 url 구조>
+이미지 출처 : [Next.js 공식 사이트](https://nextjs.org/docs/app/building-your-application/routing)
 
 - `/` : 루트 세그먼트
 - `dashboard` : 세그먼트
