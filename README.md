@@ -267,6 +267,7 @@
 -   [not-found, usePathname, Rendering](Nextjs/Nextjs_not-found_usePathname_Rendering.md)
 -   [Client/Server component 비교](Nextjs)
 -   [layout, metadata](Nextjs/Nextjs_layout_metadata.md)
+-   [Dynamic Routes](Nextjs/Nextjs_Dynamic_Routes.md)
 
 </div>
 </details>
