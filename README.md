@@ -228,6 +228,7 @@
 -   [N:1 관계 (Comment & Article & User)](Django/Django_Many_to_one_relationships_article_comment_user.md)
 -   [M:N 관계 (Like 기능)](Django/Django_Many_to_many_relationships_like.md)
 -   [M:N 관계 (Follow 기능)](Django/Django_Many_to_many_relationships_follow.md)
+-   [Ajax를 이용한 비동기 요청](Django/Django_asynchronous_with_Ajax.md)
 -
 -   [REST API](Django/REST_API.md)
 -   [HTTP requests (PUT/PATCH)](Django/PUT&PATCH.md)
@@ -268,6 +269,7 @@
 -   [Client/Server component 비교](Nextjs)
 -   [layout, metadata](Nextjs/Nextjs_layout_metadata.md)
 -   [Dynamic Routes](Nextjs/Nextjs_Dynamic_Routes.md)
+-   [Data Fetching](Nextjs/Nextjs_Data_Fetching.md)
 
 </div>
 </details>
