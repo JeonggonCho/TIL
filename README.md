@@ -24,7 +24,8 @@
 -   [Git](Git/Git.md)
 -   [GitHub](Git/GitHub.md)
 -   [Branch](Git/Branch.md)
--   [GitHub Flow](Git/GitHub%20Flow.md)
+-   [GitHub Flow](Git/GitHub_Flow.md)
+-   [GitHub action](Git/GitHub_action.md)
 
 </div>
 </details>
@@ -166,7 +167,7 @@
 -   [async & await](JavaScript/JS_async,await.md)
 -   [API & fetch](JavaScript/JS_API,fetch.md)
 -   [try & catch](JavaScript/JS_try,catch.md)
--   [closure](JavaScript/JS_closure.md)
+-   [Closure](JavaScript/JS_closure.md)
 -   [Node.js 기초](JavaScript/Nodejs_basic.md)
 
 </div>
@@ -229,6 +230,7 @@
 -   [M:N 관계 (Like 기능)](Django/Django_Many_to_many_relationships_like.md)
 -   [M:N 관계 (Follow 기능)](Django/Django_Many_to_many_relationships_follow.md)
 -   [Ajax를 이용한 비동기 요청](Django/Django_asynchronous_with_Ajax.md)
+-   [Fixtures](Django/Django_Fixtures.md)
 -
 -   [REST API](Django/REST_API.md)
 -   [HTTP requests (PUT/PATCH)](Django/PUT&PATCH.md)
