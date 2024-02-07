@@ -231,7 +231,7 @@
 -   [M:N 관계 (Follow 기능)](Django/Django_Many_to_many_relationships_follow.md)
 -   [Ajax를 이용한 비동기 요청](Django/Django_asynchronous_with_Ajax.md)
 -   [Fixtures](Django/Django_Fixtures.md)
--
+-   [Query 향상시키기](Django/Django_Improve_query.md)
 -   [REST API](Django/REST_API.md)
 -   [HTTP requests (PUT/PATCH)](Django/PUT&PATCH.md)
 
