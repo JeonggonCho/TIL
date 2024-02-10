@@ -6,6 +6,11 @@
 2. [Data Fetching](#2-data-fetching)
     1. [Client Component에서 Data Fetching](#2-1-client-component에서-data-fetching)
     2. [Server Component에서 Data Fetching](#2-2-server-component에서-data-fetching)
+3. [병렬 요청(Parallel Requests)](#3-병렬-요청parallel-requests)
+    1. [home에서 영화 목록 출력](#3-1-home에서-영화-목록-출력)
+    2. [movies/id 영화 디테일 페이지](#3-2-moviesid-영화-디테일-페이지)
+    3. [영화 디테일에서 여러 개 Data Fetch - 영화 정보, 비디오](#3-3-영화-디테일에서-여러-개-data-fetch---영화-정보-비디오)
+    4. [Promise.all()](#3-4-promiseall)
 
 <br>
 <br>
@@ -116,3 +121,127 @@ export default async function HomePage() {
 - 하지만 서버에서 Data Fetch이 오래 걸리면 그만큼 클라이언트 단에서 로딩 시간이 길어짐
 - 이는 사용자 경험적으로 좋지 않음
 - 로딩 시, UI 처리 방법이 필요
+
+<br>
+<br>
+
+## 3. 병렬 요청(Parallel Requests)
+
+### 3-1. home에서 영화 목록 출력
+
+- movies 데이터를 map으로 순회하여 `Link` 생성
+
+```tsx
+// app/(home)/page.tsx
+
+...
+<div>
+   {movies.map((movie) => (
+      <li key={movie.id}>
+         <Link href={`/movies/${movie.id}`}>{movie.title}</Link>
+      </li>
+   ))}
+</div>
+```
+
+<br>
+
+![영화 목록 링크 생성](../img/Nextjs_link.gif)
+
+<영화 목록 링크 생성>
+
+<br>
+
+### 3-2. movies/id 영화 디테일 페이지
+
+- URL 내보내기
+
+```tsx
+// app/(home)/page.tsx
+
+export const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
+```
+
+<br>
+
+- 재사용할 URL 가져오기
+- Server Component에서 Data Fetch할 함수 getMovie 생성
+- 페이지 컴포넌트에서 async로 Promise 반환하도록 만들고 해당 데이터를 movie 변수에 담기
+- 영화 제목 movie.title 출력
+
+```tsx
+// app/(movies)/movies/[id]/page.tsx
+
+import { API_URL } from "../../../(home)/page";
+
+async function getMovie(id: string) {
+   const response = await fetch(`${API_URL}/${id}`);
+   return response.json();
+}
+
+export default async function MovieDetail({ params: { id } }: { params: { id: string } }) {
+   const movie = await getMovie(id);
+   return <h1>{movie.title}</h1>;
+}
+```
+
+<br>
+
+![영화 디테일 페이지](../img/Nextjs_movie_detail.gif)
+
+<영화 디테일 페이지>
+
+<br>
+
+### 3-3. 영화 디테일에서 여러 개 Data Fetch - 영화 정보, 비디오
+
+```tsx
+// app/(movies)/movies/[id]/page.tsx
+
+import { get } from "http";
+import { API_URL } from "../../../(home)/page";
+
+async function getMovie(id: string) {
+   await new Promise((response) => setTimeout(response, 5000));
+   const response = await fetch(`${API_URL}/${id}`);
+   return response.json();
+}
+
+async function getVideos(id: string) {
+   await new Promise((response) => setTimeout(response, 5000));
+   const response = await fetch(`${API_URL}/${id}/videos`);
+   return response.json();
+}
+
+export default async function MovieDetail({ params: { id } }: { params: { id: string } }) {
+   const movie = await getMovie(id);
+   const videos = await getVideos(id);
+   return <h1>{movie.title}</h1>;
+}
+```
+
+- Data를 요청하는 `함수를 2개 생성`
+- 영화 정보 + 비디오 데이터
+- 이 경우, 함수가 `순차적(동기적)으로 호출`되기에 하나의 data fetching이 오래 걸리면 `전체 시간이 오래 걸림`
+- 따라서 `병렬 처리가 필요함`
+
+<br>
+
+### 3-4. Promise.all()
+
+- 두 함수 getMovie와 getVideos를 await함
+
+```tsx
+// app/(movies)/movies/[id]/page.tsx
+
+...
+export default async function MovieDetail({ params: { id } }: { params: { id: string } }) {
+   const [movie, videos] = await Promise.all([getMovie(id), getVideos(id)]);
+   return <h1>{movie.title}</h1>;
+}
+```
+
+- `Promise.all()`의 파라미터 `배열에 호출하는 함수들을 담으면`, 해당 리턴 값은 배열로 주어짐
+- 이를 `비구조화 할당`을 통해 movie와 videos에 담기
+- 이렇게 처리하면, 함수를 `병렬적으로 동시에 처리`할 수 있음
+- 여러 개의 Data Fetching 시, 최적화에 도움이 됨

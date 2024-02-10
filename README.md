@@ -275,6 +275,10 @@
 -   [layout, metadata](Nextjs/Nextjs_layout_metadata.md)
 -   [Dynamic Routes](Nextjs/Nextjs_Dynamic_Routes.md)
 -   [Data Fetching](Nextjs/Nextjs_Data_Fetching.md)
+-   [Loading component](Nextjs/Nextjs_Loading_component.md)
+-   [Suspense](Nextjs/Nextjs_Suspense.md)
+- 
+-   [Revalidation]()
 
 </div>
 </details>
