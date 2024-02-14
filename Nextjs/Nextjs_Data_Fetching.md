@@ -11,6 +11,7 @@
     2. [movies/id 영화 디테일 페이지](#3-2-moviesid-영화-디테일-페이지)
     3. [영화 디테일에서 여러 개 Data Fetch - 영화 정보, 비디오](#3-3-영화-디테일에서-여러-개-data-fetch---영화-정보-비디오)
     4. [Promise.all()](#3-4-promiseall)
+        - [Promise.all()의 문제점](#--promiseall의-문제점)
 
 <br>
 <br>
@@ -245,3 +246,10 @@ export default async function MovieDetail({ params: { id } }: { params: { id: st
 - 이를 `비구조화 할당`을 통해 movie와 videos에 담기
 - 이렇게 처리하면, 함수를 `병렬적으로 동시에 처리`할 수 있음
 - 여러 개의 Data Fetching 시, 최적화에 도움이 됨
+
+<br>
+
+### - Promise.all()의 문제점
+
+- 이 방법의 단점은 Promise.all()이 다 끝나고 movie와 video 모두가 생성되어야 UI를 볼 수 있음
+- 동시에 처리하더라도 fetch 함수를 분리하여 `먼저 처리가 끝난 요소`는 화면에 `먼저 출력`되도록 최적화 할 수 있음 (기다릴 필요 없음)
