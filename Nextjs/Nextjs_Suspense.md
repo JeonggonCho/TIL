@@ -2,7 +2,9 @@
 
 ## 목차
 
-1. []()
+1. [Suspense의 필요성](#1-suspense의-필요성)
+2. [Suspense 적용하기](#2-suspense-적용하기)
+    1. [fetch 분리하기](#2-1-fetch-분리하기)
 
 <br>
 <br>
