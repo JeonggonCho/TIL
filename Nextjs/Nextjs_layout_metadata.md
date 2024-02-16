@@ -10,6 +10,7 @@
     4. [route groups](#1-4-route-groups)
 2. [Metadata](#2-metadata)
     1. [metadata 템플릿](#2-1-metadata-템플릿)
+    2. [Dynamic Metadata - generateMetadata()](#2-2-dynamic-metadata---generatemetadata)
 
 <br>
 <br>
@@ -40,13 +41,13 @@
 import Navigation from "../components/navigation";
 
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <body>
-                <Navigation />
-                {children}
-            </body>
+        <body>
+        <Navigation/>
+        {children}
+        </body>
         </html>
     );
 }
@@ -68,7 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 ```tsx
 // app/about-us/layout.tsx
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({children}: { children: React.ReactNode }) {
     return (
         <div>
             {children}
@@ -135,12 +136,12 @@ export const metadata = {
 ```tsx
 // 만약 home 페이지의 metadata의 title이 아래와 같고
 export const metadata = {
-   title: "Home | Next Movies",
+    title: "Home | Next Movies",
 };
 
 // about-us 페이지의 metadata의 title이 아래와 같다면
 export const metadata = {
-   title: "About us | Next Movies",
+    title: "About us | Next Movies",
 };
 ```
 
@@ -153,14 +154,14 @@ export const metadata = {
 // 상위 layout에서 metadata 템플릿 적용
 
 // app/layout.tsx
-import { Metadata } from "next";
+import {Metadata} from "next";
 
 export const metadata: Metadata = {
-   title: {
-      template: "%s | Next Movies",
-      default: "Next Movies.",
-   },
-   description: "The best movies on the best framework",
+    title: {
+        template: "%s | Next Movies",
+        default: "Next Movies.",
+    },
+    description: "The best movies on the best framework",
 };
 
 
@@ -168,13 +169,13 @@ export const metadata: Metadata = {
 
 // app/(home)/page.tsx
 export const metadata = {
-   title: "Home",
+    title: "Home",
 };
 
 
 // app/about-us/layout.tsx
 export const metadata = {
-   title: "About us",
+    title: "About us",
 };
 ```
 
@@ -182,3 +183,36 @@ export const metadata = {
 - title에 객체로 `template`과 `기본 값(default)`을 넣어준다.
 - template에서 `%s`은 하위 page나 layout에서 `title 문자열`을 받고 그 외의 부분("| Next Movies")은 공통으로 작성됨
 - 만약 title이 작성되지 않은 page나 layout에서는 기본 값이 출력됨
+
+<br>
+
+### 2-2. Dynamic Metadata - generateMetadata()
+
+- Home(index) 페이지, 소개 페이지(about-us)의 경우, 동적이지 않고 하나의 제목만 가지고 있음
+- 하지만, 영화 디테일 페이지와 같은 경우, [id]에 따라 각각의 제목이 필요함
+- `generateMetadata 함수`를 사용하여 해결할 수 있음
+
+```tsx
+// app/(movies)/movies/[id]/page.tsx
+
+...
+
+import {getMovie} from "../../../../components/movie-info";
+
+interface IParams {
+    params: { id: string };
+}
+
+export async function generateMetadata({params: {id},}: IParams) {
+    const movie = await getMovie(id);
+    return {
+        title: movie.title,
+    }
+};
+...
+```
+
+- 프레임워크가 해당 함수를 찾아 metadata를 동적으로 적용해줌
+- 따라서 `export` 해주어야 함
+- 해당 함수에서 getMovie() 함수를 통해 데이터를 fetch하는데 movie-info 컴포넌트에서 역시도 getMovie() 함수를 사용하고 있어 속도가 느려질 수도 있다는 우려있을 수 있지만,
+  Next.js에서 `fetch된 데이터를 캐싱하고 있어 속도에 문제없음`

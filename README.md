@@ -299,7 +299,7 @@
 - [Next.js 소개 및 프로젝트 생성](Nextjs/Nextjs_intro.md)
 - [Library vs Framework](Nextjs/Nextjs_Library_Framework.md)
 - [Routing](Nextjs/Nextjs_Routing.md)
-- [not-found, usePathname, Rendering](Nextjs/Nextjs_not-found_usePathname_Rendering.md)
+- [not-found, Link, useRouter, usePathname, Rendering](Nextjs/Nextjs_not-found_Link_useRouter_usePathname_Rendering.md)
 - [Client/Server component 비교](Nextjs)
 - [layout, metadata](Nextjs/Nextjs_layout_metadata.md)
 - [Dynamic Routes](Nextjs/Nextjs_Dynamic_Routes.md)
@@ -308,6 +308,7 @@
 - [Suspense](Nextjs/Nextjs_Suspense.md)
 - [Error Handling](Nextjs/Nextjs_Error_Handling.md)
 - [CSS modules](Nextjs/Nextjs_CSS_modules.md)
+- [Deployment](Nextjs/Nextjs_Deployment.md)
 - [Revalidation]()
 
 </div>

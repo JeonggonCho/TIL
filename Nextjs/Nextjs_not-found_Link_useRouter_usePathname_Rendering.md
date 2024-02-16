@@ -1,4 +1,4 @@
-# not-found, usePathname, Rendering
+# not-found, Link, useRouter, usePathname, Rendering
 
 ## 목차
 
@@ -6,6 +6,8 @@
 2. [네비게이션 바 생성](#2-네비게이션-바-생성)
     1. [components 폴더 생성](#2-1-components-폴더-생성)
     2. [Navigation 컴포넌트 생성](#2-2-navigation-컴포넌트-생성)
+        - [Link 컴포넌트](#--link-컴포넌트)
+        - [useRouter()](#--userouter)
         - [Navigation 컴포넌트 모든 페이지에서 가져오기](#--navigation-컴포넌트-모든-페이지에서-가져오기)
     3. [usePathname() 커스텀 Hooks 사용](#2-3-usepathname-커스텀-hooks-사용)
         - [현재 어느 페이지에 있는지 표시하기](#--현재-어느-페이지에-있는지-표시하기)
@@ -25,7 +27,8 @@
 // app/not-found.tsx
 
 export default function NotFount() {
-    return <h1>Not found!</h1>;
+    return <h1>Not
+    found! < /h1>;
 }
 ```
 
@@ -63,19 +66,60 @@ export default function Navigation() {
         <nav>
             <ul>
                 <li>
-                    <Link href="/">Home</Link>
-                </li>
-                <li>
-                    <Link href="/about-us">About Us</Link>
-                </li>
-            </ul>
-        </nav>
-    );
+                    <Link href = "/" > Home < /Link>
+        < /li>
+        < li >
+        <Link href = "/about-us" > About
+    Us < /Link>
+    < /li>
+    < /ul>
+    < /nav>
+)
+    ;
 }
 ```
 
+<br>
+
+### - Link 컴포넌트
+
 - 버튼의 경우, Next.js에서 제공하는 `Link` 컴포넌트를 사용
 - `href` 속성을 통해 `url`을 이동
+
+<br>
+
+### - useRouter()
+
+- Link 컴포넌트가 아닌 다른 컴포넌트의 onClick 속성에 router 기능 넣기
+
+```tsx
+// useRouter() 예시
+
+"use client";
+
+import {useRouter} from "next/navigation";
+
+...
+
+export default function Movie() {
+    const router = useRouter();
+    const onClick = () => {
+        router.push(`/movies/${id}`);
+    };
+
+    return (
+        <div>
+            <img... onClick={onClick}/>
+        </div>
+    )
+};
+...
+```
+
+- useRouter를 가져와 router 생성
+- onClick 함수를 만들어 해당 함수 호출 시, router에 url을 push하기
+- onClick 속성에 onClick 함수 넣기
+- onClick의 경우, 서버가 아닌 클라이언트에서 동작하기에 "use client"로 클라이언트 서버 선언해야 에러 발생하지 않음
 
 <br>
 
@@ -95,9 +139,9 @@ import Navigation from "../components/navigation";
 export default function Page() {
     return (
         <div>
-            <Navigation />
-            <h1>Hello!</h1>
-        </div>
+            <Navigation / >
+        <h1>Hello! < /h1>
+        < /div>
     );
 }
 ```
@@ -115,7 +159,7 @@ export default function Page() {
 // components/Navigation.tsx
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import {usePathname} from "next/navigation";
 
 export default function Navigation() {
     const path = usePathname();
@@ -124,14 +168,16 @@ export default function Navigation() {
         <nav>
             <ul>
                 <li>
-                    <Link href="/">Home</Link>
-                </li>
-                <li>
-                    <Link href="/about-us">About Us</Link>
-                </li>
-            </ul>
-        </nav>
-    );
+                    <Link href = "/" > Home < /Link>
+        < /li>
+        < li >
+        <Link href = "/about-us" > About
+    Us < /Link>
+    < /li>
+    < /ul>
+    < /nav>
+)
+    ;
 }
 ```
 
@@ -154,7 +200,8 @@ usePathname only works in Client Components. Add the "use client" directive at t
 
 "use client"
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import {usePathname} from "next/navigation";
+
 ...
 ```
 
@@ -170,11 +217,17 @@ import { usePathname } from "next/navigation";
 
 ...
 <li>
-    <Link href="/">Home</Link> {path === "/" ? "🔥" : ""}
-</li>
-<li>
-    <Link href="/about-us">About Us</Link> {path === "/about-us" ? "🔥" : ""}
-</li>
+    <Link href = "/" > Home < /Link> {path === "/
+" ? "🔥" : "
+"}
+< /li>
+< li >
+<Link href = "/about-us" > About
+Us < /Link> {path === "/
+about - us
+" ? "🔥" : "
+"}
+< /li>
 ```
 
 - 삼항 연산자를 통해 현재있는 경로이면 "🔥"을 뒤에 표시하고 아닐 경우, 빈문자열을 뒤에 표시

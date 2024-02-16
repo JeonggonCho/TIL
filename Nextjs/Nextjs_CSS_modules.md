@@ -15,6 +15,8 @@
 - Next.js에서 별도의 설치나 설정을 따로 하지 않아도 바로 CSS 모듈을 사용할 수 있음
 - 물론 Styled component, tailwind, chakra 등을 사용할 수 있음
 
+<br/>
+
 ### 1-1. global CSS 파일 생성
 
 - css 파일을 관리할 `styles` 디렉토리 생성
