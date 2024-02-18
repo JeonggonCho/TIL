@@ -205,6 +205,10 @@
 - [타입 시스템](TypeScript/TS_Type_system.md)
 - [변수](TypeScript/TS_Variable.md)
 - [타입 추론](TypeScript/TS_Type_assertion.md)
+- [호출 시그니쳐](TypeScript/TS_call_signatures.md)
+- [오버로딩](TypeScript/TS_overloading.md)
+- [다형성 - Generics](TypeScript/TS_Polymorphism_Generics.md)
+- 
 
 </div>
 </details>

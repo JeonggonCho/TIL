@@ -90,6 +90,11 @@ if (typeof a === 'string') {
 function hello() {
     console.log('x');
 }
+
+const a = hello();
+
+// 에러 발생 a는 void 타입으로 toUpperCase() 메서드 적용 불가
+a.toUpperCase();
 ```
 
 <br>
