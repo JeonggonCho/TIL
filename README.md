@@ -208,7 +208,7 @@
 - [호출 시그니쳐](TypeScript/TS_call_signatures.md)
 - [오버로딩](TypeScript/TS_overloading.md)
 - [다형성 - Generics](TypeScript/TS_Polymorphism_Generics.md)
-- 
+- [클래스](TypeScript/TS_classes.md)
 
 </div>
 </details>
