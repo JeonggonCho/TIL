@@ -9,6 +9,7 @@
     3. [추상 클래스 안의 메소드 & 추상 메소드 (Abstract Method)](#1-3-추상-클래스-안의-메소드--추상-메소드-abstract-method)
         - [추상 클래스 안의 메소드](#--추상-클래스-안의-메소드)
         - [추상 메소드 (Abstract Method)](#--추상-메소드-abstract-method)
+    4. [해시맵 만들기](#1-4-해시맵-만들기)
 
 <br/>
 <br/>
@@ -68,7 +69,7 @@ jeonggon.firstName // 에러 발생 -> private이기 때문
 
 ### 1-2. 추상 클래스 (Abstract Class)
 
-- 추상 클래스는 다른 클래스가 `상속 받을 수만 있는` 클래스를 의미
+- 추상 클래스는 `인스턴스 생성은 불가능`하며 다른 클래스가 `상속 받을 수만 있는` 클래스를 의미함
 - class 키워드 앞에 `abstract 키워드`를 붙여서 선언
 - 상속받을 경우, 클래스 명 뒤에 `extends (추상 클래스 명)`을 붙여서 상속받음
 - 하지만 추상 클래스는 직접 새로운 `인스턴스를 만드는 것은 불가함`
@@ -152,8 +153,7 @@ class Player extends User {
     // 추상 메소드를 구현해야 에러 안 발생함
     getNickName() {
         // 만약 클래스의 필드가 private(private nickname: string)이면
-        // 클래스를 상속하였을지라도
-        // 추상 메소드에서 해당 필드를 사용한 console.log 출력 불가함
+        // 클래스를 상속하였을지라도 추상 메소드에서 해당 필드를 사용 불가능
         // 클래스를 상속받아 사용하려면 protected 사용(protected nickname: string)
         console.log(this.nickname);
     }
@@ -162,4 +162,56 @@ class Player extends User {
 const jeonggon = new Player("jeonggon", "cho", "Gon");
 
 jeonggon.firstName; // protected이므로 접근 불가능
+```
+
+<br/>
+
+### 1-4. 해시맵 만들기
+
+- TypeScript 클래스를 통해 사전 기능과 같이 해싱 알고리즘을 쓰는 해시맵 만들기
+
+```tsx
+// 해시맵 만들기
+
+// 객체의 type 선언 시, 사용
+type Words = {
+    // key가 가변적이지만 타입만 알고 있을 경우, 대괄호 사용
+    [key: string]: string
+};
+
+// 사전 객체를 만들고, 추가(add 메소드), 정의 출력(def 메소드)를 가진 클래스 Dict
+class Dict {
+    private words: Words
+
+    // 수동으로 constructor 함수에 initialize
+    constructor() {
+        this.words = {}
+    }
+    
+    // 중요!! 클래스를 type처럼 사용 가능
+    add(word: Word) {
+        if (this.words[word.term] === undefined) {
+            this.words[word.term] = word.def;
+        }
+    }
+    
+    def(term: string) {
+        return this.words[term]
+    }
+}
+
+// 단어의 명칭(term)과 의미(def)를 public으로 받는 클래스 Word
+class Word {
+    constructor(
+       public term: string,
+       public def: string
+    ) {}
+}
+
+const kimchi = new Word("kimchi", "한국의 음식");
+
+const dict = new Dict();
+
+dict.add(kimchi);
+dict.def("kimchi"); // "한국의 음식"
 ```
