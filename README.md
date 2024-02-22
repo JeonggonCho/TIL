@@ -209,6 +209,7 @@
 - [오버로딩](TypeScript/TS_overloading.md)
 - [다형성 - Generics](TypeScript/TS_Polymorphism_Generics.md)
 - [클래스](TypeScript/TS_classes.md)
+- [Interfaces](TypeScript/TS_Interfaces.md)
 
 </div>
 </details>

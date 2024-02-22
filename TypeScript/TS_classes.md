@@ -10,6 +10,8 @@
         - [추상 클래스 안의 메소드](#--추상-클래스-안의-메소드)
         - [추상 메소드 (Abstract Method)](#--추상-메소드-abstract-method)
     4. [해시맵 만들기](#1-4-해시맵-만들기)
+        - [public이지만 변경 불가능 하게 만들기](#--public이지만-변경-불가능-하게-만들기)
+    5. [static 속성 및 메소드](#1-5-static-속성-및-메소드)
 
 <br/>
 <br/>
@@ -214,4 +216,53 @@ const dict = new Dict();
 
 dict.add(kimchi);
 dict.def("kimchi"); // "한국의 음식"
+```
+
+- Word 클래스에서 term과 def를 public으로 선언하였기에 Dict 클래스에서 사용 가능
+- 하지만, `kimchi.def = "xxx";`와 같이 변경해버릴 수 있음 (보호에 취약함)
+
+<br/>
+
+### - public이지만 변경 불가능 하게 만들기
+
+- `readonly` 키워드 사용
+- 데이터 덮어쓰는 것을 방지함
+- TypeScript에서 지원하는 기능으로 JavaScript로 컴파일 시, 안 나타남
+
+```tsx
+...
+class Word {
+    constructor(
+        // readonly로 수정 불가능하게 만들기
+       public readonly term: string,
+       public readonly def: string
+    ) {}
+}
+...
+
+const kimchi = new Word("kimchi", "한국의 음식");
+
+kimchi.def = "xxx"; // 에러 발생 -> 수정 불가능
+```
+
+<br/>
+
+### 1-5. static 속성 및 메소드
+
+- JavaScript의 기능
+- 클래스를 통하여 `인스턴스를 생성할 필요없이` 클래스의 속성, 메소드를 사용하고자 할 경우, `static` 키워드를 사용하여 선언
+
+```tsx
+class Dict {
+    private words: Words
+    constructor() {
+        this.words = {}
+    }
+    
+    static hello() {
+        return "hello";
+    }
+}
+
+Dict.hello(); // "hello"
 ```
