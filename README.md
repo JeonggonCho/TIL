@@ -210,6 +210,9 @@
 - [다형성 - Generics](TypeScript/TS_Polymorphism_Generics.md)
 - [클래스](TypeScript/TS_classes.md)
 - [Interfaces](TypeScript/TS_Interfaces.md)
+- [TypeScript 프로젝트 시작하기](TypeScript/TS_start_project_with_typescript.md)
+- [TypeScript 프로젝트 - Lib & Declaration Files](TypeScript/TS_Lib_Declaration_Files.md)
+-
 
 </div>
 </details>
