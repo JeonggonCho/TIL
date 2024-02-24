@@ -213,6 +213,7 @@
 - [TypeScript 프로젝트 시작하기](TypeScript/TS_start_project_with_typescript.md)
 - [TypeScript 프로젝트 - Lib & Declaration Files](TypeScript/TS_Lib_Declaration_Files.md)
 - [TypeScript 프로젝트 - JSDoc](TypeScript/TS_JSDoc.md)
+- [효율적인 개발환경 구축](TypeScript/TS_efficient.md)
 
 </div>
 </details>
