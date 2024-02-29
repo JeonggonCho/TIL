@@ -425,17 +425,16 @@
 
 [//]: # "docker"
 
-[//]: # "<details>"
+<details>
+<summary><img src="./logo/docker.png" width="20" height="20"/> Docker</summary>
+<div markdown="1">
 
-[//]: # '<summary><img src="./logo/docker.png" width="20" height="20"/> Docker</summary>'
+- []()
 
-[//]: # '<div markdown="1">'
+</div>
+</details>
 
-[//]: # "</div>"
-
-[//]: # "</details>"
-
-[//]: # "<br>"
+<br/>
 
 [//]: # "kubernetes"
 
