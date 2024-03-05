@@ -1,34 +1,22 @@
-# Node.js 기초
+# 모듈 & 패키지
 
 ## 목차
 
-1. [Node.js](#1-nodejs)
-2. [모듈](#2-모듈)
-    1. [Common JS 모듈 시스템 (CJS)](#2-1-common-js-모듈-시스템-cjs)
+1. [모듈](#1-모듈)
+    1. [Common JS 모듈 시스템 (CJS)](#1-1-common-js-모듈-시스템-cjs)
         - [CJS 모듈의 특징](#cjs-모듈의-특징)
-    2. [ES 모듈 시스템 (ESM)](#2-2-es-모듈-시스템-esm)
+    2. [ES 모듈 시스템 (ESM)](#1-2-es-모듈-시스템-esm)
         - [ESM 사용법](#esm-사용법)
         - [ESM 특징](#esm-특징)
-3. [패키지](#3-패키지)
-    1. [npm(Node Package Manager)](#3-1-npmnode-package-manager)
-    2. [npm을 이용하여 Node.js 패키지 만들기](#3-2-npm을-이용하여-nodejs-패키지-만들기)
-    3. [npm을 이용하여 다른 사람이 만든 패키지 설치 및 사용하는 예시](#3-3-npm을-이용하여-다른-사람이-만든-패키지-설치-및-사용하는-예시)
+2. [패키지](#2-패키지)
+    1. [npm(Node Package Manager)](#2-1-npmnode-package-manager)
+    2. [npm을 이용하여 Node.js 패키지 만들기](#2-2-npm을-이용하여-nodejs-패키지-만들기)
+    3. [npm을 이용하여 다른 사람이 만든 패키지 설치 및 사용하는 예시](#2-3-npm을-이용하여-다른-사람이-만든-패키지-설치-및-사용하는-예시)
 
-<br>
-<br>
+<br/>
+<br/>
 
-## 1. Node.js
-
--   기존의 JavaScript는 웹 브라우저에서 요소들의 동적인 기능을 위해 개발되어 브라우저에서만 사용이 가능하였다. 하지만 JavaScript를 구동하는 엔진을 사용하여 `브라우저가 아닌 로컬, 서버 등 다양한 영역`에서 사용할 수 있도록 확장성을 부여하였다. 이를 Node.js라고 한다.
-
--   크로스플랫폼 오픈소스 JavaScript 런타임 환경
-
--   즉, V8 JavaScript 엔진으로 구동되며, 웹 브라우저 바깥에서 자바스크립트 코드를 실행 가능
-
-<br>
-<br>
-
-## 2. 모듈
+## 1. 모듈
 
 -   모듈은 코드를 구성하고 `재사용 가능한` 단위로 분할하는데 사용되는 개념
 -   모듈은 일반적으로 `하나의 파일`에 `정의`되며, 해당 파일 안에서 필요한 변수, 함수, 클래스 등을 내보내고(export) 가져올(import) 수 있다.
@@ -36,7 +24,7 @@
 
 <br>
 
-### 2-1. Common JS 모듈 시스템 (CJS)
+### 1-1. Common JS 모듈 시스템 (CJS)
 
 ```javascript
 // calc.js
@@ -84,7 +72,7 @@ console.log(calc);
 
 <br>
 
-### 2-2. ES 모듈 시스템 (ESM)
+### 1-2. ES 모듈 시스템 (ESM)
 
 -   `import`로 모듈에 접근하고 `export`로 모듈을 내보냄
 -   `ECMA Script`에서 지원하는 방식임
@@ -121,7 +109,7 @@ import { add as add_func } from "utils";
 
 3. 모듈 내보낼 때, export 사용
 
-    <named exports (이름있는 내보내기) 사용>
+   <named exports (이름있는 내보내기) 사용>
 
     ```javascript
     // named exports 사용
@@ -151,7 +139,7 @@ import { add as add_func } from "utils";
     <br>
     <br>
 
-    <default exports (기본 내보내기) 사용>
+   <default exports (기본 내보내기) 사용>
 
     ```javascript
     // default exports 사용
@@ -183,7 +171,7 @@ import { add as add_func } from "utils";
     <br>
     <br>
 
-    <혼합 사용>
+   <혼합 사용>
 
     ```javascript
     // module.js
@@ -215,9 +203,9 @@ import { add as add_func } from "utils";
 <br>
 <br>
 
-## 3. 패키지
+## 2. 패키지
 
-### 3-1. npm(Node Package Manager)
+### 2-1. npm(Node Package Manager)
 
 -   Node.js의 패키지 관리 도구
 -   다른 사람이 만들어 놓은 `Node.js 모듈`
@@ -225,7 +213,7 @@ import { add as add_func } from "utils";
 
 <br>
 
-### 3-2. npm을 이용하여 Node.js 패키지 만들기
+### 2-2. npm을 이용하여 Node.js 패키지 만들기
 
 1. 패키지 파일들을 효율적으로 관리하기 위해 하나의 최상위 부모인 `루트폴더`를 정하고 그 아래에 모뎀 패키지 파일들을 생성
 
@@ -416,20 +404,20 @@ $ npm publish
 
 <br>
 
-### 3-3. npm을 이용하여 다른 사람이 만든 패키지 설치 및 사용하는 예시
+### 2-3. npm을 이용하여 다른 사람이 만든 패키지 설치 및 사용하는 예시
 
 1. 패키지(=모듈) 공유 사이트 이용
 
     - 사이트 [npmjs.com](https://www.npmjs.com/)에는 방대한 Node 모듈들이 있으며, 대부분 `오픈 소스 패키지`임
     - 예시로 'randomcolor' 검색하여 선택
 
-    ![search](../img/Nodejs_package_search.png)
+   ![search](../img/Nodejs_package_search.png)
 
 <br>
 
 2. 설치하기
 
-    ![install](../img/Nodejs_package_install.png)
+   ![install](../img/Nodejs_package_install.png)
 
     ```bash
     # 터미널에서 설치 명령어 입력
@@ -441,7 +429,7 @@ $ npm publish
 
     <br>
 
-    ![설치된 것 확인](../img/Nodejs_package_install_result.png)
+   ![설치된 것 확인](../img/Nodejs_package_install_result.png)
 
     - 1개의 패키지 추가, 2개의 패키지가 조정되었다는 메시지 확인
 
@@ -449,7 +437,7 @@ $ npm publish
 
 3. Dependency 의존성
 
-    ![dependency](../img/Nodejs_package_dependency.png)
+   ![dependency](../img/Nodejs_package_dependency.png)
 
     - 이전과 달리 `dependecies`가 생기고 안에 `randomcolor 패키지`가 설치되어있는 것을 확인 할 수 있음
     - 버전이 명시되어있는데 버전의 `'^'` 문자의 의미는 `이 이상의 버전으로 설치`됨을 의미함
@@ -458,7 +446,7 @@ $ npm publish
 
 4. node_modules
 
-    ![node_modules](../img/Nodejs_package_node_modules.png)
+   ![node_modules](../img/Nodejs_package_node_modules.png)
 
     - `node_modules`라는 `라이브러리 루트폴더`가 생성됨
     - 내부에 현재 설치된 외부 패키지들의 폴더가 위치함
@@ -468,7 +456,7 @@ $ npm publish
 
 5. package-lock.json
 
-    ![package-lock.json](../img/Nodejs_package-lock.png)
+   ![package-lock.json](../img/Nodejs_package-lock.png)
 
     - 기존의 package.json과 유사하나 설치된 외부 패키지들의 정보를 `정확하게 명시`해놓음
     - 예를들어 `package.json`에서는 randomcolor 패키지의 버전을 `"^0.6.2"`(0.6.2 이상)로 범위적으로 명시해놓았으나, `package-lock.json`에는 `"0.6.2"`로 정확한 버전을 표기함
@@ -477,7 +465,7 @@ $ npm publish
 
 6. 외부 패키지 가져오기
 
-    ![외부 패키지 가져오기](../img/Nodejs_package_require.png)
+   ![외부 패키지 가져오기](../img/Nodejs_package_require.png)
 
     - `Common JS` 방식을 사용하여 `require('경로');`로 entry point인 `index.js`로 모듈 가져오기
     - `npm i`를 통해 설치한 외부 패키지는 `실제 경로를 명시할 필요없이` 가져올 수 있음
@@ -486,7 +474,7 @@ $ npm publish
 
 7. 외부 패키지 실행하기
 
-    ![외부 패키지 실행하기](../img/Nodejs_package_npm_start.png)
+   ![외부 패키지 실행하기](../img/Nodejs_package_npm_start.png)
 
     - `npm start` 실행
     - randomcolor의 기능인 랜덤의 색상을 헥스코드로 추천해주는 것을 볼 수 있음
