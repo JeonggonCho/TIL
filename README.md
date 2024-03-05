@@ -111,7 +111,7 @@
 <div markdown="1">
 
 - [MongoDB 소개](MongoDB/MongoDB_Intro.md)
-- [설치하기](MongoDB/MongoDB_Setup.md)
+- [MongoDB 사용하기](MongoDB/MongoDB_Using.md)
 
 </div>
 </details>
