@@ -10,7 +10,10 @@
 3. [Runtime](#3-runtime)
 4. [Node.js 설치](#4-nodejs-설치)
 5. [REPL](#5-repl)
-
+6. [Browser APIs vs Node.js APIs](#6-browser-apis-vs-nodejs-apis)
+    1. [브라우저와 Node.js 모두 사용하는 API](#6-1-브라우저와-nodejs-모두-사용하는-api)
+    2. [브라우저 API](#6-2-브라우저-api)
+    3. [Node.js API](#6-3-nodejs-api)
 
 <br>
 <br>
@@ -136,3 +139,55 @@ $ .exit
 ## 5. REPL
 
 - REPL은 `Read-Evaluation-Print-Loop`의 약어로 특정 코드 `입력` 후, 해당 코드를 `평가`하고 실행결과를 `출력`해주는 것을 `반복` 해주는 환경을 의미함
+- JavaScript 학습 중 간단한 코드를 즉석에서 실행하여 결과를 확인해 볼 경우에 주로 사용함
+- 터미널에 `node` 입력 시, REPL 환경 활성화 됨
+- `.exit` 또는 `ctrl + c 두 번`으로 REPL 환경에서 나올 수 있음
+
+<br/>
+<br/>
+
+## 6. Browser APIs vs Node.js APIs
+
+### 6-1. 브라우저와 Node.js 모두 사용하는 API
+
+-  console API
+
+<br/>
+
+- 브라우저에서 사용하는 API와 Node에서 사용되는 API간에 gap을 줄이려고 노력함
+- 이는 Node.js가 Browser의 컨벤션을 따를려고 하는 것
+
+| Browser APIs | Node.js APIs |
+|--------------|--------------|
+| url          | url          |
+| setTimeout   | setTimeout   |
+| ...          | ...          |
+
+<비슷하게 사용되는 API>
+
+<br/>
+
+### 6-2. 브라우저 API
+
+- window 객체 사용
+- window 객체는 JavaScript가 아닌 브라우저에서 제공하는 객체로 Node.js의 REPL 환경에서 사용 불가함
+
+<br/>
+
+### 6-3. Node.js API
+
+- process 객체 사용
+- process 객체는 JavaScript가 아닌 Node.js에서 제공해주는 객체임
+
+<br/>
+
+| Browser APIs | Node.js APIs |
+|--------------|--------------|
+| window       | global       |
+| document     | process      |
+| history      | module       |
+| location     | filename     |
+| navigator    | require()    |
+| ...          | ...          |
+
+<여러 Browser API와 Node.js API>

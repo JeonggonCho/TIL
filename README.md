@@ -199,6 +199,7 @@
 <div markdown="1">
 
 - [Node.js 소개](Nodejs/Nodejs_intro.md)
+- [Blocking & Non-blocking](Nodejs/Nodejs_blocking_nonblocking.md)
 - [모듈 & 패키지](Nodejs/Nodejs_module_package.md)
 
 </div>
