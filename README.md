@@ -202,7 +202,9 @@
 - [Blocking & Non-blocking](Nodejs/Nodejs_blocking_nonblocking.md)
 - [프로세스 및 스레드](Nodejs/Nodejs_process_thread.md)
 - [Event Emitter](Nodejs/Nodejs_Event_Emitter.md)
-- [모듈 & 패키지](Nodejs/Nodejs_module)
+- [모듈](Nodejs/Nodejs_module.md)
+- [index.js 파일](Nodejs/Nodejs_indexjs.md)
+- [패키지](Nodejs/Nodejs_package.md)
 
 </div>
 </details>
