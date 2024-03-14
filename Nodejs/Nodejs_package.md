@@ -81,7 +81,7 @@ $ npm install -g nodemon
 ```bash
 # 로컬 설치 예시
 
-$ npm install nodemon --save-dev 
+$ npm install --save-dev nodemon
 ```
 
 <br/>
