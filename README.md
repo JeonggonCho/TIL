@@ -220,6 +220,8 @@
 
 - [Express.js 소개](Expressjs/Expressjs_intro.md)
 - [Express.js 기본 구조 코드](Expressjs/Expressjs_basic_structure_code.md)
+- [request - req.params()](Expressjs/Expressjs_request.md)
+- [response - res.json() vs res.send() vs res.end()](Expressjs/Expressjs_response.md)
 
 </div>
 </details>
