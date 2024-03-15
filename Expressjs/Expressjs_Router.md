@@ -1,4 +1,4 @@
-# Router, Controller
+# Router
 
 ## 목차
 
