@@ -6,6 +6,7 @@
     1. [use()](#1-1-use)
     2. [next()](#1-2-next)
 2. [middleware 생성하기](#2-middleware-생성하기)
+3. [middleware와 응답](#3-middleware와-응답)
 
 <br/>
 <br/>
@@ -60,3 +61,40 @@ app.use((req, res, next) => {
   next();
 })
 ```
+
+<br/>
+<br/>
+
+## 3. middleware와 응답
+
+- 실제로는 요청을 받고 미들웨어를 거친 뒤, 다시 미들웨어를 `한 번 씩 거치고` 응답이 전달됨
+
+<p align="center">
+    <img src="../img/Expressjs_middleware_response.png" width="600" alt="Expressjs_middleware_response"><br/>
+    <span>middleware와 응답 과정</span>
+</p>
+
+<br/>
+
+- 실제로 요청부터 응답까지 `걸린 시간 로그`를 찍는 미들웨어를 생성해보기
+- 약간의 시간이 소요됨을 확인할 수 있음
+
+```js
+// server.js
+
+app.use((req, res, next) => {
+  const start = Date.now(); // 현재 시간 start
+  console.log(`start : ${req.method} ${req.url}`);
+  next(); // 미들웨어 통과함
+
+  // 아래는 다시 한번 더 통과할 때 수행됨
+  const diffTime = Date.now() - start; // 최초 통과에서 다시 통과할 때까지 걸린 시간
+  console.log(`end : ${req.method} ${req.url} ${diffTime}ms`);
+});
+
+// 출력
+// start : GET /users
+// end : GET /users 7ms
+```
+
+- 위의 로그 시간은 전체 미들웨어를 통과하고 응답까지 걸린 시간을 측정한 것이 아닌 해당 단일 미들웨어를 1차 통과 후, 2차 통과하는데 걸리는 시간임을 주의
