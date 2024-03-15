@@ -223,11 +223,12 @@
 - [request - req.params()](Expressjs/Expressjs_request.md)
 - [response - res.json() vs res.send() vs res.end()](Expressjs/Expressjs_response.md)
 - [middleware](Expressjs/Expressjs_middleware.md)
-- [POST 요청 - express.json()](Expressjs/Expressjs_expressjson.md)
+- [POST 요청 - express.json()](Expressjs/Expressjs_express_json.md)
 - [MVC 패턴](Expressjs/Expressjs_MVC.md)
 - [Router](Expressjs/Expressjs_Router.md)
 - [RESTful API](Expressjs/Expressjs_RESTful_API.md)
 - [파일 전송하기 - res.sendFile()](Expressjs/Expressjs_sendFile.md)
+- [정적 파일 제공 - express.static()](Expressjs/Expressjs_express_static.md)
 
 </div>
 </details>
