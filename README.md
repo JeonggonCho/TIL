@@ -229,6 +229,7 @@
 - [RESTful API](Expressjs/Expressjs_RESTful_API.md)
 - [파일 전송하기 - res.sendFile()](Expressjs/Expressjs_sendFile.md)
 - [정적 파일 제공 - express.static()](Expressjs/Expressjs_express_static.md)
+- [Template Engine, Template Layout](Expressjs/Expressjs_Template_Engine_Layout.md)
 
 </div>
 </details>
@@ -287,8 +288,6 @@
 - [Ajax를 이용한 비동기 요청](Django/Django_asynchronous_with_Ajax.md)
 - [Fixtures](Django/Django_Fixtures.md)
 - [Query 향상시키기](Django/Django_Improve_query.md)
-- [REST API](Django/REST_API.md)
-- [HTTP requests (PUT/PATCH)](Django/PUT&PATCH.md)
 
 </div>
 </details>
@@ -531,6 +530,8 @@
 - [CS\_디자인 패턴과 프로그래밍 패러다임](Computer_Science/CS_Design_pattern_Programming_paradigm.md)
 - [CS_Cookie & Session](Computer_Science/CS_Cookie,Session.md)
 - [OS\_운영체제 개요](Computer_Science/OS_운영체제_개요.md)
+- [REST API](Computer_Science/REST_API.md)
+- [HTTP requests (PUT/PATCH)](Computer_Science/PUT&PATCH.md)
 
 </div>
 </details>
