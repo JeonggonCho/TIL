@@ -59,12 +59,11 @@ GET /albums/:album_id/assets
 
 1. 데이터 묘사
 
-```typescript
-type Project
-{
-    name: String
-    tagline: String
-    contributors: [User]
+```
+type Project {
+  name: String
+  tagline: String
+  contributors: [User]
 }
 ```
 
@@ -72,7 +71,7 @@ type Project
 
 2. 필요한 데이터 선별적으로 클라이언트에 요청
 
-```graphql
+```
 {
     project(name: "GraphQL") {
         tagline

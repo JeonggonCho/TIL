@@ -429,6 +429,7 @@
 - [GraphQL 소개](GraphQL/GraphQL_intro.md)
 - [Express GraphQL Server 생성](GraphQL/GraphQL_Express.md)
 - [GraphiQL](GraphQL/GraphQL_GraphiQL.md)
+- [Schema](GraphQL/GraphQL_schema.md)
 
 </div>
 </details>
