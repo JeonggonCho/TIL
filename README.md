@@ -426,7 +426,7 @@
 <summary><img src="./logo/graphql.png" width="20" height="20"> GraphQL</summary>
 <div markdown="1">
 
-- []()
+- [GraphQL 소개](GraphQL/GraphQL_intro.md)
 
 </div>
 </details>
