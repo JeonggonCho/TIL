@@ -431,6 +431,7 @@
 - [GraphiQL](GraphQL/GraphQL_GraphiQL.md)
 - [Schema](GraphQL/GraphQL_schema.md)
 - [모듈화 - graphql-tools](GraphQL/GraphQL_graphql_tools.md)
+- [Resolver](GraphQL/GraphQL_Resolver.md)
 
 </div>
 </details>
