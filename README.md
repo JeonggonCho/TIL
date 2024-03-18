@@ -1,4 +1,6 @@
-# 📝 배운 지식 정리
+# 📝 개발 지식 정리
+
+- 강의 내용을 정리한 개발 지식 가이드 라인
 
 <br>
 
@@ -434,7 +436,20 @@
 - [Resolver](GraphQL/GraphQL_Resolver.md)
 - [필터링](GraphQL/GraphQL_filtering.md)
 - [Mutation - CRUD](GraphQL/GraphQL_Mutation.md)
-- [Apollo 소개](GraphQL/GraphQL_Apollo_intro.md)
+
+</div>
+</details>
+
+<br>
+
+[//]: # (Apollo)
+
+<details>
+<summary><img src="./logo/apollo.png" width="24" height="24"> Apollo</summary>
+<div markdown="1">
+
+- [Apollo 소개](Apollo/Apollo_intro.md)
+- [Apollo Server](Apollo/Apollo_server.md)
 
 </div>
 </details>
