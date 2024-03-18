@@ -202,15 +202,25 @@ $ npm install @apollo/server cors body-parser -f
 ```js
 // server.js
 
+const express = require("express");
+const {makeExecutableSchema} = require("@graphql-tools/schema");
+const {loadFilesSync} = require("@graphql-tools/load-files");
+const path = require("path");
+
 // 추가된 새로운 모듈들 가져오기
 const {ApolloServer} = require('@apollo/server');
 const cors = require('cors');
 const {json} = require('body-parser');
 const {expressMiddleware} = require('@apollo/server/express4');
 
-// ...
+const loadedTypes = loadFilesSync("**/*", {
+  extensions: ["graphql"],
+});
+
+const loadedResolvers = loadFilesSync(path.join(__dirname, "**/*.resolvers.js"));
 
 async function startApolloServer() {
+  const PORT = 4000;
   const app = express();
 
   const schema = makeExecutableSchema({
@@ -234,7 +244,7 @@ async function startApolloServer() {
     }),
   );
 
-  app.listen(4000, () => {
+  app.listen(PORT, () => {
     console.log('Running a GraphQL API server...');
   })
 }
