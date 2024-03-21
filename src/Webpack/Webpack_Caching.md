@@ -59,14 +59,14 @@ module.exports = {
 <br/>
 
 <p align="center">
-    <img src="../assets/img/Webpack_caching_file.png" width="400" alt="Webpack_caching_file"><br/>
+    <img src="../../assets/img/Webpack_caching_file.png" width="400" alt="Webpack_caching_file"><br/>
     <span>dist 폴더에 해쉬 값이 부여된 파일 생성</span>
 </p>
 
 <br/>
 
 <p align="center">
-    <img src="../assets/img/Webpack_caching_import.png" width="700" alt="Webpack_caching_import"><br/>
+    <img src="../../assets/img/Webpack_caching_import.png" width="700" alt="Webpack_caching_import"><br/>
     <span>dist의 index.html에 해쉬값의 JS파일이 자동으로 import 됨</span>
 </p>
 
@@ -84,7 +84,7 @@ module.exports = {
 - dist/index.html 파일에도 새로운 JS 빌드 파일이 import됨
 
 <p align="center">
-    <img src="../assets/img/Webpack_caching_edit_build.png" width="400" alt="Webpack_caching_edit_build"><br/>
+    <img src="../../assets/img/Webpack_caching_edit_build.png" width="400" alt="Webpack_caching_edit_build"><br/>
     <span>src/index.js 소스코드 수정 후 다시 빌드 시, 새로운 파일 생성</span>
 </p>
 

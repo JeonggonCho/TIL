@@ -20,11 +20,12 @@
 
 ## 1. Node.js
 
--   기존의 JavaScript는 웹 브라우저에서 요소들의 동적인 기능을 위해 개발되어 `브라우저에서만` 사용이 가능하였다. 하지만 JavaScript를 구동하는 엔진을 사용하여 `브라우저가 아닌 로컬, 서버 등 다양한 영역`에서 사용할 수 있도록 확장성을 부여하였다. 이를 Node.js라고 한다.
--   크로스플랫폼 오픈소스 JavaScript 런타임 환경
--   즉, `V8 JavaScript 엔진`으로 구동되며, 웹 브라우저 바깥에서 자바스크립트 코드를 실행 가능
+- 기존의 JavaScript는 웹 브라우저에서 요소들의 동적인 기능을 위해 개발되어 `브라우저에서만` 사용이 가능하였다. 하지만 JavaScript를 구동하는 엔진을
+  사용하여 `브라우저가 아닌 로컬, 서버 등 다양한 영역`에서 사용할 수 있도록 확장성을 부여하였다. 이를 Node.js라고 한다.
+- 크로스플랫폼 오픈소스 JavaScript 런타임 환경
+- 즉, `V8 JavaScript 엔진`으로 구동되며, 웹 브라우저 바깥에서 자바스크립트 코드를 실행 가능
 
-![nodejs 정의](../assets/img/Nodejs_description.png)
+![nodejs 정의](../../assets/img/Nodejs_description.png)
 
 <공식 사이트 - Node.js 정의>
 
@@ -150,7 +151,7 @@ $ .exit
 
 ### 6-1. 브라우저와 Node.js 모두 사용하는 API
 
--  console API
+- console API
 
 <br/>
 

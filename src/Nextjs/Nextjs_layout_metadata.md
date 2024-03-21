@@ -25,7 +25,7 @@
 
 ### 1-1. layout의 동작
 
-![layout](../assets/img/Nextjs_layout.png)
+![layout](../../assets/img/Nextjs_layout.png)
 
 - url 요청을 받으면 Next.js는 제일 먼저 layout.tsx 파일을 조회함
 - 해당 모듈로 구조화함
@@ -86,7 +86,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
 
 ### 1-4. route groups
 
-![route groups](../assets/img/Nextjs_route_group.png)
+![route groups](../../assets/img/Nextjs_route_group.png)
 
 <route groups인 (home) 폴더 생성>
 

@@ -74,13 +74,13 @@ export default function Page() {
 
 <br>
 
-![data_fetch](../assets/img/Nextjs_data_fetch.gif)
+![data_fetch](../../assets/img/Nextjs_data_fetch.gif)
 
 <Mount시, Data Fetch하는 예시>
 
 <br>
 
-![url 비보호](../assets/img/Nextjs_data_fetch_url.png)
+![url 비보호](../../assets/img/Nextjs_data_fetch_url.png)
 
 - 이러한 Data Fetch의 경우, `url이 보호되지 않음`
 
@@ -151,7 +151,7 @@ export default async function HomePage() {
 
 <br>
 
-![영화 목록 링크 생성](../assets/img/Nextjs_link.gif)
+![영화 목록 링크 생성](../../assets/img/Nextjs_link.gif)
 
 <영화 목록 링크 생성>
 
@@ -192,7 +192,7 @@ export default async function MovieDetail({params: {id}}: { params: { id: string
 
 <br>
 
-![영화 디테일 페이지](../assets/img/Nextjs_movie_detail.gif)
+![영화 디테일 페이지](../../assets/img/Nextjs_movie_detail.gif)
 
 <영화 디테일 페이지>
 

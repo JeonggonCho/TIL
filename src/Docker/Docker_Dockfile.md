@@ -33,7 +33,7 @@
 - 베이스 이미지 : 그 중 이미지의 `기반이 되는 부분`
 - 레이어 : 중간 단계의 이미지
 
-![베이스 이미지, 레이어](../assets/img/docker_base_image.png)
+![베이스 이미지, 레이어](../../assets/img/docker_base_image.png)
 
 <이미지, 베이스 이미지, 레이어 관계>
 

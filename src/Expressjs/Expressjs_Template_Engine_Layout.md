@@ -34,7 +34,7 @@
 ### 1-2. Template Engine 역할
 
 <p align="center">
-    <img src="../assets/img/Expressjs_Template_Engine.png" width="600" alt="Expressjs_Template_Engine"><br/>
+    <img src="../../assets/img/Expressjs_Template_Engine.png" width="600" alt="Expressjs_Template_Engine"><br/>
     <span>Template Engine의 역할</span>
 </p>
 

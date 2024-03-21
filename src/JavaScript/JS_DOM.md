@@ -44,42 +44,42 @@
 
 ### 2-1. DOM
 
--   웹 페이지(Document)를 구조화된 객체로 제공하며, `프로그래밍 언어가 웹 페이지를 사용할 수 있게` 연결시킴
+- 웹 페이지(Document)를 구조화된 객체로 제공하며, `프로그래밍 언어가 웹 페이지를 사용할 수 있게` 연결시킴
 
 <br>
 
 ### 2-2. 브라우저가 웹 페이지를 불러오는 과정
 
-![DOM 트리](../assets/img/React_DOM.png)
+![DOM 트리](../../assets/img/React_DOM.png)
 
 <DOM 트리>
 
--   문서(Document)는 웹 브라우저를 통해 해석되어 화면에 나타남
--   `DOM`은 이러한 `문서를 조작하는 방법을 제공하는 API`임
--   브라우저는 HTML 문서를 해석하여 `DOM tree`라는 객체의 트리로 구조화함
--   DOM에서 모든 요소, 속성, 텍스트는 하나의 객체이며, 모두 document 객체의 자식임
--   웹 페이지를 동적으로 만드는 것은 웹 페이지를 조작(CRUD)하는 것과 같음
-    -   조작하는 순서는 다음과 같음
-    -   조작하고자 하는 요소를 `선택` 또는 `탐색`
-    -   선택된 요소의 컨텐츠 또는 속성을 `조작`
+- 문서(Document)는 웹 브라우저를 통해 해석되어 화면에 나타남
+- `DOM`은 이러한 `문서를 조작하는 방법을 제공하는 API`임
+- 브라우저는 HTML 문서를 해석하여 `DOM tree`라는 객체의 트리로 구조화함
+- DOM에서 모든 요소, 속성, 텍스트는 하나의 객체이며, 모두 document 객체의 자식임
+- 웹 페이지를 동적으로 만드는 것은 웹 페이지를 조작(CRUD)하는 것과 같음
+    - 조작하는 순서는 다음과 같음
+    - 조작하고자 하는 요소를 `선택` 또는 `탐색`
+    - 선택된 요소의 컨텐츠 또는 속성을 `조작`
 
 <br>
 
 ### 2-3. 'document' object
 
--   웹 페이지 객체
--   DOM tree의 진입점
--   페이지를 구성하는 모든 객체 요소를 포함
+- 웹 페이지 객체
+- DOM tree의 진입점
+- 페이지를 구성하는 모든 객체 요소를 포함
 
 <br>
 
 ### - 'document' 객체 접근 예시
 
--   HTML의 `<title>`값 변경하기
+- HTML의 `<title>`값 변경하기
 
-![title 변경](../assets/img/JS_DOM_title.png)
+![title 변경](../../assets/img/JS_DOM_title.png)
 
--   `document.title`의 점 표기법으로 document 객체의 title 값에 접근하여 수정
+- `document.title`의 점 표기법으로 document 객체의 title 값에 접근하여 수정
 
 <br>
 <br>
@@ -88,15 +88,15 @@
 
 ### 3-1. 요소 선택
 
--   요소 하나 선택 : `document.querySelector(selector)`
+- 요소 하나 선택 : `document.querySelector(selector)`
 
-    -   제공한 선택자와 일치하는 element 한 개를 선택
-    -   제공한 CSS selector를 만족하는 첫 번째 element 객체를 반환함(없을 경우, null 반환)
+    - 제공한 선택자와 일치하는 element 한 개를 선택
+    - 제공한 CSS selector를 만족하는 첫 번째 element 객체를 반환함(없을 경우, null 반환)
 
--   요소 여러 개 선택 : `document.querySelectorAll(selector)`
-    -   제공한 선택자와 일치하는 여러 element를 선택
-    -   매칭할 하나 이상의 선택자를 포함하는 유효한 CSS selector를 인자(문자열)로 받음
-    -   제공한 CSS selector를 만족하는 NodeList를 반환
+- 요소 여러 개 선택 : `document.querySelectorAll(selector)`
+    - 제공한 선택자와 일치하는 여러 element를 선택
+    - 매칭할 하나 이상의 선택자를 포함하는 유효한 CSS selector를 인자(문자열)로 받음
+    - 제공한 CSS selector를 만족하는 NodeList를 반환
 
 <br>
 
@@ -122,7 +122,7 @@
 </body>
 ```
 
-![DOM 선택 예시 결과](../assets/img/JS_DOM_selector_example.png)
+![DOM 선택 예시 결과](../../assets/img/JS_DOM_selector_example.png)
 
 <DOM 선택 예시 결과>
 
@@ -133,10 +133,10 @@
 
 ### 4-1. 속성(attribute) 조작
 
--   클래스 속성 조작('classList' property) : 요소의 클래스 목록을 `DOMTokenList(유사 배열)` 형태로 반환
--   `add()`와 `remove()` 메서드를 사용해 지정한 클래스 값을 `추가` 혹은 `제거`
-    -   `element.classList.add()` : 지정한 클래스 값을 추가
-    -   `element.classList.remove()` : 지정한 클래스 값을 제거
+- 클래스 속성 조작('classList' property) : 요소의 클래스 목록을 `DOMTokenList(유사 배열)` 형태로 반환
+- `add()`와 `remove()` 메서드를 사용해 지정한 클래스 값을 `추가` 혹은 `제거`
+    - `element.classList.add()` : 지정한 클래스 값을 추가
+    - `element.classList.remove()` : 지정한 클래스 값을 제거
 
 <br>
 
@@ -169,7 +169,7 @@
 </body>
 ```
 
-![클래스 리스트 예시](../assets/img/JS_DOM_classList_example.png)
+![클래스 리스트 예시](../../assets/img/JS_DOM_classList_example.png)
 
 <클래스 리스트 예시 결과>
 
@@ -177,17 +177,17 @@
 
 ### 4-2. 일반 속성 조작
 
--   조회하기 : `Element.getAttribute(selector)`
+- 조회하기 : `Element.getAttribute(selector)`
 
-    -   해당 요소에 지정된 값을 반환
+    - 해당 요소에 지정된 값을 반환
 
--   설정(수정)하기 : `Element.setAttribute(selector, 수정할 값)`
+- 설정(수정)하기 : `Element.setAttribute(selector, 수정할 값)`
 
-    -   지정된 요소의 속성 값을 설정
-    -   속성이 이미 있으면 값이 업데이트 / 없으면 지정된 이름과 값으로 새로운 속성 추가
+    - 지정된 요소의 속성 값을 설정
+    - 속성이 이미 있으면 값이 업데이트 / 없으면 지정된 이름과 값으로 새로운 속성 추가
 
--   삭제하기 : `Element.removeAttribute(selector)`
-    -   요소에서 지정된 이름을 가진 속성 제거
+- 삭제하기 : `Element.removeAttribute(selector)`
+    - 요소에서 지정된 이름을 가진 속성 제거
 
 <br>
 
@@ -223,7 +223,7 @@
 </body>
 ```
 
-![일반 속성 조작 예시 결과](../assets/img/JS_DOM_일반속성조작_example.png)
+![일반 속성 조작 예시 결과](../../assets/img/JS_DOM_일반속성조작_example.png)
 
 <일반 속성 조작 예시 결과>
 
@@ -231,9 +231,9 @@
 
 ### 4-3. 'textContent' property 조작
 
--   HTML 컨텐츠 조작
--   요소의 텍스트 컨텐츠를 표현
-    -   ex) `<h1>Heading</h1>`에서 `Heading`에 해당하는 부분
+- HTML 컨텐츠 조작
+- 요소의 텍스트 컨텐츠를 표현
+    - ex) `<h1>Heading</h1>`에서 `Heading`에 해당하는 부분
 
 <br>
 
@@ -260,7 +260,7 @@
 </body>
 ```
 
-![textContent 예시](../assets/img/JS_textContent_example.png)
+![textContent 예시](../../assets/img/JS_textContent_example.png)
 
 <텍스트 컨텐츠 예시 결과>
 
@@ -268,9 +268,9 @@
 
 ### 4-4. DOM 조작(생성/추가/삭제)
 
--   생성하기 : `.createElement()`
--   추가하기 : `.appendChild()`
--   삭제하기 : `.removeChild()`
+- 생성하기 : `.createElement()`
+- 추가하기 : `.appendChild()`
+- 삭제하기 : `.removeChild()`
 
 <br>
 
@@ -299,8 +299,8 @@
 
 ### 4-5. 'style' property 조작
 
--   해당 요소의 모든 `스타일 속성 목록`을 포함하는 속성
--   `.style.(스타일)`로 접근 가능
+- 해당 요소의 모든 `스타일 속성 목록`을 포함하는 속성
+- `.style.(스타일)`로 접근 가능
 
 <br>
 
@@ -321,7 +321,7 @@
 </body>
 ```
 
-![스타일 속성 예시](../assets/img/JS_DOM_style_example.png)
+![스타일 속성 예시](../../assets/img/JS_DOM_style_example.png)
 
 <스타일 속성 예시 결과>
 
@@ -346,20 +346,20 @@
 
 ### 5-1. 요소별 DOM property 확인 Tip
 
-![개발자도구](../assets/img/JS_DOM_devtools.png)
+![개발자도구](../../assets/img/JS_DOM_devtools.png)
 
--   `개발자 도구 - Elements - Properties`에서 해당 요소의 모든 DOM property 확인 가능
+- `개발자 도구 - Elements - Properties`에서 해당 요소의 모든 DOM property 확인 가능
 
 <br>
 
 ### 5-2. appendChild()의 특성
 
-![appendChild](../assets/img/JS_DOM_appendChild.png)
+![appendChild](../../assets/img/JS_DOM_appendChild.png)
 
--   이미 문서에 `존재하는 요소`를 다른 요소의 자식으로 삽입하는 경우, 복사되는 것이 아닌 `위치를 이동시킴`
+- 이미 문서에 `존재하는 요소`를 다른 요소의 자식으로 삽입하는 경우, 복사되는 것이 아닌 `위치를 이동시킴`
 
 <br>
 
 ### 5-3. Parsing(파싱)
 
--   브라우저가 문자열을 읽고 해석하여 DOM tree를 생성하는 과정을 `파싱`이라고 함
+- 브라우저가 문자열을 읽고 해석하여 DOM tree를 생성하는 과정을 `파싱`이라고 함

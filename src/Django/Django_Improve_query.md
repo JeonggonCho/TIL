@@ -84,7 +84,7 @@ def index(request):
 
 <br>
 
-![annotate로 향상된 쿼리](../assets/img/django_annotate.png)
+![annotate로 향상된 쿼리](../../assets/img/django_annotate.png)
 
 <annotate로 향상된 Query>
 
@@ -136,7 +136,7 @@ def index(request):
 
 <br>
 
-![select_related로 향상된 쿼리](../assets/img/django_select_related.png)
+![select_related로 향상된 쿼리](../../assets/img/django_select_related.png)
 
 <select_related로 향상된 Query>
 
@@ -192,7 +192,7 @@ def index(request):
 
 <br>
 
-![prefetch_related로 향상된 쿼리](../assets/img/django_prefetch_related.png)
+![prefetch_related로 향상된 쿼리](../../assets/img/django_prefetch_related.png)
 
 <prefetch_related로 향상된 Query>
 
@@ -241,6 +241,6 @@ def index(request):
 
 <br>
 
-![select_related & prefetch_related로 향상된 쿼리](../assets/img/django_select_prefetch_related.png)
+![select_related & prefetch_related로 향상된 쿼리](../../assets/img/django_select_prefetch_related.png)
 
 <select_related & prefetch_related로 향상된 Query>

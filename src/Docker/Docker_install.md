@@ -14,7 +14,7 @@ Docker 설치
 2. Get started 이동
 3. Windows 버전 설치
 
-![윈도우 도커 프로그램](../assets/img/docker_program.png)
+![윈도우 도커 프로그램](../../assets/img/docker_program.png)
 
 <설치된 윈도우 도커 프로그램 실행>
 
@@ -27,6 +27,6 @@ Docker 설치
 2. Get started 이동
 3. Apple Mac 버전 설치
 
-![mac 도커 프로그램](../assets/img/docker_program_mac.png)
+![mac 도커 프로그램](../../assets/img/docker_program_mac.png)
 
 <설치된 Mac 도커 프로그램 실행>

@@ -49,6 +49,6 @@ http://localhost:4000/graphql
 ```
 
 <p align="center">
-    <img src="../assets/img/GraphQL_graphiql.png" width="700" alt="GraphQL_graphiql"><br/>
+    <img src="../../assets/img/GraphQL_graphiql.png" width="700" alt="GraphQL_graphiql"><br/>
     <span>브라우저에서 URL을 통해 GraphiQL 실행</span>
 </p>

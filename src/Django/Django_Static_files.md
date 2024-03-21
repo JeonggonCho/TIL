@@ -63,7 +63,7 @@
 
 - `articles/static/articles/` 경로에 이미지 파일 배치
 
-![정적 파일 경로 구조](../assets/img/django_static_folder_structure.png)
+![정적 파일 경로 구조](../../assets/img/django_static_folder_structure.png)
 
 <정적 파일 경로 구조(폴더 구조)>
 
@@ -96,7 +96,7 @@
 STATIC_URL = '/static/'
 ```
 
-![static_url](../assets/img/django_static_url.png)
+![static_url](../../assets/img/django_static_url.png)
 
 <STATIC_URL 경로>
 
@@ -115,7 +115,7 @@ STATICFILES_DIR = [
 ]
 ```
 
-![추가 경로의 static files](../assets/img/django_static_other_directory.png)
+![추가 경로의 static files](../../assets/img/django_static_other_directory.png)
 
 <추가 경로의 static files>
 
@@ -301,7 +301,7 @@ def update(request, pk):
 
 - 파일 자체가 DB에 저장되는 것이 아닌, `경로`가 저장됨
 
-![이미지 업로드 결과](../assets/img/django_image_upload.png)
+![이미지 업로드 결과](../../assets/img/django_image_upload.png)
 
 <이미지 업로드 시, DB>
 

@@ -115,7 +115,7 @@ module.exports = {
 <br/>
 
 <p align="center">
-    <img src="../assets/img/Webpack_resource_asset.png" width="300" alt="Webpack_resource_asset"><br/>
+    <img src="../../assets/img/Webpack_resource_asset.png" width="300" alt="Webpack_resource_asset"><br/>
     <span>dist 폴더에 번들된 이미지 파일</span>
 </p>
 
@@ -153,6 +153,6 @@ module.exports = {
 <br/>
 
 <p align="center">
-    <img src="../assets/img/Webpack_resource_asset_name.png" width="300" alt="Webpack_resource_asset_name"><br/>
+    <img src="../../assets/img/Webpack_resource_asset_name.png" width="300" alt="Webpack_resource_asset_name"><br/>
     <span>dist 폴더에 번들된 이미지 파일 이름 원래대로 나오게 하기</span>
 </p>

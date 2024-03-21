@@ -14,7 +14,7 @@
 
 ## 1. 도커로 어플을 실행하기 위해서 필요한 것
 
-![도커로 어플 실행하기](../assets/img/docker_running_app.png)
+![도커로 어플 실행하기](../../assets/img/docker_running_app.png)
 
 - Dockerfile을 한 가지만 생성하였지만, 실제로는 Dockerfile을 `개발 단계`를 위한 용도와 `실제 배포 후`를 위한 용도를 분리하여 따로 작성하는 것이 좋음
 - `Dockerfile.dev` : 개발 단계를 위한 용도
@@ -85,6 +85,6 @@ $ docker run -p 3000:3000 <이미지 이름>
 
 <br/>
 
-![포트 맵핑](../assets/img/docker_port_mapping.png)
+![포트 맵핑](../../assets/img/docker_port_mapping.png)
 
 <포트 맵핑>

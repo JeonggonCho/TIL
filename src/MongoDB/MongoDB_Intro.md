@@ -61,7 +61,7 @@
 - 그 중 관계형(RDBMS, Relational DBMS)를 주로 사용하고 있음
 - 대표적인 RDBMS는 Oracle, MySQL, PostgreSQL 등이 있음
 
-![RDBMS](../assets/img/MongoDB_RDBMS.png)
+![RDBMS](../../assets/img/MongoDB_RDBMS.png)
 
 <RDBMS 모습>
 
@@ -97,7 +97,7 @@ Database(ex. Shop) --> Collections(ex. Users, Menus, Orders) --> Documents(ex. {
 
 <br/>
 
-![MongoDB 구조와 Schemaless](../assets/img/MongoDB_structure_schemaless.png)
+![MongoDB 구조와 Schemaless](../../assets/img/MongoDB_structure_schemaless.png)
 
 <MongoDB 구조와 Schemaless>
 
@@ -122,9 +122,9 @@ Database(ex. Shop) --> Collections(ex. Users, Menus, Orders) --> Documents(ex. {
 ```
 
 - 값으로 `숫자`, `문자`, `참-거짓`, `중첩 데이터`, `배열` 등을 가질 수 있음
-  - 중첩 데이터를 통해 데이터 사이의 `복잡한 관계`를 `하나의 동일한 문서`에 저장할 수 있음
-  - SQL에서는 A테이블과 B테이블의 데이터를 찾기 위해서는 복합적인 JOIN을 작성해야하는데 MongoDB는 문서 하나에 가져올 수 있어서 효율적임
-  - 데이터를 논리적으로 저장할 수 있음
+    - 중첩 데이터를 통해 데이터 사이의 `복잡한 관계`를 `하나의 동일한 문서`에 저장할 수 있음
+    - SQL에서는 A테이블과 B테이블의 데이터를 찾기 위해서는 복합적인 JOIN을 작성해야하는데 MongoDB는 문서 하나에 가져올 수 있어서 효율적임
+    - 데이터를 논리적으로 저장할 수 있음
 - 데이터 형식을 `BSON`이라고도 하는데 이는 MongoDB가 JSON 데이터를 `바이너리 버전`으로 변환하기 때문
 
 <br>
@@ -137,7 +137,6 @@ Database(ex. Shop) --> Collections(ex. Users, Menus, Orders) --> Documents(ex. {
 - MongoDB는 `NoSQL` 솔루션임
 - MongoDB와 CouchDB 간에도 사용하는 쿼리 언어가 다르지만 SQL이 아니기에 NoSQL로 묶임
 
-
 | 분류      | 특징                                                                                 |
 |---------|------------------------------------------------------------------------------------|
 | SQL     | 데이터를 `정규화(normalization)`해서 저장하고 모든 테이블이 `스키마`를 가지고 있으며 여러 테이블에 데이터를 배포하고 `관계를 사용` |
@@ -145,8 +144,8 @@ Database(ex. Shop) --> Collections(ex. Users, Menus, Orders) --> Documents(ex. {
 
 - `관계(relations)`도 존재
 - MongoDB는 컬랙션(테이블)이 적음
-  - 대신 데이터를 함께 저장
-  - 응용 프로그램이 데이터를 가져올 경우, 컬랙션1과 컬랙션2를 `병합할 필요가 없음`
+    - 대신 데이터를 함께 저장
+    - 응용 프로그램이 데이터를 가져올 경우, 컬랙션1과 컬랙션2를 `병합할 필요가 없음`
 
 <br/>
 
@@ -188,24 +187,24 @@ Database(ex. Shop) --> Collections(ex. Users, Menus, Orders) --> Documents(ex. {
 ### - ACID vs BASE
 
 - ACID : 데이터가 일관되고 안정적임
-  - `Atomic` : 원자성으로 모든 작업이 성공하거나 롤백됨
-  - `Consistency` : 일관성으로 각 트랜잭션은 DB가 유효한 상태에서 다른 상태로 이동
-  - `Isolation` : 격리로 트랜잭션 간에 간섭 없음
-  - `Durability` : 지속성으로 트랜잭션 결과는 실패가 있더라도 영구적임
+    - `Atomic` : 원자성으로 모든 작업이 성공하거나 롤백됨
+    - `Consistency` : 일관성으로 각 트랜잭션은 DB가 유효한 상태에서 다른 상태로 이동
+    - `Isolation` : 격리로 트랜잭션 간에 간섭 없음
+    - `Durability` : 지속성으로 트랜잭션 결과는 실패가 있더라도 영구적임
 
 <br/>
 
 - BASE : 복제된 데이터의 일관성보다 유동적이며, 가용성을 선호
-  - `Basically Available` : 모든 사용자가 쿼리 수행 가능, 오류 발생 시, 완전히 중단되지 않음
-  - `Soft State` : 데이터 베이스 상태는 시간이 지남에 따라 변경될 수 있음
-  - `Eventually Consistent` : 작동하고 충분히 지나면 데이터 베이스가 일관성을 갖게 됨
+    - `Basically Available` : 모든 사용자가 쿼리 수행 가능, 오류 발생 시, 완전히 중단되지 않음
+    - `Soft State` : 데이터 베이스 상태는 시간이 지남에 따라 변경될 수 있음
+    - `Eventually Consistent` : 작동하고 충분히 지나면 데이터 베이스가 일관성을 갖게 됨
 
 <br>
 <br>
 
 ## 3. MongoDB Ecosystem
 
-![MongoDB ecosystem](../assets/img/MongoDB_ecosystem.png)
+![MongoDB ecosystem](../../assets/img/MongoDB_ecosystem.png)
 
 <MongoDB에서 제공하는 서비스>
 
@@ -213,7 +212,7 @@ Database(ex. Shop) --> Collections(ex. Users, Menus, Orders) --> Documents(ex. {
 
 1. `MongoDB 데이터 베이스` : 핵심 기능인 동시에 핵심 주제
 2. `Self-Managed / Enterprise` : 개인용 / 기업용 솔루션
-   - `CloudManager / OpsManager` : 데이터 베이스 관리 도구
+    - `CloudManager / OpsManager` : 데이터 베이스 관리 도구
 
 3. `Atlas(Cloud)` : 클라우드 솔루션
 4. `Mobile` : 모바일 솔루션으로 모바일에 MongoDB를 직접 설치해 데이터를 저장하고 인터넷 없이 작업가능

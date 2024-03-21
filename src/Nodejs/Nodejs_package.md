@@ -293,13 +293,13 @@ $ npm start
 - 사이트 [npmjs.com](https://www.npmjs.com/)에는 방대한 Node 모듈들이 있으며, 대부분 `오픈 소스 패키지`임
 - 예시로 'randomcolor' 검색하여 선택
 
-![search](../assets/img/Nodejs_package_search.png)
+![search](../../assets/img/Nodejs_package_search.png)
 
 <br/>
 
 ### 3-2. 설치하기
 
-![install](../assets/img/Nodejs_package_install.png)
+![install](../../assets/img/Nodejs_package_install.png)
 
 ```bash
 # 터미널에서 설치 명령어 입력
@@ -311,7 +311,7 @@ $ npm i randomcolor
 
 <br/>
 
-![설치된 것 확인](../assets/img/Nodejs_package_install_result.png)
+![설치된 것 확인](../../assets/img/Nodejs_package_install_result.png)
 
 - 1개의 패키지 추가, 2개의 패키지가 조정되었다는 메시지 확인
 
@@ -319,7 +319,7 @@ $ npm i randomcolor
 
 ### 3-3. Dependency 의존성
 
-![dependency](../assets/img/Nodejs_package_dependency.png)
+![dependency](../../assets/img/Nodejs_package_dependency.png)
 
 - 이전과 달리 `dependecies`가 생기고 안에 `randomcolor 패키지`가 설치되어있는 것을 확인 할 수 있음
 - 버전이 명시되어있는데 버전의 `'^'` 문자의 의미는 `이 이상의 버전으로 설치`됨을 의미함
@@ -328,7 +328,7 @@ $ npm i randomcolor
 
 ### 3-4. node_modules
 
-![node_modules](../assets/img/Nodejs_package_node_modules.png)
+![node_modules](../../assets/img/Nodejs_package_node_modules.png)
 
 - `node_modules`라는 `라이브러리 루트폴더`가 생성됨
 - 내부에 현재 설치된 외부 패키지들의 폴더가 위치함
@@ -338,7 +338,7 @@ $ npm i randomcolor
 
 ### 3-5. package-lock.json
 
-![package-lock.json](../assets/img/Nodejs_package-lock.png)
+![package-lock.json](../../assets/img/Nodejs_package-lock.png)
 
 - 파일이 생성되는 시점의 `의존성 트리(node_modules)에 대한 정보`를 가지고 있는 파일
 - 기존의 package.json과 유사하나 설치된 외부 패키지들의 정보를 `정확하게 명시`해놓음
@@ -355,7 +355,7 @@ $ npm i randomcolor
 
 ### 3-6. 외부 패키지 가져오기
 
-![외부 패키지 가져오기](../assets/img/Nodejs_package_require.png)
+![외부 패키지 가져오기](../../assets/img/Nodejs_package_require.png)
 
 - `Common JS` 방식을 사용하여 `require('경로');`로 entry point인 `index.js`로 모듈 가져오기
 - `npm i`를 통해 설치한 외부 패키지는 `실제 경로를 명시할 필요없이` 가져올 수 있음
@@ -364,7 +364,7 @@ $ npm i randomcolor
 
 ### 3-7. 외부 패키지 실행하기
 
-![외부 패키지 실행하기](../assets/img/Nodejs_package_npm_start.png)
+![외부 패키지 실행하기](../../assets/img/Nodejs_package_npm_start.png)
 
 - `npm start` 실행
 - randomcolor의 기능인 랜덤의 색상을 헥스코드로 추천해주는 것을 볼 수 있음

@@ -195,13 +195,13 @@ Running a GraphQL API server at http://localhost:4000/graphql
 - 메서드는 POST로 설정
 
 <p align="center">
-    <img src="../assets/img/GraphQL_body_json.png" width="700" alt="GraphQL_body_json"><br/>
+    <img src="../../assets/img/GraphQL_body_json.png" width="700" alt="GraphQL_body_json"><br/>
     <span>body를 JSON 형식으로 요청 및 응답</span>
 </p>
 
 <br/>
 
 <p align="center">
-    <img src="../assets/img/GraphQL_body_graphql.png" width="700" alt="GraphQL_body_graphql"><br/>
+    <img src="../../assets/img/GraphQL_body_graphql.png" width="700" alt="GraphQL_body_graphql"><br/>
     <span>body를 GraphQL 형식으로 요청 및 응답</span>
 </p>

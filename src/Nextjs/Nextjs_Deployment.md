@@ -55,15 +55,15 @@
 
 1. `Add New` -> `Project` 클릭
 
-![add new](../assets/img/Nextjs_vercel_add_project.png)
+![add new](../../assets/img/Nextjs_vercel_add_project.png)
 
 2. 배포할 프로젝트의 레포지토리 선택
 
-![select repo](../assets/img/Nextjs_vercel_import_repo.png)
+![select repo](../../assets/img/Nextjs_vercel_import_repo.png)
 
 3. 프로젝트 이름 작성, 루트 디렉토리('./')는 수정하면 안 됨
 
-![setting](../assets/img/Nextjs_vercel_project_setting.png)
+![setting](../../assets/img/Nextjs_vercel_project_setting.png)
 
 4. `Build and Output Settings`
     - package.json의 스크립트에서 작성한 `npm run build`와 `npm run start` 자동으로 실행 될 것임

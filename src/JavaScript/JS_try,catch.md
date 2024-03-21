@@ -94,7 +94,7 @@ try {
 
 ### 1-5. 예외 처리의 흐름
 
-![예외처리 흐름도](../assets/img/JS_try,catch,finally,throw.png)
+![예외처리 흐름도](../../assets/img/JS_try,catch,finally,throw.png)
 
 - try 블록에서 예외가 발생하는 그 즉시, 프로그램의 제어는 try 블록을 빠져나와 catch로 이동
 - catch 블록이 실행되면 예외처리 로직을 수행하고 try-catch 구문 다음으로 이동함

@@ -24,13 +24,14 @@
 ```bash
 $ docker create <이미지 이름>
 ```
+
 <br/>
 
 ### - 이미지와 컨테이너 전환
 
 - 이미지를 이용하여 컨테이너를 생성하는 것이 가능하며 컨테이너를 이용하여 이미지를 생성하는 것이 가능함
 
-![이미지 컨테이너 전환](../assets/img/docker_image_container.png)
+![이미지 컨테이너 전환](../../assets/img/docker_image_container.png)
 
 <도커 이미지와 컨테이너 전환>
 

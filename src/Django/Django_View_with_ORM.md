@@ -32,7 +32,7 @@
 
 ### 1-1. app URLs 분할 및 연결
 
--   프로젝트 폴더에서 articles 앱으로 articles.urls 분배
+- 프로젝트 폴더에서 articles 앱으로 articles.urls 분배
 
 ```python
 # crud/urls.py
@@ -46,7 +46,7 @@ urlpatterns = [
 ]
 ```
 
--   articles 앱에서 url 받아 연결
+- articles 앱에서 url 받아 연결
 
 ```python
 # articles/urls.py
@@ -118,9 +118,9 @@ def index(request):
     return render(request, 'articles/index.html', context)
 ```
 
--   `models`에서 Article 모델을 가져오고, QuerySet API 메서드 `.all()`을 사용하여 모든 데이터 객체를 가져와 articles 변수에 담기
--   `context` 객체를 생성하여 articles 키에 데이터 객체를 담은 변수 articles를 값으로 받기
--   렌더링하는 템플릿 articles/index.html에 context 보내기
+- `models`에서 Article 모델을 가져오고, QuerySet API 메서드 `.all()`을 사용하여 모든 데이터 객체를 가져와 articles 변수에 담기
+- `context` 객체를 생성하여 articles 키에 데이터 객체를 담은 변수 articles를 값으로 받기
+- 렌더링하는 템플릿 articles/index.html에 context 보내기
 
 <br>
 
@@ -141,9 +141,9 @@ def index(request):
 {% endfor%}
 ```
 
--   DTL 태그 for 구문을 사용하여 articles 객체를 순회하고 점표기법으로 각 데이터의 번호, 제목, 내용에 접근하여 렌더링
--   url 태그로 각 글의 제목을 누르면 상세페이지로 이동
-    -   detail 함수에서 사용할 pk인자를 article.pk로 담아 보내기
+- DTL 태그 for 구문을 사용하여 articles 객체를 순회하고 점표기법으로 각 데이터의 번호, 제목, 내용에 접근하여 렌더링
+- url 태그로 각 글의 제목을 누르면 상세페이지로 이동
+    - detail 함수에서 사용할 pk인자를 article.pk로 담아 보내기
 
 <br>
 
@@ -177,11 +177,11 @@ def detail(request, pk):
     return render(request, 'articles/detail.html', context)
 ```
 
--   models에서 Article 모델을 가져와 QuerySet API 메서드 중 `.get()` 메서드를 사용한다.
--   함수의 인자로 `request 요청`과 함께 어떤 게시글을 조회할 지, 찾기위한 Unique 값인 `pk(primary key)`를 받는다.
--   따라서 get에서 pk값이 인자로 보낸 pk와 같은 모델 데이터를 article 변수에 담기
--   context 객체에 article 키에 변수 article을 값으로 지정
--   detail.html 렌더링 페이지에 context 보내기
+- models에서 Article 모델을 가져와 QuerySet API 메서드 중 `.get()` 메서드를 사용한다.
+- 함수의 인자로 `request 요청`과 함께 어떤 게시글을 조회할 지, 찾기위한 Unique 값인 `pk(primary key)`를 받는다.
+- 따라서 get에서 pk값이 인자로 보낸 pk와 같은 모델 데이터를 article 변수에 담기
+- context 객체에 article 키에 변수 article을 값으로 지정
+- detail.html 렌더링 페이지에 context 보내기
 
 <br>
 
@@ -201,7 +201,7 @@ def detail(request, pk):
 <a href="{% url 'articles:index' %}">[back]</a>
 ```
 
--   점표기법을 통해 접근하여 렌더링한다.
+- 점표기법을 통해 접근하여 렌더링한다.
 
 <br>
 <br>
@@ -210,9 +210,9 @@ def detail(request, pk):
 
 ### 3-1. 생성 view 함수 로직
 
--   2가지의 view 함수가 필요하다.
-    -   `입력을 받는` 페이지를 렌더링 `new`
-    -   `데이터를 DB에 저장`하는 `create`
+- 2가지의 view 함수가 필요하다.
+    - `입력을 받는` 페이지를 렌더링 `new`
+    - `데이터를 DB에 저장`하는 `create`
 
 <br>
 
@@ -240,7 +240,7 @@ def new(request):
     return render(request, 'articles/new.html')
 ```
 
--   articles의 new.html만 렌더링하면 되기에 따로 context를 생성하거나 보내지 않음
+- articles의 new.html만 렌더링하면 되기에 따로 context를 생성하거나 보내지 않음
 
 <br>
 
@@ -319,23 +319,23 @@ def create(request):
     return render(request, 'articles/create.html')
 ```
 
--   new.html의 form에서 입력받은 내용은 `method="GET"`으로 url의 `request`에 담겨서 전달됨
--   따라서 `request.GET.get()`으로 request 자체를 참조함
--   ORM 구문을 활용하여 model에 저장하기
--   저장이 완료되면 create.html로 보내진다.
+- new.html의 form에서 입력받은 내용은 `method="GET"`으로 url의 `request`에 담겨서 전달됨
+- 따라서 `request.GET.get()`으로 request 자체를 참조함
+- ORM 구문을 활용하여 model에 저장하기
+- 저장이 완료되면 create.html로 보내진다.
 
 <br>
 <br>
 
 ## 4. HTTP request methods
 
--   게시글 작성 후, 완료를 나타내는 `페이지를 렌더링`하는 것은 `작성의 요청`에서는 적절한 응답이 아니다.
+- 게시글 작성 후, 완료를 나타내는 `페이지를 렌더링`하는 것은 `작성의 요청`에서는 적절한 응답이 아니다.
 
 <br>
 
 ### 4-1. redirect()
 
--   인자에 작성된 주소로 다시 요청을 보냄
+- 인자에 작성된 주소로 다시 요청을 보냄
 
 ```python
 # views.py
@@ -351,32 +351,32 @@ def create(request):
     return redirect('articles:detail', article.pk)
 ```
 
--   redirect 호출을 통해 작성된 그 article 상세 페이지를 조회하는 url을 실행함
--   두 번째 인자로 해당 기사의 pk값이 필요
+- redirect 호출을 통해 작성된 그 article 상세 페이지를 조회하는 url을 실행함
+- 두 번째 인자로 해당 기사의 pk값이 필요
 
 <br>
 
 ### 4-2. GET & POST
 
--   데이터에 `어떤 요청(행동)`을 원하는지를 나타내는 것
+- 데이터에 `어떤 요청(행동)`을 원하는지를 나타내는 것
 
 <br>
 
 ### - GET method
 
--   특정 리소스를 `조회`하는 요청
--   반드시 데이터를 가져올 경우에만 사용해야 함
--   GET으로 데이터를 전달하면 `Query String` 형식으로 보내짐
+- 특정 리소스를 `조회`하는 요청
+- 반드시 데이터를 가져올 경우에만 사용해야 함
+- GET으로 데이터를 전달하면 `Query String` 형식으로 보내짐
 
 ```
 ex) http://127.0.0.1:8000/articles/create/?title=제목&content=내용
 ```
 
--   조회하는 데이터 : ? 뒤의 title=제목&content=내용
+- 조회하는 데이터 : ? 뒤의 title=제목&content=내용
 
 <br>
 
-![네이버검색](../assets/img/http_get_naver_search.png)
+![네이버검색](../../assets/img/http_get_naver_search.png)
 
 <네이버 검색 시 GET method를 통해 Query String 형태로 url에 담겨 전달>
 
@@ -384,14 +384,14 @@ ex) http://127.0.0.1:8000/articles/create/?title=제목&content=내용
 
 ### - POST method
 
--   특정 리소스에 `변경사항`을 만드는 요청
--   HTTP Body에 데이터가 담겨 보내진다.
+- 특정 리소스에 `변경사항`을 만드는 요청
+- HTTP Body에 데이터가 담겨 보내진다.
 
 ```
 ex) http://127.0.0.1:8000/articles/create/?title=제목&content=내용
 ```
 
--   변경하는 데이터 : ? 뒤의 title=제목&content=내용
+- 변경하는 데이터 : ? 뒤의 title=제목&content=내용
 
 <br>
 
@@ -401,7 +401,7 @@ ex) http://127.0.0.1:8000/articles/create/?title=제목&content=내용
 <form action="{% url 'articles:create' %}" method="POST">...</form>
 ```
 
--   이 경우, html의 form 태그의 method 속성을 `method="POST"`로 해야함
+- 이 경우, html의 form 태그의 method 속성을 `method="POST"`로 해야함
 
 <br>
 
@@ -414,13 +414,13 @@ def create(request):
     ...
 ```
 
--   view 함수에서도 request 데이터 참조 시, `request.POST.get()`으로 POST사용
--   하지만 이 상태에서 실행 시, `403 에러`가 발생
--   `CSRF Token이 누락되었다`는 메시지가 뜨게 됨
+- view 함수에서도 request 데이터 참조 시, `request.POST.get()`으로 POST사용
+- 하지만 이 상태에서 실행 시, `403 에러`가 발생
+- `CSRF Token이 누락되었다`는 메시지가 뜨게 됨
 
 <br>
 
-![403에러](../assets/img/http_post_403_error.png)
+![403에러](../../assets/img/http_post_403_error.png)
 
 <POST method 사용 시 403 에러 발생>
 
@@ -428,17 +428,17 @@ def create(request):
 
 ### - CSRF
 
--   `Cross-Site-Request-Forgery`의 약자
--   사이트 간 요청 위조의 뜻을 가지고 있음
--   웹페이지의 `보안에 취약`하여 수정, 삭제 등의 작업을 하게 만드는 공격 방법으로 위험하다.
+- `Cross-Site-Request-Forgery`의 약자
+- 사이트 간 요청 위조의 뜻을 가지고 있음
+- 웹페이지의 `보안에 취약`하여 수정, 삭제 등의 작업을 하게 만드는 공격 방법으로 위험하다.
 
 <br>
 
 ### - Security Token (CSRF Token)
 
--   대표적인 CSRF 방어 방법으로 서버는 사용자 입력 데이터에 `임의의 난수 값(Token)`을 부여함
--   매 요청마다 해당 Token을 포함하여 전송시키도록 함
--   서버에서 요청 받을 때마다 전달된 Token 값이 `유효한지 검증`하여 응답을 수행함
+- 대표적인 CSRF 방어 방법으로 서버는 사용자 입력 데이터에 `임의의 난수 값(Token)`을 부여함
+- 매 요청마다 해당 Token을 포함하여 전송시키도록 함
+- 서버에서 요청 받을 때마다 전달된 Token 값이 `유효한지 검증`하여 응답을 수행함
 
 <br>
 
@@ -448,12 +448,12 @@ def create(request):
 <form action="{% url 'articles:create' %}" method="POST">{% csrf_token %}</form>
 ```
 
--   html에서 DTL 태그인 `csrf_token` 태그를 사용하여 사용자에게 토큰 값을 부여하고 이후, 요청마다 토큰 값도 함께 서버로 전송되도록 Django에서 지원함
--   `POST method`의 경우, 데이터 베이스에 변경사항을 만드는 요청이므로 `위변조의 위험을 방지`하기 위해 토큰 값으로 신원확인을 함
+- html에서 DTL 태그인 `csrf_token` 태그를 사용하여 사용자에게 토큰 값을 부여하고 이후, 요청마다 토큰 값도 함께 서버로 전송되도록 Django에서 지원함
+- `POST method`의 경우, 데이터 베이스에 변경사항을 만드는 요청이므로 `위변조의 위험을 방지`하기 위해 토큰 값으로 신원확인을 함
 
 <br>
 
-![csrf_token](../assets/img/http_post_csrf_token.png)
+![csrf_token](../../assets/img/http_post_csrf_token.png)
 
 <csrf token을 부여함>
 
@@ -485,9 +485,9 @@ def delete(request, pk):
     return redirect('articles:index')
 ```
 
--   어떤 게시글을 삭제할 지 찾기위해 pk 값을 url로 같이 받음
--   pk=pk로 해당 게시글을 찾고 delete 수행
--   삭제 후, index페이지로 리다이렉트된다.
+- 어떤 게시글을 삭제할 지 찾기위해 pk 값을 url로 같이 받음
+- pk=pk로 해당 게시글을 찾고 delete 수행
+- 삭제 후, index페이지로 리다이렉트된다.
 
 <br>
 
@@ -500,8 +500,8 @@ def delete(request, pk):
 </form>
 ```
 
--   html에서 form을 통해 delete url로 보내고 method는 POST로 설정
--   POST method 방식을 사용하기에 `csrf_token` 반드시 추가해야함
+- html에서 form을 통해 delete url로 보내고 method는 POST로 설정
+- POST method 방식을 사용하기에 `csrf_token` 반드시 추가해야함
 
 <br>
 <br>
@@ -510,9 +510,9 @@ def delete(request, pk):
 
 ### 6-1. 수정 view 함수 로직
 
--   2가지의 view 함수가 필요하다.
-    -   `수정되는 입력을 받는` 페이지를 렌더링 `edit`
-    -   ` 수정한 데이터를 DB에 저장`하는 `update`
+- 2가지의 view 함수가 필요하다.
+    - `수정되는 입력을 받는` 페이지를 렌더링 `edit`
+    - ` 수정한 데이터를 DB에 저장`하는 `update`
 
 <br>
 
@@ -543,9 +543,9 @@ def edit(request, pk):
     return render(request, 'articles/edit.html', context)
 ```
 
--   pk로 어떤 기사를 수정할지 모델에서 찾아 article 변수에 담기
--   context 객체에 키 'article'에 변수 article을 값으로 지정
--   edit.html을 렌더링하고 context를 함께 전달하기
+- pk로 어떤 기사를 수정할지 모델에서 찾아 article 변수에 담기
+- context 객체에 키 'article'에 변수 article을 값으로 지정
+- edit.html을 렌더링하고 context를 함께 전달하기
 
 <br>
 
@@ -569,9 +569,9 @@ def edit(request, pk):
 </form>
 ```
 
--   form을 생성하고 변경되는 정보를 보내기 때문에 method는 POST로 지정
--   POST method는 csrf_token 반드시 추가
--   수정 시, 이전에 작성된 내용이 출력되도록 `input`의 value 속성에는 기존의 데이터 `article.title`을 넣고 `textarea` 태그는 `article.content`를 받음
+- form을 생성하고 변경되는 정보를 보내기 때문에 method는 POST로 지정
+- POST method는 csrf_token 반드시 추가
+- 수정 시, 이전에 작성된 내용이 출력되도록 `input`의 value 속성에는 기존의 데이터 `article.title`을 넣고 `textarea` 태그는 `article.content`를 받음
 
 <br>
 
@@ -602,5 +602,5 @@ def update(request, pk):
     return redirect('articles:detail', article.pk)
 ```
 
--   받은 pk로 모델 Article에서 해당 기사를 찾아 `title`, `content`에 request.POST 객체의 정보를 담아 저장한다.
--   저장이 완료되면 해당 기사의 상세 페이지로 리다이렉트된다.
+- 받은 pk로 모델 Article에서 해당 기사를 찾아 `title`, `content`에 request.POST 객체의 정보를 담아 저장한다.
+- 저장이 완료되면 해당 기사의 상세 페이지로 리다이렉트된다.

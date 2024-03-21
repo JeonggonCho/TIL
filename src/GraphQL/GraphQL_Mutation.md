@@ -183,6 +183,6 @@ module.exports = {
 <br/>
 
 <p align="center">
-    <img src="../assets/img/GraphQL_mutation_add.png" width="700" alt="GraphQL_mutation_add"><br/>
+    <img src="../../assets/img/GraphQL_mutation_add.png" width="700" alt="GraphQL_mutation_add"><br/>
     <span>Mutation을 통해 데이터 추가 테스트</span>
 </p>

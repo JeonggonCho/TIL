@@ -208,7 +208,7 @@ const server = http.createServer((req, res) => {
 ## 3. POST 요청으로 데이터 추가하기
 
 <p align="center">
-   <img src="../assets/img/Nodejs_post_request.png" alt="post_request" width="600"><br/>
+   <img src="../../assets/img/Nodejs_post_request.png" alt="post_request" width="600"><br/>
    <span>POST로 데이터 추가하기</span>
 </p>
 

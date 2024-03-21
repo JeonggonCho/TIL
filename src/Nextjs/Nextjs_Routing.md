@@ -25,7 +25,7 @@
 - 중첩 루트를 생성하기 위해서는, 각각 `폴더 안에 다른 폴더들을 중첩`시킬 수 있음
 - 폴더를 생성한다는 것은 폴더명이 잠재적으로 하나의 페이지가 될 수 있음을 의미
 
-![Root Segments](../assets/img/Nextjs_Root_segments.png)
+![Root Segments](../../assets/img/Nextjs_Root_segments.png)
 
 이미지 출처 : [Next.js 공식 사이트](https://nextjs.org/docs/app/building-your-application/routing)
 
@@ -62,7 +62,7 @@ export default function AboutUs() {
 
 <br>
 
-![Segment를 통한 새로운 url의 페이지](../assets/img/Nextjs_about_us_url.png)
+![Segment를 통한 새로운 url의 페이지](../../assets/img/Nextjs_about_us_url.png)
 
 <세그먼트를 통한 새로운 url로 페이지 출력>
 
@@ -73,7 +73,7 @@ export default function AboutUs() {
 - 중간에 page.tsx를 만들지 않고 해당 segment에서 페이지 화면 출력을 건너뛸 수 있음
 - 이 경우, page 파일이 없는 폴더는 url의 경로 명의 일부로 사용됨
 
-![폴더 구조](../assets/img/Nextjs_company_sales_file_system.png)
+![폴더 구조](../../assets/img/Nextjs_company_sales_file_system.png)
 
 - 만약 폴더 구조가 위의 그림과 같을 경우
 

@@ -52,7 +52,7 @@ $ python manage.py dumpdata --indent 4 articles.article > articles.json
 
 <br>
 
-![생성된 json 파일](../assets/img/django_making_fixtures.png)
+![생성된 json 파일](../../assets/img/django_making_fixtures.png)
 
 <생성된 json 파일 확인>
 

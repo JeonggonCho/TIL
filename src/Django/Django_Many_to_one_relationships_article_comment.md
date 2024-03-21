@@ -60,7 +60,7 @@
 
 <br>
 
-![댓글과 기사의 관계](../assets/img/django_article_comment_relation.png)
+![댓글과 기사의 관계](../../assets/img/django_article_comment_relation.png)
 
 <댓글과 기사의 관계>
 
@@ -70,8 +70,8 @@
 
 - Django에서 N:1 관계 설정 모델 필드
 - ForeignKey(to, on_delete)
-  - `to` : 참조하는 모델 클래스의 이름
-  - `on_delete` : 참조하는 모델 클래스가 삭제될 때, 연결된 하위 객체의 동작을 설정 (데이터 무결성)
+    - `to` : 참조하는 모델 클래스의 이름
+    - `on_delete` : 참조하는 모델 클래스가 삭제될 때, 연결된 하위 객체의 동작을 설정 (데이터 무결성)
 
 <br>
 
@@ -175,7 +175,7 @@ def detail(request, pk):
 
 <br>
 
-![CommentForm 출력확인](../assets/img/django_comment_form.png)
+![CommentForm 출력확인](../../assets/img/django_comment_form.png)
 
 <CommentForm 출력 모습>
 

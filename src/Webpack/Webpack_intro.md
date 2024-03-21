@@ -33,7 +33,7 @@
 <br/>
 
 <p align="center">
-    <img src="../assets/img/Webpack_diagram.png" width="700" alt="Webpack_diagram"><br/>
+    <img src="../../assets/img/Webpack_diagram.png" width="700" alt="Webpack_diagram"><br/>
     <span>웹팩의 의존성 그래프</span>
 </p>
 

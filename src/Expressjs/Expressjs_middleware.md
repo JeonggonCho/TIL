@@ -14,7 +14,7 @@
 ## 1. middleware란?
 
 <p align="center">
-    <img src="../assets/img/Expressjs_middleware.png" width="600" alt="Expressjs_middleware"><br/>
+    <img src="../../assets/img/Expressjs_middleware.png" width="600" alt="Expressjs_middleware"><br/>
     <span>middleware</span>
 </p>
 
@@ -70,7 +70,7 @@ app.use((req, res, next) => {
 - 실제로는 요청을 받고 미들웨어를 거친 뒤, 다시 미들웨어를 `한 번 씩 거치고` 응답이 전달됨
 
 <p align="center">
-    <img src="../assets/img/Expressjs_middleware_response.png" width="600" alt="Expressjs_middleware_response"><br/>
+    <img src="../../assets/img/Expressjs_middleware_response.png" width="600" alt="Expressjs_middleware_response"><br/>
     <span>middleware와 응답 과정</span>
 </p>
 

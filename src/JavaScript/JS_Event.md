@@ -27,50 +27,50 @@
 
 ### 1-1. event
 
--   무언가 일어났다는 신호, 사건(모든 DOM요소는 이러한 신호를 만들어 냄)
--   웹에서의 이벤트
-    -   버튼 클릭 시 나타나는 반응
-    -   마우스 커서의 위치에 따라 드래그 앤 드롭
-    -   입력 값에 따른 요소 생성 등...
+- 무언가 일어났다는 신호, 사건(모든 DOM요소는 이러한 신호를 만들어 냄)
+- 웹에서의 이벤트
+    - 버튼 클릭 시 나타나는 반응
+    - 마우스 커서의 위치에 따라 드래그 앤 드롭
+    - 입력 값에 따른 요소 생성 등...
 
 <br>
 
 ### 1-2. event 종류
 
--   마우스, 인풋, 키보드, 터치 등...
--   DOM 요소는 event를 받고 받은 event를 `처리`할 수 있음
+- 마우스, 인풋, 키보드, 터치 등...
+- DOM 요소는 event를 받고 받은 event를 `처리`할 수 있음
 
 <br>
 
 ### 1-3. event handler
 
--   이벤트가 발생했을 때 실행되는 `함수`
--   사용자의 행동에 어떻게 반응할 지를 JavaScript 코드로 표현한 것
+- 이벤트가 발생했을 때 실행되는 `함수`
+- 사용자의 행동에 어떻게 반응할 지를 JavaScript 코드로 표현한 것
 
 <br>
 
 ### - .addEventListener()
 
--   대표적인 이벤트 핸들러 중 하나
--   특정 이벤트를 DOM 요소가 수신할 때마다 콜백함수를 호출
+- 대표적인 이벤트 핸들러 중 하나
+- 특정 이벤트를 DOM 요소가 수신할 때마다 콜백함수를 호출
 
 ```javascript
 // 기본적인 구성
 EventTarget.addEventListener(type, handler);
 ```
 
--   `EventTarget` : DOM 요소
+- `EventTarget` : DOM 요소
 
--   `type` : 특정 이벤트
+- `type` : 특정 이벤트
 
-    -   이벤트 이름(ex. 'click')
+    - 이벤트 이름(ex. 'click')
 
--   `handler` : 콜백함수
+- `handler` : 콜백함수
 
-    -   발생한 이벤트 객체를 수신하는 콜백함수
-    -   콜백함수는 발생한 Event object를 유일한 매개변수로 받음
+    - 발생한 이벤트 객체를 수신하는 콜백함수
+    - 콜백함수는 발생한 Event object를 유일한 매개변수로 받음
 
--   `대상(EventTarget)`에 `특정 이벤트(type)`가 발생하면 `할 일(handler)`을 등록함
+- `대상(EventTarget)`에 `특정 이벤트(type)`가 발생하면 `할 일(handler)`을 등록함
 
 <br>
 
@@ -98,7 +98,7 @@ EventTarget.addEventListener(type, handler);
 </body>
 ```
 
-![event handler 예시](../assets/img/event_handler_예시.gif)
+![event handler 예시](../../assets/img/event_handler_예시.gif)
 
 <event handler 예시 결과>
 
@@ -109,7 +109,7 @@ EventTarget.addEventListener(type, handler);
 
 ### 2-1. click 이벤트
 
--   버튼을 클릭하면 숫자를 1씩 증가
+- 버튼을 클릭하면 숫자를 1씩 증가
 
 ```html
 <body>
@@ -139,7 +139,7 @@ EventTarget.addEventListener(type, handler);
 </body>
 ```
 
-![click event](../assets/img/click_event.gif)
+![click event](../../assets/img/click_event.gif)
 
 <click 이벤트 예시 결과>
 
@@ -147,7 +147,7 @@ EventTarget.addEventListener(type, handler);
 
 ### 2-2. input 이벤트
 
--   사용자의 입력 값을 실시간으로 출력하기
+- 사용자의 입력 값을 실시간으로 출력하기
 
 ```html
 <body>
@@ -175,7 +175,7 @@ EventTarget.addEventListener(type, handler);
 </body>
 ```
 
-![input event](../assets/img/input_event.gif)
+![input event](../../assets/img/input_event.gif)
 
 <input 이벤트 예시 결과>
 
@@ -183,8 +183,8 @@ EventTarget.addEventListener(type, handler);
 
 ### 2-3. click & input 이벤트
 
--   사용자의 입력 값을 실시간으로 출력하기
--   버튼을 클릭하면 출력한 값의 스타일을 변경하기
+- 사용자의 입력 값을 실시간으로 출력하기
+- 버튼을 클릭하면 출력한 값의 스타일을 변경하기
 
 ```html
 <head>
@@ -220,7 +220,7 @@ EventTarget.addEventListener(type, handler);
 </body>
 ```
 
-![click & input event](../assets/img/click_input_event.gif)
+![click & input event](../../assets/img/click_input_event.gif)
 
 <click & input 이벤트 예시 결과>
 
@@ -228,7 +228,7 @@ EventTarget.addEventListener(type, handler);
 
 ### 2-4. 이벤트 취소하기
 
--   텍스트를 복사하려고 하면 알림창을 띄우면서 복사 중단하기
+- 텍스트를 복사하려고 하면 알림창을 띄우면서 복사 중단하기
 
 ```html
 <body>
@@ -246,7 +246,7 @@ EventTarget.addEventListener(type, handler);
 </body>
 ```
 
-![prevent event](../assets/img/prevent_event.gif)
+![prevent event](../../assets/img/prevent_event.gif)
 
 <이벤트 취소 예시 결과>
 
@@ -254,14 +254,14 @@ EventTarget.addEventListener(type, handler);
 
 ### - .preventDefault()
 
--   현재 Event의 기본 동작을 중단
+- 현재 Event의 기본 동작을 중단
 
 <br>
 
 ### 2-5. 간단한 To do 만들기
 
--   할 일을 입력하고 버튼을 클릭하면 할 일 요소를 생성
--   input 컨텐츠를 작성하지 않고 버튼 클릭 시, 경고 알림 출력
+- 할 일을 입력하고 버튼을 클릭하면 할 일 요소를 생성
+- input 컨텐츠를 작성하지 않고 버튼 클릭 시, 경고 알림 출력
 
 ```html
 <body>
@@ -306,7 +306,7 @@ EventTarget.addEventListener(type, handler);
 </body>
 ```
 
-![간단한 todo](../assets/img/simple_todo.gif)
+![간단한 todo](../../assets/img/simple_todo.gif)
 
 <간단한 To do 만들기 결과>
 
@@ -314,7 +314,7 @@ EventTarget.addEventListener(type, handler);
 
 ### 2-6. 로또 번호 생성기 예시
 
--   버튼 클릭 시, 랜덤한 로또 번호 생성
+- 버튼 클릭 시, 랜덤한 로또 번호 생성
 
 ```html
 <body>
@@ -361,7 +361,7 @@ EventTarget.addEventListener(type, handler);
 </body>
 ```
 
-![lotto generator](../assets/img/lotto_generator.gif)
+![lotto generator](../../assets/img/lotto_generator.gif)
 
 <로또 번호 생성기 예시 결과>
 
@@ -369,9 +369,9 @@ EventTarget.addEventListener(type, handler);
 
 ### - lodash
 
--   모듈성, 성능 및 추가 기능을 제공하는 JavaScript 유틸리티 라이브러리
--   array, object등 자료구조를 다룰 때, 사용하는 유용하고 간편한 함수들을 제공
--   https://lodash.com/
+- 모듈성, 성능 및 추가 기능을 제공하는 JavaScript 유틸리티 라이브러리
+- array, object등 자료구조를 다룰 때, 사용하는 유용하고 간편한 함수들을 제공
+- https://lodash.com/
 
 <br>
 <br>
@@ -380,7 +380,7 @@ EventTarget.addEventListener(type, handler);
 
 ### 3-1. addEventListener와 this
 
--   addEventListener에서의 콜백함수는 특별하게 function 키워드의 경우, addEventListener를 호출한 대상(event.target)을 뜻함
+- addEventListener에서의 콜백함수는 특별하게 function 키워드의 경우, addEventListener를 호출한 대상(event.target)을 뜻함
 
 ```html
 <!--function 함수와 화살표 함수 이벤트 핸들러의 콜백함수에서 this 사용 비교-->

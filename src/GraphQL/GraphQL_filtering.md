@@ -142,7 +142,7 @@ module.exports = {
 <br/>
 
 <p align="center">
-    <img src="../assets/img/GraphQL_filtering.png" width="700" alt="GraphQL_filtering"><br/>
+    <img src="../../assets/img/GraphQL_filtering.png" width="700" alt="GraphQL_filtering"><br/>
     <span>resolver 함수 및 args 인자를 통한 필터링 결과 예시</span>
 </p>
 
@@ -269,6 +269,6 @@ module.exports = {
 <br/>
 
 <p align="center">
-    <img src="../assets/img/GraphQL_filtering_id.png" width="700" alt="GraphQL_filtering_id"><br/>
+    <img src="../../assets/img/GraphQL_filtering_id.png" width="700" alt="GraphQL_filtering_id"><br/>
     <span>resolver 함수 및 args 인자를 통한 데이터 선별 결과 예시</span>
 </p>

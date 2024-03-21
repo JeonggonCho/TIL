@@ -37,7 +37,7 @@
 
 <br>
 
-![hydration](../assets/img/Nextjs_hydration.png)
+![hydration](../../assets/img/Nextjs_hydration.png)
 
 <Next.js의 Hydration>
 

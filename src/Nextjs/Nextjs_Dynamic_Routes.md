@@ -29,13 +29,13 @@
 
 <br>
 
-![Dynamic route 폴더](../assets/img/Nextjs_dynamic_route.png)
+![Dynamic route 폴더](../../assets/img/Nextjs_dynamic_route.png)
 
 <대괄호를 이용한 Dynamic route 폴더 생성>
 
 <br>
 
-![Dynamic route로 접속 시, 페이지 출력](../assets/img/Nextjs_dynamic_route_browser.png)
+![Dynamic route로 접속 시, 페이지 출력](../../assets/img/Nextjs_dynamic_route_browser.png)
 
 <url에 Dynamic route로 접속 시, 페이지 출력>
 
@@ -56,7 +56,7 @@ export default function MovieDetail(props) {
 
 <br>
 
-![props 콘솔](../assets/img/Nextjs_dynamic_route_parameter.png)
+![props 콘솔](../../assets/img/Nextjs_dynamic_route_parameter.png)
 
 - 백엔드 상에서 params 객체에 id가 담겨있음
 
@@ -72,7 +72,7 @@ url = http://localhost:3000/movies/123123?region=kr&page=2
 
 <br>
 
-![searchParams](../assets/img/Nextjs_searchParams.png)
+![searchParams](../../assets/img/Nextjs_searchParams.png)
 
 <searchParams 백엔드 출력>
 
@@ -92,6 +92,6 @@ export default function MovieDetail({params: { id } }: { params: { id: string } 
 
 <br>
 
-![params의 id 출력](../assets/img/Nextjs_params_rendering.png)
+![params의 id 출력](../../assets/img/Nextjs_params_rendering.png)
 
 <params의 id 출력>

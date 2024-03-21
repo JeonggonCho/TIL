@@ -19,29 +19,29 @@
 
 ### 1-1. 요청과 응답
 
-![요청과응답](../assets/img/python_요청과응답.png)
+![요청과응답](../../assets/img/python_요청과응답.png)
 
--   `브라우저`를 통해 `주소`로 `요청`을 보내고, `응답결과`를 브라우저가 웹 `화면에 렌더링`한다.
--   `파이썬`을 통해 주소로 요청을 보내고 응답결과를 파이썬으로 조작한다.
+- `브라우저`를 통해 `주소`로 `요청`을 보내고, `응답결과`를 브라우저가 웹 `화면에 렌더링`한다.
+- `파이썬`을 통해 주소로 요청을 보내고 응답결과를 파이썬으로 조작한다.
 
 <br>
 <br>
 
 ## 2. API
 
-![api예시1](../assets/img/python_api_example1.png)
+![api예시1](../../assets/img/python_api_example1.png)
 
 <브라우저 상의 데이터 및 정보>
 
 <br>
 
-![api예시2](../assets/img/python_api_example2.png)
+![api예시2](../../assets/img/python_api_example2.png)
 
 <JSON 타입의 데이터 원형>
 
 <br>
 
-![api예시3](../assets/img/python_api_example3.png)
+![api예시3](../../assets/img/python_api_example3.png)
 
 <정제된 형태의 JSON 데이터>
 
@@ -49,9 +49,9 @@
 
 ### 2-1. API(Application Programming Interface)
 
--   컴퓨터나 컴퓨터 프로그램 사이의 연결
--   일종의 소프트웨어 인터페이스이며 다른 종류의 소프트웨어에 서비스를 제공
--   사용하는 방법을 기술하는 문서나 표준은 API 사양/명세(specification)
+- 컴퓨터나 컴퓨터 프로그램 사이의 연결
+- 일종의 소프트웨어 인터페이스이며 다른 종류의 소프트웨어에 서비스를 제공
+- 사용하는 방법을 기술하는 문서나 표준은 API 사양/명세(specification)
 
 <br>
 
@@ -70,17 +70,17 @@ A) 어떻게 조작해야하는지에 대한 명세
 
 ### 2-2. API 활용 시 확인 사항
 
--   요청하는 방식에 대한 이해
+- 요청하는 방식에 대한 이해
 
-    -   인증 방식
-    -   URL 생성
-        -   기본 주소
-        -   원하는 기능에 대한 추가 경로
-        -   요청 변수 (필수와 선택)
+    - 인증 방식
+    - URL 생성
+        - 기본 주소
+        - 원하는 기능에 대한 추가 경로
+        - 요청 변수 (필수와 선택)
 
--   응답 결과에 대한 이해
-    -   응답 결과 타입(JSON)
-    -   응답 결과 구조
+- 응답 결과에 대한 이해
+    - 응답 결과 타입(JSON)
+    - 응답 결과 구조
 
 <br>
 <br>
@@ -89,61 +89,61 @@ A) 어떻게 조작해야하는지에 대한 명세
 
 ### 3-1. 네이버 로그인 API 명세
 
--   네이버 로그인 화면
-    ![네이버로그인](../assets/img/python_api_naver.png)
+- 네이버 로그인 화면
+  ![네이버로그인](../../assets/img/python_api_naver.png)
 
 <br>
 
--   요청 보내는 메서드 및 URL
-    ![네이버로그인1](../assets/img/python_api_naver1.png)
+- 요청 보내는 메서드 및 URL
+  ![네이버로그인1](../../assets/img/python_api_naver1.png)
 
 <br>
 
--   요청 시, 변수들의 정보
-    ![네이버로그인2](../assets/img/python_api_naver2.png)
+- 요청 시, 변수들의 정보
+  ![네이버로그인2](../../assets/img/python_api_naver2.png)
 
 <br>
 
--   응답 정보
-    ![네이버로그인3](../assets/img/python_api_naver3.png)
+- 응답 정보
+  ![네이버로그인3](../../assets/img/python_api_naver3.png)
 
 <br>
 
 ### 3-2. TMDB API 명세
 
--   TMDB(The Movie Database)
+- TMDB(The Movie Database)
 
-    -   영화 데이터의 API를 제공하는 웹서비스
+    - 영화 데이터의 API를 제공하는 웹서비스
 
-        ![tmdb](../assets/img/python_api_tmdb.png)
-
-<br>
-
--   요청하는 방식
-
-    ![tmdb1](../assets/img/python_api_tmdb1.png)
-
-    -   기본 주소
+      ![tmdb](../../assets/img/python_api_tmdb.png)
 
 <br>
 
--   API 이용 명세
+- 요청하는 방식
 
-    ![tmdb2](../assets/img/python_api_tmdb2.png)
+  ![tmdb1](../../assets/img/python_api_tmdb1.png)
 
-    -   요청 할 수 있는 API 정보
-    -   요청 메서드
-    -   요청 변수, 변수타입, 필수 여부
-    -   응답 정보, 타입
-    -   응답 코드
-    -   API 요청 언어
-    -   토큰값(보안 필요)
-    -   필요한 패키지 다운로드
-    -   요청 코드 예시
+    - 기본 주소
 
 <br>
 
--   응답 예시
-    ![tmdb3](../assets/img/python_api_tmdb3.png)
+- API 이용 명세
 
-    -   JSON 형태의 응답을 반환함
+  ![tmdb2](../../assets/img/python_api_tmdb2.png)
+
+    - 요청 할 수 있는 API 정보
+    - 요청 메서드
+    - 요청 변수, 변수타입, 필수 여부
+    - 응답 정보, 타입
+    - 응답 코드
+    - API 요청 언어
+    - 토큰값(보안 필요)
+    - 필요한 패키지 다운로드
+    - 요청 코드 예시
+
+<br>
+
+- 응답 예시
+  ![tmdb3](../../assets/img/python_api_tmdb3.png)
+
+    - JSON 형태의 응답을 반환함

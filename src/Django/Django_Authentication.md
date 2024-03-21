@@ -87,12 +87,12 @@
 
 ## 1. Django Authentication System
 
--   `사용자 인증`과 관련된 기능을 모아 놓은 시스템
--   인증과 권한 부여를 함께 제공 및 처리함
+- `사용자 인증`과 관련된 기능을 모아 놓은 시스템
+- 인증과 권한 부여를 함께 제공 및 처리함
 
 <br>
 
-![django authentication system](../assets/img/django_authentication_setting.png)
+![django authentication system](../../assets/img/django_authentication_setting.png)
 
 <setting의 django authentication system>
 
@@ -100,22 +100,22 @@
 
 ### 1-1. Authentication
 
--   `인증`으로 사용자가 자신이 누구인지 확인하는 것
--   신원 확인
+- `인증`으로 사용자가 자신이 누구인지 확인하는 것
+- 신원 확인
 
 <br>
 
 ### 1-2. Authorization
 
--   인증된 사용자가 수행할 수 있는 작업을 결정
--   `권한`을 부여
+- 인증된 사용자가 수행할 수 있는 작업을 결정
+- `권한`을 부여
 
 <br>
 
 ### 1-3. 사전 설정
 
--   app `accounts` 생성 및 등록
--   auth와 관련한 경로 및 키워드들은 django의 내부적으로 accounts라는 이름으로 사용하고 있기에 accounts로 지정하는 것을 권장함
+- app `accounts` 생성 및 등록
+- auth와 관련한 경로 및 키워드들은 django의 내부적으로 accounts라는 이름으로 사용하고 있기에 accounts로 지정하는 것을 권장함
 
 <br>
 
@@ -145,16 +145,16 @@ urlpatterns = []
 
 ### 2-1. Custom User model로 대체
 
--   django가 기본적으로 제공하는 `User model`은 내장된 auth 모듈의 `User 클래스`를 사용
--   별도 설정없이 사용할 수 있어서 간편하지만, 직접 `수정할 수 없음`
--   [Django - 유저모델 대체하기](https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#substituting-a-custom-user-model)
+- django가 기본적으로 제공하는 `User model`은 내장된 auth 모듈의 `User 클래스`를 사용
+- 별도 설정없이 사용할 수 있어서 간편하지만, 직접 `수정할 수 없음`
+- [Django - 유저모델 대체하기](https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#substituting-a-custom-user-model)
 
 <br>
 
 ### 2-2. 상속
 
--   `AbstractUser`를 `상속`받는 커스텀 `User 클래스` 작성
--   기존 User 클래스도 AbstractUser를 상속받기 때문에 커스텀 User 클래스도 같은 모습을 가지게 됨
+- `AbstractUser`를 `상속`받는 커스텀 `User 클래스` 작성
+- 기존 User 클래스도 AbstractUser를 상속받기 때문에 커스텀 User 클래스도 같은 모습을 가지게 됨
 
 <br>
 
@@ -171,7 +171,7 @@ class User(AbstractUser):
 
 ### 2-3. User 모델 지정
 
--   django 프로젝트가 사용하는 기본 User 모델을 커스텀한 User 모델로 지정
+- django 프로젝트가 사용하는 기본 User 모델을 커스텀한 User 모델로 지정
 
 <br>
 
@@ -185,7 +185,7 @@ AUTH_USER_MODEL = 'accounts.User'
 
 ### 2-4. admin site에 등록하기
 
--   등록해야만 admin site에 출력됨
+- 등록해야만 admin site에 출력됨
 
 <br>
 
@@ -203,29 +203,29 @@ admin.site.register(User, UserAdmin)
 
 ### - 주의
 
--   프로젝트 중간에 AUTH_USER_MODEL을 변경할 수 없음
--   만약, 진행이 이미 되었다면 데이터 베이스 초기화 한 후 진행해야 함
+- 프로젝트 중간에 AUTH_USER_MODEL을 변경할 수 없음
+- 만약, 진행이 이미 되었다면 데이터 베이스 초기화 한 후 진행해야 함
 
 <br>
 
 ### - 반드시 User 모델을 대체해야하는가?
 
--   Django에서 공식적으로 `커스텀 User 모델을 설정`하는 것을 강력하게 `권장`하고 있음(highly recommended)
--   기본 User 모델과 동일하게 작동하는 동시에 필요 시, 맞춤 설정 가능하기 때문
--   단, 앞선 주의와 같이 User 모델 대체 작업은 프로젝트의 모든 migrations 혹은 첫 migrate 실행 전 수행되어야 함
+- Django에서 공식적으로 `커스텀 User 모델을 설정`하는 것을 강력하게 `권장`하고 있음(highly recommended)
+- 기본 User 모델과 동일하게 작동하는 동시에 필요 시, 맞춤 설정 가능하기 때문
+- 단, 앞선 주의와 같이 User 모델 대체 작업은 프로젝트의 모든 migrations 혹은 첫 migrate 실행 전 수행되어야 함
 
 <br>
 <br>
 
 ## 3. Login
 
--   `Session`을 생성하는 과정
+- `Session`을 생성하는 과정
 
 <br>
 
 ### 3-1. AuthenticationForm()
 
--   로그인을 위한 built-in form
+- 로그인을 위한 built-in form
 
 <br>
 
@@ -260,7 +260,7 @@ def login(request):
     return render(request, 'accounts/login.html', context)
 ```
 
--   GET method로 login 요청을 받으면 form으로 인증 폼인 AuthenticationForm을 받아 로그인 페이지로 context에 담아 전달
+- GET method로 login 요청을 받으면 form으로 인증 폼인 AuthenticationForm을 받아 로그인 페이지로 context에 담아 전달
 
 <br>
 
@@ -278,7 +278,7 @@ def login(request):
 
 <br>
 
-![로그인 페이지](../assets/img/django_login_page.png)
+![로그인 페이지](../../assets/img/django_login_page.png)
 
 <로그인 페이지>
 
@@ -316,43 +316,43 @@ def login(request):
 login(request, user)
 ```
 
--   인증된 사용자를 로그인 하는 함수
+- 인증된 사용자를 로그인 하는 함수
 
 <br>
 
 ### 3-3. get_user() 메서드
 
--   AuthenticationForm의 인스턴스 메서드
--   유효성 검사를 통과했을 때, 로그인을 한 사용자 객체를 반환함
+- AuthenticationForm의 인스턴스 메서드
+- 유효성 검사를 통과했을 때, 로그인을 한 사용자 객체를 반환함
 
 <br>
 
 ### - login시, Session 데이터 확인
 
-![DB session](../assets/img/django_session_db.png)
+![DB session](../../assets/img/django_session_db.png)
 
--   DB 테이블에서 django로부터 발급받은 Session 확인
+- DB 테이블에서 django로부터 발급받은 Session 확인
 
 <br>
 
-![browser session](../assets/img/django_session_browser.png)
+![browser session](../../assets/img/django_session_browser.png)
 
--   브라우저 개발자 도구에서 확인
--   개발자 도구 -> Application -> Cookies
+- 브라우저 개발자 도구에서 확인
+- 개발자 도구 -> Application -> Cookies
 
 <br>
 <br>
 
 ## 4. Logout
 
--   Session을 삭제하는 과정
+- Session을 삭제하는 과정
 
 <br>
 
 ### 4-1. logout(request)
 
--   현재 요청에 대한 Session 데이터를 DB에서 삭제
--   클라이언트 쿠키에서도 session id를 삭제
+- 현재 요청에 대한 Session 데이터를 DB에서 삭제
+- 클라이언트 쿠키에서도 session id를 삭제
 
 <br>
 
@@ -399,7 +399,7 @@ def logout(request):
 
 ## 5. Template with Authentication data
 
--   템플릿에서 인증 관련 데이터를 출력하는 방법
+- 템플릿에서 인증 관련 데이터를 출력하는 방법
 
 <br>
 
@@ -415,9 +415,9 @@ def logout(request):
 
 ### - context processors
 
--   템플릿에 렌더링 될 때, 호출 가능한 context 데이터 목록
--   작성된 context 데이터는 기본적으로 템플릿에서 사용 가능한 변수로 포함됨
--   Django에서 자주 사용되는 데이터 목록을 미리 템플릿에 로드해둔 것
+- 템플릿에 렌더링 될 때, 호출 가능한 context 데이터 목록
+- 작성된 context 데이터는 기본적으로 템플릿에서 사용 가능한 변수로 포함됨
+- Django에서 자주 사용되는 데이터 목록을 미리 템플릿에 로드해둔 것
 
 ```python
 # settings.py
@@ -442,13 +442,13 @@ TEMPLATES = [
 
 ## 6. 회원가입
 
--   User 객체를 생성하는 것
+- User 객체를 생성하는 것
 
 <br>
 
 ### 6-1. UserCreationForm()
 
--   회원가입을 위한 built-in ModelForm
+- 회원가입을 위한 built-in ModelForm
 
 <br>
 
@@ -502,7 +502,7 @@ def signup(request):
 
 <br>
 
-![회원가입 페이지](../assets/img/django_signup_page.png)
+![회원가입 페이지](../../assets/img/django_signup_page.png)
 
 <회원가입 페이지>
 
@@ -533,18 +533,18 @@ def signup(request):
 
 ### - 회원가입 후 에러
 
-![회원가입 에러](../assets/img/django_signup_error.png)
+![회원가입 에러](../../assets/img/django_signup_error.png)
 
 <회원가입 후 에러 발생>
 
--   회원가입에서 사용하는 `UserCreationForm()`이 커스텀 User 모델이 아닌 `기본 유저 모델`로 인해 작성된 클래스이기 때문
+- 회원가입에서 사용하는 `UserCreationForm()`이 커스텀 User 모델이 아닌 `기본 유저 모델`로 인해 작성된 클래스이기 때문
 
 <br>
 
 ### - 커스텀 User 모델 사용을 위해 Form 다시 작성
 
--   `UserCreationForm()`, `UserChangeForm()` : 두 개의 form 모두 기본 유저 모델을 사용
--   회원가입 및 회원정보 수정을 위해 커스텀 User 모델과 같이 `커스텀 Form`을 작성해 주어야 함
+- `UserCreationForm()`, `UserChangeForm()` : 두 개의 form 모두 기본 유저 모델을 사용
+- 회원가입 및 회원정보 수정을 위해 커스텀 User 모델과 같이 `커스텀 Form`을 작성해 주어야 함
 
 ```python
 # accounts/forms.py
@@ -565,14 +565,14 @@ class CustomUserChangeForm(UserChangeForm):
 
 ### - get_user_model()
 
--   현재 프로젝트에서 `활성화된 사용자 모델(Active User Model)`을 반환하는 함수
+- 현재 프로젝트에서 `활성화된 사용자 모델(Active User Model)`을 반환하는 함수
 
 <br>
 
 ### - User 모델을 직접 참조하지 않는 이유
 
--   get_user_model()을 사용하면 커스텀 User 모델을 자동으로 반환(간편함)
--   Django에서 공식적으로 User 클래스 직접 참조보다 get_user_model()을 통해 참조해야 함을 강조
+- get_user_model()을 사용하면 커스텀 User 모델을 자동으로 반환(간편함)
+- Django에서 공식적으로 User 클래스 직접 참조보다 get_user_model()을 통해 참조해야 함을 강조
 
 <br>
 
@@ -602,7 +602,7 @@ def signup(request):
 
 ## 7. 회원탈퇴
 
--   User 객체를 삭제하는 것
+- User 객체를 삭제하는 것
 
 <br>
 
@@ -650,13 +650,13 @@ def delete(request):
 
 ## 8. 회원정보 수정
 
--   User 객체를 수정하는 것
+- User 객체를 수정하는 것
 
 <br>
 
 ### 8-1. UserChangeForm()
 
--   회원정보 수정을 위한 built-in ModelForm
+- 회원정보 수정을 위한 built-in ModelForm
 
 <br>
 
@@ -710,7 +710,7 @@ def update(request):
 
 <br>
 
-![회원정보 수정 페이지](../assets/img/django_user_change_page.png)
+![회원정보 수정 페이지](../../assets/img/django_user_change_page.png)
 
 <회원정보 수정 페이지>
 
@@ -718,8 +718,8 @@ def update(request):
 
 ### - UserChangeForm 사용 시, 문제
 
--   일반 유저가 접근해서는 안 될 `모든 정보들(fields)`까지 수정이 가능해짐
--   따라서 `CustomUserChangeForm`을 통해 `접근 가능한 필드들만` 받을 수 있게 조정해야 함
+- 일반 유저가 접근해서는 안 될 `모든 정보들(fields)`까지 수정이 가능해짐
+- 따라서 `CustomUserChangeForm`을 통해 `접근 가능한 필드들만` 받을 수 있게 조정해야 함
 
 <br>
 
@@ -734,7 +734,7 @@ class CustomUserChangeForm(UserChangeForm):
         fields = ('email', 'first_name', 'last_name')
 ```
 
--   User Model의 필드만 수정할 수 있도록 명시
+- User Model의 필드만 수정할 수 있도록 명시
 
 <br>
 
@@ -767,7 +767,7 @@ def update(request):
 
 - Django에서는 비밀번호 변경 페이지를 회원정보 수정 form에서 별도의 주소로 제공하고 있음
 
-![기본제공되는 비밀번호 변경 페이지](../assets/img/django_password_change_page.png)
+![기본제공되는 비밀번호 변경 페이지](../../assets/img/django_password_change_page.png)
 
 <기본 제공되는 비밀번호 변경 페이지>
 
@@ -1021,23 +1021,23 @@ def change_password(request):
 ### 11-1. User 모델 상속 관계
 
 <p align=center>
-    <img src="../assets/img/django_User_model.png" width=400>
+    <img src="../../assets/img/django_User_model.png" width=400>
 </p>
 
--   Django User 모델 상속은 다음과 같은 순서로 이루어짐
+- Django User 모델 상속은 다음과 같은 순서로 이루어짐
 
 <br>
 
 ### - AbstractUser class
 
--   관리자 권한과 함께 완전한 기능을 가지고 있는 User model을 구현하는 `추상 기본 클래스`
+- 관리자 권한과 함께 완전한 기능을 가지고 있는 User model을 구현하는 `추상 기본 클래스`
 
 <br>
 
 ### - 추상 기본 클래스
 
--   몇 가지 공통 정보를 여러 다른 모델에 넣을 때 사용하는 클래스
--   데이터 베이스 테이블을 만드는데 사용되지 않으며, 대신 다른 모델의 기본 클래스로 사용되는 경우, 해당 필드가 하위 클래스의 필드에 추가됨
+- 몇 가지 공통 정보를 여러 다른 모델에 넣을 때 사용하는 클래스
+- 데이터 베이스 테이블을 만드는데 사용되지 않으며, 대신 다른 모델의 기본 클래스로 사용되는 경우, 해당 필드가 하위 클래스의 필드에 추가됨
 
 <br>
 

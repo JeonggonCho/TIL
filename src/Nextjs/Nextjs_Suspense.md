@@ -100,6 +100,6 @@ export default async function MovieDetail({ params: { id } }: { params: { id: st
 
 <br>
 
-![Suspense를 통한 개별 fetch](../assets/img/Nextjs_suspense.gif)
+![Suspense를 통한 개별 fetch](../../assets/img/Nextjs_suspense.gif)
 
 <Suspense를 통한 개별 fetch>

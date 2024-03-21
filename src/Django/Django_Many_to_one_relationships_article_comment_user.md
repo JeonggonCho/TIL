@@ -61,7 +61,7 @@
 
 ### 2-1. Article에서 User 외래키 정의
 
-![article과 user 관계](../assets/img/django_article_user_relation.png)
+![article과 user 관계](../../assets/img/django_article_user_relation.png)
 
 - Article 객체에서 User 객체의 id 참조
 
@@ -164,7 +164,7 @@ def create(request):
 
 <br>
 
-![인덱스 페이지](../assets/img/django_index_page.png)
+![인덱스 페이지](../../assets/img/django_index_page.png)
 
 <index 페이지>
 
@@ -187,7 +187,7 @@ def create(request):
 
 <br>
 
-![디테일 페이지](../assets/img/django_detail_page.png)
+![디테일 페이지](../../assets/img/django_detail_page.png)
 
 <detail 페이지>
 
@@ -263,7 +263,7 @@ def delete(request, pk):
 
 ### 5-1. Comment에서 User 외래키 정의
 
-![comment와 user 관계](../assets/img/django_comment_user_relation.png)
+![comment와 user 관계](../../assets/img/django_comment_user_relation.png)
 
 - Comment 객체에서 User 객체의 id 참조
 

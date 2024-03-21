@@ -120,6 +120,6 @@ const root = {
 <br/>
 
 <p align="center">
-    <img src="../assets/img/GraphQL_schema.png" width="700" alt="GraphQL_schema"><br/>
+    <img src="../../assets/img/GraphQL_schema.png" width="700" alt="GraphQL_schema"><br/>
     <span>GraphiQL로 데이터 가져오기</span>
 </p>

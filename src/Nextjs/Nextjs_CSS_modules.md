@@ -225,4 +225,4 @@ return (
 
 <br/>
 
-![클래스명 난수 생성](../assets/img/Nextjs_styles_object_className.png)
+![클래스명 난수 생성](../../assets/img/Nextjs_styles_object_className.png)

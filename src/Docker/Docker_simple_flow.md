@@ -110,6 +110,6 @@ For more examples and ideas, visit:
 
 <br/>
 
-![도커 클라이언트 및 허브](../assets/img/docker_client_hub.png)
+![도커 클라이언트 및 허브](../../assets/img/docker_client_hub.png)
 
 <도커 이미지 요청 도식화>

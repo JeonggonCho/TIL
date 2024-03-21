@@ -59,7 +59,7 @@ ex) google.com
 
 - 웹으로 연결된 컴퓨터는 클라이언트와 서버로 구분된다.
 
-![클라이언트와 서버](../assets/img/django_%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%2C%EC%84%9C%EB%B2%84.jpg)
+![클라이언트와 서버](../../assets/img/django_%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%2C%EC%84%9C%EB%B2%84.jpg)
 
 <br>
 

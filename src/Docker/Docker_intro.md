@@ -85,6 +85,6 @@ $ docker run -it redis
 - 도커, 서버에서의 컨테이너는 다양한 프로그램, 실행환경을 `추상화`하고 `동일한 인터페이스를 제공`하여 프로그램의 배포 및 관리를 단순하게 해줌
 - AWS, Azure, Google cloud 등 어디에서든 실행 가능하게 해줌
 
-![컨테이너](../assets/img/docker_container.png)
+![컨테이너](../../assets/img/docker_container.png)
 
 <컨테이너 개념 다이어그램>

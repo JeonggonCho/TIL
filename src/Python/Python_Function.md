@@ -36,22 +36,22 @@
 
 ### 1-1. 함수의 정의
 
--   `특정한 기능`을 하는 코드의 조각(묶음)
--   특정 명령을 수행하는 코드를 매번 `반복적으로 작성하지 않고`, 필요시 `호출`하여 간단히 사용
+- `특정한 기능`을 하는 코드의 조각(묶음)
+- 특정 명령을 수행하는 코드를 매번 `반복적으로 작성하지 않고`, 필요시 `호출`하여 간단히 사용
 
 <br>
 
 ### Q) 함수는 왜 사용하는 것일까?
 
--   추상(Abstraction)을 통해 `복잡한 내용을 숨기고`, 기능에 집중하여 사용할 수 있다.(블랙박스)
--   `재사용성`, `가독성`, `생산`
+- 추상(Abstraction)을 통해 `복잡한 내용을 숨기고`, 기능에 집중하여 사용할 수 있다.(블랙박스)
+- `재사용성`, `가독성`, `생산`
 
 <br>
 
 ### - 사용자 함수(Custom Function)
 
--   구현되어 있는 함수가 없는 경우, 사용자가 직접 함수를 작성하는 것이 가능
--   def 키워드 + 코드블럭 + return 값
+- 구현되어 있는 함수가 없는 경우, 사용자가 직접 함수를 작성하는 것이 가능
+- def 키워드 + 코드블럭 + return 값
 
 ```python
 def function_name(factor)-
@@ -128,12 +128,12 @@ statistics.pstdev(values)
 
 ### 1-2. 함수 기본 구조
 
--   선언과 호출(define & call)
--   입력(input)
--   범위(scope)
--   결과값(output)
+- 선언과 호출(define & call)
+- 입력(input)
+- 범위(scope)
+- 결과값(output)
 
-![함수 기본 구조](../assets/img/python_함수기본구조.png)
+![함수 기본 구조](../../assets/img/python_함수기본구조.png)
 
 <br>
 <br>
@@ -144,13 +144,13 @@ statistics.pstdev(values)
 
 ### - print()
 
--   객체를 `출력`한다.
+- 객체를 `출력`한다.
 
 <br>
 
 ### - len(s)
 
--   객체의 `길이`를 반환한다. 인자는 시퀀스 또는 컬렉션일 수 있다.
+- 객체의 `길이`를 반환한다. 인자는 시퀀스 또는 컬렉션일 수 있다.
 
 ```python
 # ex)
@@ -162,8 +162,8 @@ statistics.pstdev(values)
 
 ### - sum(iterable, start=0)
 
--   start 및 iterable의 항목들을 왼쪽에서 오른쪽으로 합하고 `합계`를 돌려준다.
--   iterable의 항목은 일반적으로 숫자이며, 시작값은 문자열이 될 수 없다.
+- start 및 iterable의 항목들을 왼쪽에서 오른쪽으로 합하고 `합계`를 돌려준다.
+- iterable의 항목은 일반적으로 숫자이며, 시작값은 문자열이 될 수 없다.
 
 ```python
 # ex)
@@ -175,8 +175,8 @@ statistics.pstdev(values)
 
 ### - max(iterable)
 
--   iterable에서 가장 큰 항목이나, 두 개 이상의 인자 중 `가장 큰 것`을 반환한다.
--   여러 항목이 최댓값이면, 함수는 처음 만난 항목을 반환한다.
+- iterable에서 가장 큰 항목이나, 두 개 이상의 인자 중 `가장 큰 것`을 반환한다.
+- 여러 항목이 최댓값이면, 함수는 처음 만난 항목을 반환한다.
 
 ```python
 # ex)
@@ -188,8 +188,8 @@ statistics.pstdev(values)
 
 ### - min(iterable)
 
--   iterable에서 가장 작은 항목이나, 두 개 이상의 인자 중 `가장 작은 것`을 반환한다.
--   여러 항목이 최솟값이면, 함수는 처음 만난 항목을 반환한다.
+- iterable에서 가장 작은 항목이나, 두 개 이상의 인자 중 `가장 작은 것`을 반환한다.
+- 여러 항목이 최솟값이면, 함수는 처음 만난 항목을 반환한다.
 
 ```python
 # ex)
@@ -203,8 +203,8 @@ statistics.pstdev(values)
 
 ### - abs(x)
 
--   숫자의 `절댓값`을 반환한다. 인자는 정수, 실수 또는 **abs**()를 구현하는 객체이다.
--   인자가 복소수면 그 크기를 반환한다.
+- 숫자의 `절댓값`을 반환한다. 인자는 정수, 실수 또는 **abs**()를 구현하는 객체이다.
+- 인자가 복소수면 그 크기를 반환한다.
 
 ```python
 # ex)
@@ -216,7 +216,7 @@ statistics.pstdev(values)
 
 ### - divmod(a, b)
 
--   두 수를 받아 `몫과 나머지`를 반환한다.
+- 두 수를 받아 `몫과 나머지`를 반환한다.
 
 ```python
 # ex)
@@ -228,8 +228,8 @@ statistics.pstdev(values)
 
 ### - pow(base, exp, mod=None)
 
--   base의 exp `거듭제곱`을 반환한다.
--   mod가 있는 경우, base의 exp 거듭제곱의 모듈로 mod를 반환한다.
+- base의 exp `거듭제곱`을 반환한다.
+- mod가 있는 경우, base의 exp 거듭제곱의 모듈로 mod를 반환한다.
 
 ```python
 # ex)
@@ -241,8 +241,8 @@ statistics.pstdev(values)
 
 ### - round(number, ndigit=None)
 
--   number를 소수점 다음에 ndigits 정밀도로 `반올림한 값`을 반환한다.
--   ndigits가 생략되거나 None이면, 입력에 가장 가까운 정수를 반환한다.
+- number를 소수점 다음에 ndigits 정밀도로 `반올림한 값`을 반환한다.
+- ndigits가 생략되거나 None이면, 입력에 가장 가까운 정수를 반환한다.
 
 ```python
 # ex)
@@ -256,7 +256,7 @@ statistics.pstdev(values)
 
 ### - all(iterable)
 
--   iterable의 `모든 요소가 참이면` (또는 iterable이 비어있으면) `True`를 반환한다.
+- iterable의 `모든 요소가 참이면` (또는 iterable이 비어있으면) `True`를 반환한다.
 
 ```python
 # ex)
@@ -268,8 +268,8 @@ statistics.pstdev(values)
 
 ### - any(iterable)
 
--   iterable의 요소 중 `어느 하나라도 참`이면 `True`를 반환한다.
--   iterable이 비어있으면 False를 반환한다.
+- iterable의 요소 중 `어느 하나라도 참`이면 `True`를 반환한다.
+- iterable이 비어있으면 False를 반환한다.
 
 ```python
 # ex)
@@ -283,7 +283,7 @@ statistics.pstdev(values)
 
 ### - bin(x)
 
--   정수를 '0b'접두사가 붙은 `이진 문자열`로 반환한다.
+- 정수를 '0b'접두사가 붙은 `이진 문자열`로 반환한다.
 
 ```python
 # ex)
@@ -295,7 +295,7 @@ statistics.pstdev(values)
 
 ### - hex(x)
 
--   정수를 '0x'접두사가 붙은 `16진수 문자열`로 반환한다.
+- 정수를 '0x'접두사가 붙은 `16진수 문자열`로 반환한다.
 
 ```python
 # ex)
@@ -307,7 +307,7 @@ statistics.pstdev(values)
 
 ### - oct(x)
 
--   정수를 '0o'접두사가 붙은 `8진수의 문자열`로 반환한다.
+- 정수를 '0o'접두사가 붙은 `8진수의 문자열`로 반환한다.
 
 ```python
 # ex)
@@ -319,7 +319,7 @@ statistics.pstdev(values)
 
 ### - ord(c)
 
--   유니코드(아스키코드) 문자 c에 대응되는 `유니코드 숫자`를 반환한다.
+- 유니코드(아스키코드) 문자 c에 대응되는 `유니코드 숫자`를 반환한다.
 
 ```python
 # ex)
@@ -331,7 +331,7 @@ statistics.pstdev(values)
 
 ### - chr(i)
 
--   유니코드(아스키코드) 숫자 i에 `대응되는 문자`를 반환한다.
+- 유니코드(아스키코드) 숫자 i에 `대응되는 문자`를 반환한다.
 
 ```python
 # ex)
@@ -343,7 +343,7 @@ statistics.pstdev(values)
 
 ### - map(function, iterable)
 
--   iterable의 `모든 요소에 함수(function)을 적용`하고, 그 결과를 map object로 반환한다.
+- iterable의 `모든 요소에 함수(function)을 적용`하고, 그 결과를 map object로 반환한다.
 
 ```python
 # ex)

@@ -14,7 +14,7 @@
 
 - Server Component에서 Data Fetch 시, 보안적으로 우수하나 fetch 시간이 오래 걸리면 그만큼 로딩 시간이 길어져 사용자에게 화면이 보이지 않게 되는 문제가 있음
 
-###  1-1. loading.tsx 생성
+### 1-1. loading.tsx 생성
 
 - 폴더 내에 `loading.tsx` 파일을 생성함
 - 반드시 파일명이 `loading`이여야 하며, Data fetch가 완료된 후, 보여질 `page.tsx 파일과 동일한 위치`에 있어야 함
@@ -34,13 +34,13 @@ export default function Loading() {
 
 <br>
 
-![server data fetching](../assets/img/Nextjs_server_data_fetching.png)
+![server data fetching](../../assets/img/Nextjs_server_data_fetching.png)
 
 <loading 페이지와 fetching된 데이터를 담은 페이지 전환 과정>
 
 <br>
 
-![로딩 화면](../assets/img/Nextjs_loading.gif)
+![로딩 화면](../../assets/img/Nextjs_loading.gif)
 
 <로딩 화면>
 
@@ -49,7 +49,7 @@ export default function Loading() {
 - Next.js가 페이지를 작은 html 부분으로 나누고(chunk) 준비되는 부분부터 하나씩 보여줌
 - 동시에 여러 데이터를 fetch할 수 있음
 
-![streaming](../assets/img/Nextjs_streaming.png)
+![streaming](../../assets/img/Nextjs_streaming.png)
 
 출처 : [Next.js 공식 사이트 - Loading UI and Streaming](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming#what-is-streaming)
 
@@ -67,6 +67,6 @@ export default function Loading() {
 
 <br>
 
-![영화 디테일 로딩 페이지](../assets/img/Nextjs_movie_detail_loading.gif)
+![영화 디테일 로딩 페이지](../../assets/img/Nextjs_movie_detail_loading.gif)
 
 <영화 디테일 로딩 페이지>

@@ -29,7 +29,7 @@ export default async function MovieVideos({id}: {id:string}) {
 
 <br>
 
-![에러 발생](../assets/img/Nextjs_throw_error.gif)
+![에러 발생](../../assets/img/Nextjs_throw_error.gif)
 
 <에러 발생 시키기>
 
@@ -53,11 +53,11 @@ export default function Error() {
 
 - error.tsx 파일의 컴포넌트 이름은 아무거나 상관없으나, 파일 명은 무조건 error.tsx여야 함
 - error.tsx 파일에는 반드시 `use client`가 필요함
-  - 없을 경우, 에러 발생
+    - 없을 경우, 에러 발생
 - 이렇게 하면 에러 발생 시, 기존 페이지 대신 error 컴포넌트를 보여줌
 
 <br>
 
-![error 컴포넌트 출력](../assets/img/Nextjs_error_component.gif)
+![error 컴포넌트 출력](../../assets/img/Nextjs_error_component.gif)
 
 <error 발생 시, error 컴포넌트 출력>

@@ -133,7 +133,7 @@ startApolloServer();
 <br/>
 
 <p align="center">
-    <img src="../assets/img/Apollo_server.png" width="700" alt="Apollo_server"><br/>
+    <img src="../../assets/img/Apollo_server.png" width="700" alt="Apollo_server"><br/>
     <span>localhost:4000/graphql로 접속</span>
 </p>
 
@@ -149,7 +149,7 @@ startApolloServer();
 <br/>
 
 <p align="center">
-    <img src="../assets/img/Apollo_query_your_server.png" width="700" alt="Apollo_query_your_server"><br/>
+    <img src="../../assets/img/Apollo_query_your_server.png" width="700" alt="Apollo_query_your_server"><br/>
     <span>Query your server로 접속</span>
 </p>
 
@@ -162,7 +162,7 @@ startApolloServer();
 - [Apollo 공식 사이트 - Migrating to Apollo Server 4](https://www.apollographql.com/docs/apollo-server/migration)
 
 <p align="center">
-    <img src="../assets/img/Apollo_migration_flow_chart.png" width="600" alt="Apollo_migration_flow_chart"><br/>
+    <img src="../../assets/img/Apollo_migration_flow_chart.png" width="600" alt="Apollo_migration_flow_chart"><br/>
     <span>Apollo Server 마이그레이션 Flow Chart</span>
 </p>
 
@@ -255,6 +255,6 @@ startApolloServer();
 <br/>
 
 <p align="center">
-    <img src="../assets/img/Apollo_server_V4.png" width="700" alt="Apollo_server_V4"><br/>
+    <img src="../../assets/img/Apollo_server_V4.png" width="700" alt="Apollo_server_V4"><br/>
     <span>Apollo Server V4로 마이그레이션 후, /graphql 접속</span>
 </p>

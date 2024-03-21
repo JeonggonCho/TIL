@@ -24,7 +24,7 @@
 <br/>
 
 <p align="center">
-    <img src="../assets/img/Expressjs_MVC.png" width="500" alt="Expressjs_MVC"><br/>
+    <img src="../../assets/img/Expressjs_MVC.png" width="500" alt="Expressjs_MVC"><br/>
     <span>MVC 패턴</span>
 </p>
 

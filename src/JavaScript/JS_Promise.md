@@ -15,7 +15,7 @@
 
 ## 1. 콜백지옥
 
--   `연속되는 비동기 함수`에서 비동기 처리의 결과 값을 사용하기 위해 `콜백이 계속 깊어지는` 현상
+- `연속되는 비동기 함수`에서 비동기 처리의 결과 값을 사용하기 위해 `콜백이 계속 깊어지는` 현상
 
 ```javascript
 // ex) 콜백지옥 예시
@@ -36,21 +36,21 @@ step1(function (value1) {
 
 ## 2. Promise란?
 
--   JavaScript의 비동기 처리를 돕는 객체
+- JavaScript의 비동기 처리를 돕는 객체
 
 <br>
 
 ### 2-1. 비동기 작업이 가지는 3가지 상태
 
-![비동기 작업 3가지 상태](../assets/img/JS_비동기_상태.png)
+![비동기 작업 3가지 상태](../../assets/img/JS_비동기_상태.png)
 
-1.  `Pending` (대기상태) : 현재 비동기 작업이 진행 중이거나, 작업이 시작할 수 없는 문제가 발생한 상태
+1. `Pending` (대기상태) : 현재 비동기 작업이 진행 중이거나, 작업이 시작할 수 없는 문제가 발생한 상태
 
-2.  `Fulfilled` (성공) : 비동기 작업이 의도한 대로 정상적으로 수행됨
+2. `Fulfilled` (성공) : 비동기 작업이 의도한 대로 정상적으로 수행됨
 
-3.  `Rejected` (실패) : 비동기 작업이 어떠한 이유로 실패함
+3. `Rejected` (실패) : 비동기 작업이 어떠한 이유로 실패함
 
-    -   ex) 시간지연으로 인한 자동 취소 등...
+    - ex) 시간지연으로 인한 자동 취소 등...
 
 <br>
 
@@ -113,13 +113,13 @@ res.then((res) => {
 });
 ```
 
--   실행자 executor를 Promise 객체에 넣기
+- 실행자 executor를 Promise 객체에 넣기
 
--   함수 isPositive()를 호출해서 리턴 값 Promise 객체를 res 변수에 담기
+- 함수 isPositive()를 호출해서 리턴 값 Promise 객체를 res 변수에 담기
 
--   then 메서드와 catch 메서드를 이용가능
-    -   `.then()` : resolve(성공) 시, 실행되는 메서드
-    -   `.catch()` : reject(실패) 시, 실행되는 메서드
+- then 메서드와 catch 메서드를 이용가능
+    - `.then()` : resolve(성공) 시, 실행되는 메서드
+    - `.catch()` : reject(실패) 시, 실행되는 메서드
 
 <br>
 
@@ -183,11 +183,11 @@ taskA(5, 1) // Promise를 리턴
     });
 ```
 
--   `then 체이닝(Chaining)` : 연속된 then으로 Promise 객체를 계속 반환
+- `then 체이닝(Chaining)` : 연속된 then으로 Promise 객체를 계속 반환
 
 <br>
 
-![then 체이닝](../assets/img/JS_then_chaining.png)
+![then 체이닝](../../assets/img/JS_then_chaining.png)
 
 <then 체이닝>
 
@@ -198,8 +198,8 @@ taskA(5, 1) // Promise를 리턴
 
 ### 3-1. Promise 장점
 
--   Promise 객체를 사용하면 then 체이닝을 통해 `아래로 늘여서` 작성가능하여 내부로 파고들게 작성하던 콜백지옥을 해결할 수 있음
--   또한 중간에 `다른 작업을 삽입`하는 것도 가능함
+- Promise 객체를 사용하면 then 체이닝을 통해 `아래로 늘여서` 작성가능하여 내부로 파고들게 작성하던 콜백지옥을 해결할 수 있음
+- 또한 중간에 `다른 작업을 삽입`하는 것도 가능함
 
 ```javascript
 // 다른 작업 삽입

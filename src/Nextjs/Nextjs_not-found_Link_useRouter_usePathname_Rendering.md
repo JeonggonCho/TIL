@@ -37,7 +37,7 @@ export default function NotFount() {
 
 <br>
 
-![not-found 페이지](../assets/img/Nextjs_not_found_page.png)
+![not-found 페이지](../../assets/img/Nextjs_not_found_page.png)
 
 <잘못된 url 접근 시, not-found 페이지 출력>
 
@@ -123,7 +123,7 @@ export default function Movie() {
 
 <br>
 
-![Navigation.tsx](../assets/img/Nextjs_navigation_file.png)
+![Navigation.tsx](../../assets/img/Nextjs_navigation_file.png)
 
 <components 폴더와 Navigation.tsx 파일 계층>
 

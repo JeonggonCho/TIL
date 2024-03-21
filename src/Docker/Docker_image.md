@@ -39,7 +39,7 @@ $ docker build .
 <br/>
 
 
-![도커 빌드](../assets/img/docker_build.png)
+![도커 빌드](../../assets/img/docker_build.png)
 
 <도커 빌드 실행>
 
@@ -60,7 +60,7 @@ $ docker build .
 
 <br/>
 
-![임시 컨테이너](../assets/img/docker_intermediate_container.png)
+![임시 컨테이너](../../assets/img/docker_intermediate_container.png)
 
 <임시 컨테이너>
 

@@ -166,7 +166,7 @@ module.exports = {
 - src/styles/main.scss 파일은 어떤 과정으로 빌드되고 있을까?
 
 <p align="center">
-    <img src="../assets/img/Webpack_import_scss.png" width="700" alt="Webpack_import_scss"><br/>
+    <img src="../../assets/img/Webpack_import_scss.png" width="700" alt="Webpack_import_scss"><br/>
     <span>scss 파일이 빌드 파일로 import되는 과정</span>
 </p>
 
@@ -263,6 +263,6 @@ $color-title: $color-black;
 <br/>
 
 <p align="center">
-    <img src="../assets/img/Webpack_scss_apply.png" width="700" alt="Webpack_scss_apply"><br/>
+    <img src="../../assets/img/Webpack_scss_apply.png" width="700" alt="Webpack_scss_apply"><br/>
     <span>scss 파일까지 적용된 빌드된 UI</span>
 </p>

@@ -25,7 +25,7 @@
 <br/>
 
 <p align="center">
-    <img src="../assets/img/GraphQL_Resolver.png" width="500" alt="GraphQL_Resolver"><br/>
+    <img src="../../assets/img/GraphQL_Resolver.png" width="500" alt="GraphQL_Resolver"><br/>
     <span>Resolver</span>
 </p>
 

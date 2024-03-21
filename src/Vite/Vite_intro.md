@@ -43,7 +43,7 @@
 - 따라서 모듈이 많아질수록 속도가 느려질 수 있음
 
 <p align="center">
-    <img src="../assets/img/Vite_bundle.png" width="500" alt="Vite_bundle"><br/>
+    <img src="../../assets/img/Vite_bundle.png" width="500" alt="Vite_bundle"><br/>
     <span>번들러 기반 빌드 과정</span>
 </p>
 
@@ -64,7 +64,7 @@
         - Vite는 브라우저가 요청할 때만 소스코드를 변환하고 제공
 
 <p align="center">
-    <img src="../assets/img/Vite_ESM.png" width="600" alt="Vite_ESM"><br/>
+    <img src="../../assets/img/Vite_ESM.png" width="600" alt="Vite_ESM"><br/>
     <span>ESM 기반 빌드 과정</span>
 </p>
 

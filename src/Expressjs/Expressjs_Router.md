@@ -68,7 +68,7 @@ app.post('/posts/xxx', postsController.xxx);
 - routes/posts.route.js
 
 <p align="center">
-    <img src="../assets/img/Expressjs_routes.png" width="600" alt="Expressjs_routes"><br/>
+    <img src="../../assets/img/Expressjs_routes.png" width="600" alt="Expressjs_routes"><br/>
     <span>라우팅 과정</span>
 </p>
 

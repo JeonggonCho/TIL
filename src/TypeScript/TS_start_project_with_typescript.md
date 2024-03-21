@@ -170,7 +170,7 @@ $ touch tsconfig.json
 $ npm run build
 ```
 
-<img src="../assets/img/TS_compile.png" width="300" alt="컴파일 확인">
+<img src="../../assets/img/TS_compile.png" width="300" alt="컴파일 확인">
 
 <컴파일 확인 - build 폴더 생성 및 index.js 파일로 컴파일>
 

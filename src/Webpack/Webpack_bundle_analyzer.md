@@ -75,6 +75,6 @@ module.exports = {
 <br/>
 
 <p align="center">
-    <img src="../assets/img/Webpack_bundle_analyzer.png" width="700" alt="Webpack_bundle_analyzer"><br/>
+    <img src="../../assets/img/Webpack_bundle_analyzer.png" width="700" alt="Webpack_bundle_analyzer"><br/>
     <span>웹 화면과 함께 bundle-analyzer 화면도 실행됨</span>
 </p>

@@ -24,7 +24,8 @@
 
 ## 1. ORM이란?
 
-- ORM이란, Object-Relational-Mapping(객체 지향 연결)의 줄임말로 객체지향 프로그래밍 언어(ex. 파이썬, 자바스크립트 등)을 사용하여 이를 지원하지 않는 시스템과의 `호환을 가능하게 하도록 데이터를 변환`해주는 프로그래밍 기술을 말한다.
+- ORM이란, Object-Relational-Mapping(객체 지향 연결)의 줄임말로 객체지향 프로그래밍 언어(ex. 파이썬, 자바스크립트 등)을 사용하여 이를 지원하지 않는
+  시스템과의 `호환을 가능하게 하도록 데이터를 변환`해주는 프로그래밍 기술을 말한다.
 - Django에서는 Python을 통하여, `SQL언어`를 사용하는 `DB를 조작`할 수 있도록 한다.
 
 <br>
@@ -32,7 +33,7 @@
 
 ### 1-1. QuerySet API
 
-![ORM, QuerySet API](../assets/img/django_ORM_QuerySet_API.png)
+![ORM, QuerySet API](../../assets/img/django_ORM_QuerySet_API.png)
 
 <ORM과 QuerySet API 개념도>
 
@@ -75,6 +76,7 @@
 - ORM을 활용하기 위해서는 초기 세팅이 필요
 
 1. 패키지 설치
+
 ```bash
 $ pip install ipython
 $ pip install django-extensions
@@ -148,6 +150,7 @@ $ Article.objects.create(title='first', content='Django!') # QuerySet API의 cre
 ```bash
 $ Article.objects.all()
 ```
+
 <br>
 
 ### 3-2. 단일 데이터 조회
@@ -155,7 +158,7 @@ $ Article.objects.all()
 - `.get()` 메서드 사용
 - get 메서드의 경우, 객체를 찾을 수 없으면, `DoesNotExist` 예외발생
 - 둘 이상의 객체를 찾으면 `MultipleObjectsReturned` 예외발생
-- 따라서 `primary key`와 같은  메서드 안에 `고유성(uniqueness)`을 보장하는 특징을 삽입해야 함
+- 따라서 `primary key`와 같은 메서드 안에 `고유성(uniqueness)`을 보장하는 특징을 삽입해야 함
 
 ```bash
 $ Article.objects.get(pk=1)

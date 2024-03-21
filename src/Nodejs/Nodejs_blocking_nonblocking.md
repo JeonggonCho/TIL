@@ -27,7 +27,7 @@
 <br/>
 
 <p align="center">
-    <img src="../assets/img/Nodejs_blocking.png" alt="blocking" width="350"/><br/>
+    <img src="../../assets/img/Nodejs_blocking.png" alt="blocking" width="350"/><br/>
     <span>Node.js에서 Blocking</span>
 </p>
 
@@ -99,6 +99,7 @@ fs.unlinkSync('/file.md');
 ```
 2. 파일 지우기 --> 1. 파일 읽기
 ```
+
 <br/>
 
 ### - 해결 방안

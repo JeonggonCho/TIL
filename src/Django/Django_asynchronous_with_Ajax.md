@@ -83,7 +83,7 @@ console.log('3. 다른 작업 실행됨');
 
 <br>
 
-![ajax 통신](../assets/img/django_XMLHttpRequest.png)
+![ajax 통신](../../assets/img/django_XMLHttpRequest.png)
 
 <Ajax를 이용한 통신의 변화>
 
@@ -184,7 +184,8 @@ print('작업 끝')
 </script>
 ```
 
-- JavaScript는 비동기식 코드로 즉각적인 처리가 가능한 콘솔출력 작업은 바로 처리하고, 오래 걸리는 이미지 요청 및 응답 받는 작업은 작업을 요청 후, 기다리지 않고 다음 콘솔을 출력하고 응답이 완료된 후, 결과를 출력
+- JavaScript는 비동기식 코드로 즉각적인 처리가 가능한 콘솔출력 작업은 바로 처리하고, 오래 걸리는 이미지 요청 및 응답 받는 작업은 작업을 요청 후, 기다리지 않고 다음 콘솔을 출력하고 응답이 완료된 후,
+  결과를 출력
 
 <br>
 
@@ -340,7 +341,7 @@ print('작업 끝')
 
 ### 4-6. csrf 값
 
-![hidden csrf](../assets/img/django_hidden_csrf.png)
+![hidden csrf](../../assets/img/django_hidden_csrf.png)
 
 - form 태그 내부에는 hidden 타입으로 숨어있는 csrf 값을 가진 input 태그가 있음
 - 해당 태그를 이용
