@@ -329,6 +329,7 @@
 
 - [Vite 소개](src/Vite/Vite_intro.md)
 - [Vite를 이용한 React 설치](src/Vite/Vite_install_react.md)
+- [Vite, Create-React-App 비교](src/Vite/Vite_create_react_app.md)
 
 </div>
 </details>
