@@ -314,6 +314,7 @@
 - [Devtool](Webpack/Webpack_Devtool.md)
 - [Babel Loader](Webpack/Webpack_Babel_Loader.md)
 - [Resource Asset](Webpack/Webpack_Resource_asset.md)
+- [bundle analyzer](Webpack/Webpack_bundle_analyzer.md)
 
 </div>
 </details>
