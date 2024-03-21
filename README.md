@@ -313,6 +313,7 @@
 - [gzip 압축](Webpack/Webpack_gzip.md)
 - [Devtool](Webpack/Webpack_Devtool.md)
 - [Babel Loader](Webpack/Webpack_Babel_Loader.md)
+- [Resource Asset](Webpack/Webpack_Resource_asset.md)
 
 </div>
 </details>
