@@ -83,6 +83,9 @@
 - ID 대신 todoId를 사용해주면 되고 사용하기 위해서는 설정이 필요함
 
 ```js
+// src/apollo/client.ts
+
+//...
 const cache = new InMemoryCache({
   typePolicies: {
     Todo: {
