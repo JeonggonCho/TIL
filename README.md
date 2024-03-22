@@ -491,6 +491,7 @@
 - [Apollo 소개](src/Apollo/Apollo_intro.md)
 - [Apollo Server](src/Apollo/Apollo_server.md)
 - [Apollo Client 구조](src/Apollo/Apollo_client.md)
+- [Tailwind CSS 설정](src/Apollo/Apollo_Tailwind.md)
 
 </div>
 </details>
