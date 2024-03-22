@@ -490,7 +490,7 @@
 
 - [Apollo 소개](src/Apollo/Apollo_intro.md)
 - [Apollo Server](src/Apollo/Apollo_server.md)
-- [Apollo Client](src/Apollo/Apollo_client.md)
+- [Apollo Client 구조](src/Apollo/Apollo_client.md)
 
 </div>
 </details>
