@@ -69,14 +69,6 @@ $ npm install graphql @apollo/client json-graphql-server react-icons
 
 <br/>
 
-- `postcss`, `autoprefixer`, `tailwindcss` CSS 관련 패키지 설치
-
-```bash
-$ npm install -D postcss autoprefixer tailwindcss
-```
-
-<br/>
-
 - Node.js 형식의 module 키워드 사용할 수 있도록 패키지 설치
 
 ```bash

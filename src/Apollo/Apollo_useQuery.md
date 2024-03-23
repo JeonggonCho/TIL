@@ -58,8 +58,6 @@ export default App;
 ```tsx
 // src/App.tsx
 
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
 import {useQuery} from "@apollo/client";
 import {GET_TODOS} from "./apollo/todos";
 import "./App.css";
@@ -103,7 +101,7 @@ function App() {
                         {data && data.allTodos.map((item: IList) => (
                             <TodoItem
                                 key={item.id}
-                                // item={item}
+                                item={item}
                             />
                         ))}
                     </ul>
