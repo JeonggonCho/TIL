@@ -32,7 +32,7 @@ $ npx tailwindcss init
 ```js
 // postcss.config.cjs
 
-export default {
+module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
@@ -53,7 +53,7 @@ export default {
 // tailwind.config.cjs
 
 /** @type {import('tailwindcss').Config} */
-export default {
+module.export = {
   // 경로 추가
   content: [
     "./src/**/*.{js, jsx, ts, tsx}",
@@ -111,3 +111,5 @@ export default App;
     <img src="../../assets/img/Apollo_tailwind_test.png" width="400" alt="Apollo_tailwind_test"><br/>
     <span>tailwind CSS의 underline 적용한 모습</span>
 </p>
+
+<br/>
