@@ -512,6 +512,7 @@
 <div markdown="1">
 
 - [Redux 소개](src/Redux/Redux_intro.md)
+- [Redux 카운터 앱 - without middleware](src/Redux/Redux_counter_without_middleware.md)
 
 </div>
 </details>
