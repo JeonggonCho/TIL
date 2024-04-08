@@ -517,6 +517,7 @@
 - [Provider](src/Redux/Redux_provider.md)
 - [useSelector, useDispatch](src/Redux/Redux_useSelector_useDispatch.md)
 - [Middleware - logger, thunk](src/Redux/Redux_middleware.md)
+- [Redux Toolkit](src/Redux/Redux_toolkit.md)
 
 </div>
 </details>

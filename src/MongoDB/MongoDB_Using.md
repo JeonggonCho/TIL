@@ -73,6 +73,65 @@
 
 <br/>
 
-9. 데이터 베이스가 생성 된 것을 확인할 수 있음
+9. 데이터 베이스가 생성 된 것을 확인 할 수 있음
 
 ![클라우드 9](../../assets/img/MongoDB_cloud9.png)
+
+<br/>
+
+10. mongoose 다운로드 하기
+
+```bash
+$ npm install mongoose
+```
+
+<br/>
+
+11. 앱에 MongoDB 연결하기
+
+```js
+// mongoose를 이용한 연결 메서드 connect
+
+await mongoose.connect(MONGO_URL);
+```
+
+- `MONGO_URL` : MongoDB 프로젝트의 Database 대쉬보드에서 `Connect` 버튼을 누른 후, 연결 방법 중 Connect to your application의 `Drivers` 선택,
+  아래 `Add your connection string into your application code`에서 `view full code sample`을 통해 url을 확인 할 수 있음
+- URL 중간에 <password> 부분에 데이터 베이스 생성시 설정한 패스워드 넣어주기
+
+![클라우드 10](../../assets/img/MongoDB_cloud10.png)
+
+<br/>
+
+```js
+// server.js
+
+// ...
+
+// mongoose 가져오기
+const {default: demongoose} = require('mongoose');
+
+// url 넣어 연결
+mongoose.connect(MONGO_URL)
+  // 연결이 잘 되었을 경우 출력할 콘솔 메시지
+  .then(() => console.log('mongodb connected'))
+  .catch(err => console.log(err))
+```
+
+<br/>
+
+12. 서버 실행해서 연결되었는지 확인하기
+
+```bash
+$ npm run start
+```
+
+![클라우드 11](../../assets/img/MongoDB_cloud11.png)
+
+- mongodb connected 문구와 함께 연결된 것을 확인 할 수 있음
+
+<br/>
+
+13. 쿼리 작업을 할 경우, `View Monitoring`의 `Collections`으로 데이터가 들어오게 됨
+
+![클라우드 12](../../assets/img/MongoDB_cloud12.png)
