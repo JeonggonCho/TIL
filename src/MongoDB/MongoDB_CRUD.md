@@ -37,7 +37,7 @@
 ```js
 // models/products.model.js
 
-const {default: mongoose} = required("mongoose");
+const {default: mongoose} = require("mongoose");
 
 // 스키마 생성
 const productSchema = new mongoose.Schema({
@@ -62,7 +62,7 @@ const productSchema = new mongoose.Schema({
 ```js
 // models/products.model.js
 
-const {default: mongoose} = required("mongoose");
+const {default: mongoose} = require("mongoose");
 
 const productSchema = new mongoose.Schema({
   name: {
@@ -104,7 +104,7 @@ module.exports = Product;
 
 // controllers.products.controller.js
 
-const productModel = required('../models/products.model');
+const productModel = require('../models/products.model');
 
 async function createProduct(req, res, next) {
   try {
@@ -135,8 +135,8 @@ module.exports = {createProduct};
 // routes/products.router.js
 
 // express, controller 가져오기
-const express = required('express');
-const productsController = required('../controllers/products.controller');
+const express = require('express');
+const productsController = require('../controllers/products.controller');
 
 // 라우터 생성
 const productsRouter = express.Router();
@@ -192,7 +192,7 @@ app.use('/products', productsRouter);
 
 // controllers.products.controller.js
 
-const productModel = required('../models/products.model');
+const productModel = require('../models/products.model');
 
 // 전체 product document 조회
 async function getProducts(req, res, next) {
@@ -231,8 +231,8 @@ module.exports = {getProducts, getProductById};
 ```js
 // routes/products.router.js
 
-const express = required('express');
-const productsController = required('../controllers/products.controller');
+const express = require('express');
+const productsController = require('../controllers/products.controller');
 
 const productsRouter = express.Router();
 
@@ -273,7 +273,7 @@ module.exports = productsRouter;
 
 // controllers.products.controller.js
 
-const productModel = required('../models/products.model');
+const productModel = require('../models/products.model');
 
 async function updateProduct(req, res, next) {
   try {
@@ -300,8 +300,8 @@ module.exports = {updateProduct};
 ### - Update 라우트
 
 ```js
-const express = required('express');
-const productsController = required('../controllers/products.controller');
+const express = require('express');
+const productsController = require('../controllers/products.controller');
 
 const productsRouter = express.Router();
 
@@ -329,7 +329,7 @@ module.exports = productsRouter;
 ```js
 // delete 예시
 
-const productModel = required('../models/products.model');
+const productModel = require('../models/products.model');
 
 async function deleteProduct(req, res, next) {
   try {
@@ -352,8 +352,8 @@ module.exports = {deleteProduct};
 ### - Delete 라우트
 
 ```js
-const express = required('express');
-const productsController = required('../controllers/products.controller');
+const express = require('express');
+const productsController = require('../controllers/products.controller');
 
 const productsRouter = express.Router();
 
