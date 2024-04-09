@@ -102,7 +102,7 @@ module.exports = usersRouter;
 
 ### - server.js에서 router 등록하기
 
-- 해당 라우터를 server.js로 가져와서 use()를 이용하여 라우터 등록하기
+- 해당 라우터를 server.js로 가져와서 `use()`를 이용하여 라우터 등록하기
 
 ```js
 // server.js
