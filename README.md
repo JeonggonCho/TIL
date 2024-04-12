@@ -658,7 +658,6 @@
 <summary><img src="assets/logo/computer_science.png" width="20" height="20"/> Computer Science(CS)</summary>
 <div markdown="1">
 
-- [CS_컴퓨터 구조](src/Computer_Science/CS_structure_of_computer.md)
 - [CS_CLI](src/Computer_Science/CS_CLI.md)
 - [CS_Server](src/Computer_Science/CS_Server.md)
 - [CS\_디자인 패턴과 프로그래밍 패러다임](src/Computer_Science/CS_Design_pattern_Programming_paradigm.md)
@@ -666,6 +665,8 @@
 - [OS\_운영체제 개요](src/Computer_Science/OS_운영체제_개요.md)
 - [REST API](src/Computer_Science/REST_API.md)
 - [HTTP requests (PUT/PATCH)](src/Computer_Science/PUT&PATCH.md)
+- [CS_OAuth](src/Computer_Science/CS_OAuth.md)
+- [CS_컴퓨터 구조](src/Computer_Science/CS_structure_of_computer.md)
 
 </div>
 </details>
