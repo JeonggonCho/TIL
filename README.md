@@ -660,14 +660,15 @@
 
 - [CS_CLI](src/Computer_Science/CS_CLI.md)
 - [CS_Server](src/Computer_Science/CS_Server.md)
-- [CS\_디자인 패턴과 프로그래밍 패러다임](src/Computer_Science/CS_Design_pattern_Programming_paradigm.md)
+- [CS_디자인 패턴과 프로그래밍 패러다임](src/Computer_Science/CS_Design_pattern_Programming_paradigm.md)
 - [CS_Cookie & Session](src/Computer_Science/CS_Cookie,Session.md)
-- [OS\_운영체제 개요](src/Computer_Science/OS_운영체제_개요.md)
+- [OS_운영체제 개요](src/Computer_Science/OS_운영체제_개요.md)
 - [REST API](src/Computer_Science/REST_API.md)
 - [HTTP requests (PUT/PATCH)](src/Computer_Science/PUT&PATCH.md)
 - [CS_OAuth](src/Computer_Science/CS_OAuth.md)
 - [CS_JWT](src/Computer_Science/CS_JWT.md)
 - [CS_컴퓨터 구조](src/Computer_Science/CS_structure_of_computer.md)
+- [CS_CPU 동작](src/Computer_Science/CS_cpu.md)
 
 </div>
 </details>
