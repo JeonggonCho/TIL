@@ -670,6 +670,7 @@
 - [CS_컴퓨터 구조](src/Computer_Science/CS_structure_of_computer.md)
 - [CS_CPU 동작](src/Computer_Science/CS_cpu.md)
 - [CS_캐시 메모리](src/Computer_Science/CS_memory.md)
+- [CS_데이터 베이스](src/Computer_Science/CS_DB.md)
 
 </div>
 </details>
